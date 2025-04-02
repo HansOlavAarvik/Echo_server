@@ -1,0 +1,860 @@
+2025-04-02 15:29:33,658 - DEBUG - Using selector: SelectSelector
+2025-04-02 15:29:33,823 - ERROR - Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\dash\dash.py", line 1326, in dispatch
+    cb = self.callback_map[output]
+         ~~~~~~~~~~~~~~~~~^^^^^^^^
+KeyError: 'humidity_graph.figure'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\dash\dash.py", line 1400, in dispatch
+    raise KeyError(msg) from missing_callback_function
+KeyError: "Callback function not found for output 'humidity_graph.figure', perhaps you forgot to prepend the '@'?"
+2025-04-02 15:29:33,824 - ERROR - Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\dash\dash.py", line 1326, in dispatch
+    cb = self.callback_map[output]
+         ~~~~~~~~~~~~~~~~~^^^^^^^^
+KeyError: 'vibration_graph.figure'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\dash\dash.py", line 1400, in dispatch
+    raise KeyError(msg) from missing_callback_function
+KeyError: "Callback function not found for output 'vibration_graph.figure', perhaps you forgot to prepend the '@'?"
+2025-04-02 15:29:33,824 - ERROR - Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\dash\dash.py", line 1326, in dispatch
+    cb = self.callback_map[output]
+         ~~~~~~~~~~~~~~~~~^^^^^^^^
+KeyError: 'temperature_graph.figure'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\dash\dash.py", line 1400, in dispatch
+    raise KeyError(msg) from missing_callback_function
+KeyError: "Callback function not found for output 'temperature_graph.figure', perhaps you forgot to prepend the '@'?"
+2025-04-02 15:29:33,827 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:33,832 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:33,833 - DEBUG - First few rows: No data
+2025-04-02 15:29:33,835 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:33,835 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:33,835 - DEBUG - First few rows: No data
+2025-04-02 15:29:33,839 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:33,839 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:33,840 - DEBUG - First few rows: No data
+2025-04-02 15:29:33,843 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:33,843 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:33,843 - DEBUG - First few rows: No data
+2025-04-02 15:29:33,844 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:33,845 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:33,845 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:33,846 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:33,847 - DEBUG - First few rows: No data
+2025-04-02 15:29:33,847 - DEBUG - First few rows: No data
+2025-04-02 15:29:33,875 - ERROR - Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\dash\dash.py", line 1405, in dispatch
+    ctx.run(
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\dash\_callback.py", line 529, in add_context
+    raise err
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\dash\_callback.py", line 518, in add_context
+    output_value = _invoke_callback(func, *func_args, **func_kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\dash\_callback.py", line 47, in _invoke_callback
+    return func(*args, **kwargs)  # %% callback invoked %%
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ST\ST_VSC\Server_test\dashboard.py", line 153, in update_humidity_graph
+    return create_sensor_graph("Inside_humidity")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ST\ST_VSC\Server_test\dashboard.py", line 129, in create_sensor_graph
+    return create_dummy_graph(y_reading)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ST\ST_VSC\Server_test\dashboard.py", line 113, in create_dummy_graph
+    fig = px.line(dummy_df, x='timestamp', y=y_reading)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\plotly\express\_chart_types.py", line 270, in line
+    return make_figure(args=locals(), constructor=go.Scatter)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\plotly\express\_core.py", line 2477, in make_figure
+    apply_default_cascade(args)
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\plotly\express\_core.py", line 1049, in apply_default_cascade
+    scatter.marker.symbol for scatter in args["template"].data.scatter
+    ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\plotly\graph_objs\scatter\_marker.py", line 1199, in symbol
+    return self["symbol"]
+           ~~~~^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\plotly\basedatatypes.py", line 4734, in __getitem__
+    elif self._props is not None and prop in self._props:
+         ^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\plotly\basedatatypes.py", line 4429, in _props
+    return self.parent._get_child_props(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\plotly\basedatatypes.py", line 4443, in _get_child_props
+    if self._props is None:
+       ^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\plotly\basedatatypes.py", line 4429, in _props
+    return self.parent._get_child_props(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\plotly\basedatatypes.py", line 4463, in _get_child_props
+    child_ind = BaseFigure._index_is(children, child)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\plotly\basedatatypes.py", line 3957, in _index_is
+    raise ValueError("Invalid value")
+ValueError: Invalid value
+2025-04-02 15:29:33,876 - ERROR - Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\dash\dash.py", line 1405, in dispatch
+    ctx.run(
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\dash\_callback.py", line 529, in add_context
+    raise err
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\dash\_callback.py", line 518, in add_context
+    output_value = _invoke_callback(func, *func_args, **func_kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\dash\_callback.py", line 47, in _invoke_callback
+    return func(*args, **kwargs)  # %% callback invoked %%
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ST\ST_VSC\Server_test\dashboard.py", line 159, in update_vibration_graph
+    return create_sensor_graph("Vibration")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ST\ST_VSC\Server_test\dashboard.py", line 129, in create_sensor_graph
+    return create_dummy_graph(y_reading)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ST\ST_VSC\Server_test\dashboard.py", line 113, in create_dummy_graph
+    fig = px.line(dummy_df, x='timestamp', y=y_reading)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\plotly\express\_chart_types.py", line 270, in line
+    return make_figure(args=locals(), constructor=go.Scatter)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\plotly\express\_core.py", line 2477, in make_figure
+    apply_default_cascade(args)
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\plotly\express\_core.py", line 1049, in apply_default_cascade
+    scatter.marker.symbol for scatter in args["template"].data.scatter
+    ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\plotly\graph_objs\scatter\_marker.py", line 1199, in symbol
+    return self["symbol"]
+           ~~~~^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\plotly\basedatatypes.py", line 4734, in __getitem__
+    elif self._props is not None and prop in self._props:
+         ^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\plotly\basedatatypes.py", line 4429, in _props
+    return self.parent._get_child_props(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\plotly\basedatatypes.py", line 4443, in _get_child_props
+    if self._props is None:
+       ^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\plotly\basedatatypes.py", line 4429, in _props
+    return self.parent._get_child_props(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\plotly\basedatatypes.py", line 4463, in _get_child_props
+    child_ind = BaseFigure._index_is(children, child)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\plotly\basedatatypes.py", line 3957, in _index_is
+    raise ValueError("Invalid value")
+ValueError: Invalid value
+2025-04-02 15:29:33,894 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:33,894 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:33,894 - DEBUG - First few rows: No data
+2025-04-02 15:29:33,897 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:33,897 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:33,897 - DEBUG - First few rows: No data
+2025-04-02 15:29:34,796 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:34,796 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:34,797 - DEBUG - First few rows: No data
+2025-04-02 15:29:34,798 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:34,803 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:34,815 - DEBUG - First few rows: No data
+2025-04-02 15:29:34,872 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:34,872 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:34,872 - DEBUG - First few rows: No data
+2025-04-02 15:29:34,873 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:34,883 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:34,888 - DEBUG - First few rows: No data
+2025-04-02 15:29:34,944 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:34,945 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:34,945 - DEBUG - First few rows: No data
+2025-04-02 15:29:34,982 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:34,983 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:34,983 - DEBUG - First few rows: No data
+2025-04-02 15:29:35,020 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:35,020 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:35,021 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:35,021 - DEBUG - First few rows: No data
+2025-04-02 15:29:35,022 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:35,032 - DEBUG - First few rows: No data
+2025-04-02 15:29:35,123 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:35,123 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:35,134 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:35,144 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:35,145 - DEBUG - First few rows: No data
+2025-04-02 15:29:35,145 - DEBUG - First few rows: No data
+2025-04-02 15:29:35,203 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:35,209 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:35,219 - DEBUG - First few rows: No data
+2025-04-02 15:29:35,261 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:35,261 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:35,261 - DEBUG - First few rows: No data
+2025-04-02 15:29:35,301 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:35,301 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:35,301 - DEBUG - First few rows: No data
+2025-04-02 15:29:35,336 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:35,337 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:35,340 - DEBUG - First few rows: No data
+2025-04-02 15:29:35,356 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:35,357 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:35,368 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:35,379 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:35,379 - DEBUG - First few rows: No data
+2025-04-02 15:29:35,380 - DEBUG - First few rows: No data
+2025-04-02 15:29:35,392 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:35,420 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:35,432 - DEBUG - First few rows: No data
+2025-04-02 15:29:35,484 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:35,484 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:35,488 - DEBUG - First few rows: No data
+2025-04-02 15:29:35,524 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:35,524 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:35,524 - DEBUG - First few rows: No data
+2025-04-02 15:29:35,562 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:35,563 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:35,563 - DEBUG - First few rows: No data
+2025-04-02 15:29:35,602 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:35,602 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:35,602 - DEBUG - First few rows: No data
+2025-04-02 15:29:35,603 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:35,609 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:35,619 - DEBUG - First few rows: No data
+2025-04-02 15:29:35,630 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:35,646 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:35,663 - DEBUG - First few rows: No data
+2025-04-02 15:29:35,663 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:35,682 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:35,683 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:35,698 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:35,712 - DEBUG - First few rows: No data
+2025-04-02 15:29:35,712 - DEBUG - First few rows: No data
+2025-04-02 15:29:35,788 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:35,789 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:35,789 - DEBUG - First few rows: No data
+2025-04-02 15:29:35,831 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:35,831 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:35,832 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:35,833 - DEBUG - First few rows: No data
+2025-04-02 15:29:35,833 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:35,833 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:35,845 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:35,850 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:35,861 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:35,872 - DEBUG - First few rows: No data
+2025-04-02 15:29:35,876 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:35,876 - DEBUG - First few rows: No data
+2025-04-02 15:29:35,877 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:35,877 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:35,887 - DEBUG - First few rows: No data
+2025-04-02 15:29:35,920 - DEBUG - First few rows: No data
+2025-04-02 15:29:35,942 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:35,998 - DEBUG - First few rows: No data
+2025-04-02 15:29:36,069 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:36,070 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:36,070 - DEBUG - First few rows: No data
+2025-04-02 15:29:36,115 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:36,115 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:36,116 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:36,116 - DEBUG - First few rows: No data
+2025-04-02 15:29:36,118 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:36,118 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:36,123 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:36,125 - DEBUG - First few rows: No data
+2025-04-02 15:29:36,142 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:36,142 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:36,156 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:36,156 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:36,161 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:36,192 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:36,192 - DEBUG - First few rows: No data
+2025-04-02 15:29:36,192 - DEBUG - First few rows: No data
+2025-04-02 15:29:36,192 - DEBUG - First few rows: No data
+2025-04-02 15:29:36,193 - DEBUG - First few rows: No data
+2025-04-02 15:29:36,333 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:36,333 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:36,333 - DEBUG - First few rows: No data
+2025-04-02 15:29:36,374 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:36,375 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:36,375 - DEBUG - First few rows: No data
+2025-04-02 15:29:36,414 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:36,414 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:36,414 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:36,415 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:36,415 - DEBUG - First few rows: No data
+2025-04-02 15:29:36,416 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:36,416 - DEBUG - First few rows: No data
+2025-04-02 15:29:36,417 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:36,417 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:36,432 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:36,453 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:36,464 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:36,464 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:36,481 - DEBUG - First few rows: No data
+2025-04-02 15:29:36,489 - DEBUG - First few rows: No data
+2025-04-02 15:29:36,489 - DEBUG - First few rows: No data
+2025-04-02 15:29:36,489 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:36,585 - DEBUG - First few rows: No data
+2025-04-02 15:29:36,644 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:36,645 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:36,645 - DEBUG - First few rows: No data
+2025-04-02 15:29:36,646 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:36,657 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:36,669 - DEBUG - First few rows: No data
+2025-04-02 15:29:36,720 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:36,720 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:36,720 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:36,721 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:36,721 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:36,722 - DEBUG - First few rows: No data
+2025-04-02 15:29:36,722 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:36,722 - DEBUG - First few rows: No data
+2025-04-02 15:29:36,723 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:36,729 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:36,770 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:36,782 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:36,782 - DEBUG - First few rows: No data
+2025-04-02 15:29:36,794 - DEBUG - First few rows: No data
+2025-04-02 15:29:36,797 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:36,797 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:36,835 - DEBUG - First few rows: No data
+2025-04-02 15:29:36,852 - DEBUG - First few rows: No data
+2025-04-02 15:29:36,943 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:36,943 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:36,943 - DEBUG - First few rows: No data
+2025-04-02 15:29:36,949 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:36,954 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:36,960 - DEBUG - First few rows: No data
+2025-04-02 15:29:37,074 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:37,074 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:37,075 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:37,075 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:37,076 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:37,076 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:37,076 - DEBUG - First few rows: No data
+2025-04-02 15:29:37,076 - DEBUG - First few rows: No data
+2025-04-02 15:29:37,077 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:37,077 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:37,099 - DEBUG - First few rows: No data
+2025-04-02 15:29:37,116 - DEBUG - First few rows: No data
+2025-04-02 15:29:37,212 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:37,213 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:37,220 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:37,221 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:37,221 - DEBUG - First few rows: No data
+2025-04-02 15:29:37,222 - DEBUG - First few rows: No data
+2025-04-02 15:29:37,296 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:37,296 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:37,296 - DEBUG - First few rows: No data
+2025-04-02 15:29:37,320 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:37,326 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:37,332 - DEBUG - First few rows: No data
+2025-04-02 15:29:37,379 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:37,380 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:37,380 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:37,381 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:37,381 - DEBUG - First few rows: No data
+2025-04-02 15:29:37,381 - DEBUG - First few rows: No data
+2025-04-02 15:29:37,454 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:37,455 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:37,455 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:37,455 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:37,456 - DEBUG - First few rows: No data
+2025-04-02 15:29:37,456 - DEBUG - First few rows: No data
+2025-04-02 15:29:37,530 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:37,531 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:37,531 - DEBUG - First few rows: No data
+2025-04-02 15:29:37,540 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:37,547 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:37,553 - DEBUG - First few rows: No data
+2025-04-02 15:29:37,609 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:37,609 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:37,610 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:37,610 - DEBUG - First few rows: No data
+2025-04-02 15:29:37,610 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:37,621 - DEBUG - First few rows: No data
+2025-04-02 15:29:37,685 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:37,685 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:37,686 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:37,686 - DEBUG - First few rows: No data
+2025-04-02 15:29:37,686 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:37,691 - DEBUG - First few rows: No data
+2025-04-02 15:29:37,757 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:37,757 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:37,758 - DEBUG - First few rows: No data
+2025-04-02 15:29:37,797 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:37,797 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:37,797 - DEBUG - First few rows: No data
+2025-04-02 15:29:37,835 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:37,836 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:37,836 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:37,837 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:37,837 - DEBUG - First few rows: No data
+2025-04-02 15:29:37,838 - DEBUG - First few rows: No data
+2025-04-02 15:29:37,875 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:37,876 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:37,886 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:37,911 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:37,912 - DEBUG - First few rows: No data
+2025-04-02 15:29:37,912 - DEBUG - First few rows: No data
+2025-04-02 15:29:37,913 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:37,983 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:37,983 - DEBUG - First few rows: No data
+2025-04-02 15:29:37,994 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:37,999 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:38,004 - DEBUG - First few rows: No data
+2025-04-02 15:29:38,062 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:38,063 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:38,063 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:38,064 - DEBUG - First few rows: No data
+2025-04-02 15:29:38,064 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:38,076 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:38,076 - DEBUG - First few rows: No data
+2025-04-02 15:29:38,088 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:38,093 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:38,113 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:38,123 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:38,123 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:38,139 - DEBUG - First few rows: No data
+2025-04-02 15:29:38,140 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:38,140 - DEBUG - First few rows: No data
+2025-04-02 15:29:38,140 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:38,145 - DEBUG - First few rows: No data
+2025-04-02 15:29:38,207 - DEBUG - First few rows: No data
+2025-04-02 15:29:38,285 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:38,286 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:38,287 - DEBUG - First few rows: No data
+2025-04-02 15:29:38,325 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:38,325 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:38,325 - DEBUG - First few rows: No data
+2025-04-02 15:29:38,364 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:38,365 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:38,365 - DEBUG - First few rows: No data
+2025-04-02 15:29:38,402 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:38,403 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:38,403 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:38,404 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:38,405 - DEBUG - First few rows: No data
+2025-04-02 15:29:38,405 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:38,405 - DEBUG - First few rows: No data
+2025-04-02 15:29:38,417 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:38,417 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:38,456 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:38,456 - DEBUG - First few rows: No data
+2025-04-02 15:29:38,473 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:38,478 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:38,483 - DEBUG - First few rows: No data
+2025-04-02 15:29:38,500 - DEBUG - First few rows: No data
+2025-04-02 15:29:38,569 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:38,580 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:38,585 - DEBUG - First few rows: No data
+2025-04-02 15:29:38,624 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:38,624 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:38,624 - DEBUG - First few rows: No data
+2025-04-02 15:29:38,625 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:38,630 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:38,635 - DEBUG - First few rows: No data
+2025-04-02 15:29:38,700 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:38,700 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:38,701 - DEBUG - First few rows: No data
+2025-04-02 15:29:38,707 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:38,713 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:38,713 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:38,735 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:38,738 - DEBUG - First few rows: No data
+2025-04-02 15:29:38,739 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:38,739 - DEBUG - First few rows: No data
+2025-04-02 15:29:38,755 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:38,787 - DEBUG - First few rows: No data
+2025-04-02 15:29:38,847 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:38,848 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:38,851 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:38,852 - DEBUG - First few rows: No data
+2025-04-02 15:29:38,852 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:38,857 - DEBUG - First few rows: No data
+2025-04-02 15:29:38,877 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:38,887 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:38,899 - DEBUG - First few rows: No data
+2025-04-02 15:29:38,960 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:38,961 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:38,961 - DEBUG - First few rows: No data
+2025-04-02 15:29:38,999 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:38,999 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:38,999 - DEBUG - First few rows: No data
+2025-04-02 15:29:39,035 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:39,036 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:39,036 - DEBUG - First few rows: No data
+2025-04-02 15:29:39,129 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:39,130 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:39,130 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:39,131 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:39,131 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:39,132 - DEBUG - First few rows: No data
+2025-04-02 15:29:39,132 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:39,132 - DEBUG - First few rows: No data
+2025-04-02 15:29:39,144 - DEBUG - First few rows: No data
+2025-04-02 15:29:39,169 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:39,203 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:39,214 - DEBUG - First few rows: No data
+2025-04-02 15:29:39,252 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:39,256 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:39,262 - DEBUG - First few rows: No data
+2025-04-02 15:29:39,324 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:39,324 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:39,325 - DEBUG - First few rows: No data
+2025-04-02 15:29:39,366 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:39,367 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:39,368 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:39,368 - DEBUG - First few rows: No data
+2025-04-02 15:29:39,369 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:39,369 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:39,382 - DEBUG - First few rows: No data
+2025-04-02 15:29:39,382 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:39,388 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:39,417 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:39,417 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:39,429 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:39,439 - DEBUG - First few rows: No data
+2025-04-02 15:29:39,442 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:39,442 - DEBUG - First few rows: No data
+2025-04-02 15:29:39,442 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:39,447 - DEBUG - First few rows: No data
+2025-04-02 15:29:39,486 - DEBUG - First few rows: No data
+2025-04-02 15:29:39,590 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:39,591 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:39,591 - DEBUG - First few rows: No data
+2025-04-02 15:29:39,597 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:39,598 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:39,599 - DEBUG - First few rows: No data
+2025-04-02 15:29:39,618 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:39,623 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:39,640 - DEBUG - First few rows: No data
+2025-04-02 15:29:39,663 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:39,663 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:39,664 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:39,680 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:39,691 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:39,708 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:39,708 - DEBUG - First few rows: No data
+2025-04-02 15:29:39,709 - DEBUG - First few rows: No data
+2025-04-02 15:29:39,709 - DEBUG - First few rows: No data
+2025-04-02 15:29:53,799 - DEBUG - Using selector: SelectSelector
+2025-04-02 15:29:53,899 - ERROR - Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\dash\dash.py", line 1326, in dispatch
+    cb = self.callback_map[output]
+         ~~~~~~~~~~~~~~~~~^^^^^^^^
+KeyError: 'humidity_graph.figure'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\dash\dash.py", line 1400, in dispatch
+    raise KeyError(msg) from missing_callback_function
+KeyError: "Callback function not found for output 'humidity_graph.figure', perhaps you forgot to prepend the '@'?"
+2025-04-02 15:29:53,900 - ERROR - Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\dash\dash.py", line 1326, in dispatch
+    cb = self.callback_map[output]
+         ~~~~~~~~~~~~~~~~~^^^^^^^^
+KeyError: 'vibration_graph.figure'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\dash\dash.py", line 1400, in dispatch
+    raise KeyError(msg) from missing_callback_function
+KeyError: "Callback function not found for output 'vibration_graph.figure', perhaps you forgot to prepend the '@'?"
+2025-04-02 15:29:53,906 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:53,907 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:53,908 - DEBUG - First few rows: No data
+2025-04-02 15:29:55,857 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:55,857 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:55,858 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:55,859 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:55,859 - DEBUG - First few rows: No data
+2025-04-02 15:29:55,859 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:55,860 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:55,868 - DEBUG - First few rows: No data
+2025-04-02 15:29:55,878 - DEBUG - First few rows: No data
+2025-04-02 15:29:56,016 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:56,017 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:56,017 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:56,017 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:56,018 - DEBUG - First few rows: No data
+2025-04-02 15:29:56,018 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:56,018 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:56,023 - DEBUG - First few rows: No data
+2025-04-02 15:29:56,029 - DEBUG - First few rows: No data
+2025-04-02 15:29:57,857 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:57,858 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:57,858 - DEBUG - First few rows: No data
+2025-04-02 15:29:57,869 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:57,880 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:57,891 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:57,894 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:57,894 - DEBUG - First few rows: No data
+2025-04-02 15:29:57,894 - DEBUG - First few rows: No data
+2025-04-02 15:29:57,990 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:57,991 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:57,991 - DEBUG - First few rows: No data
+2025-04-02 15:29:57,997 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:57,997 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:58,008 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:58,026 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:58,027 - DEBUG - First few rows: No data
+2025-04-02 15:29:58,027 - DEBUG - First few rows: No data
+2025-04-02 15:29:59,857 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:59,857 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:59,858 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:59,858 - DEBUG - First few rows: No data
+2025-04-02 15:29:59,859 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:29:59,859 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:59,872 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:29:59,877 - DEBUG - First few rows: No data
+2025-04-02 15:29:59,893 - DEBUG - First few rows: No data
+2025-04-02 15:30:00,050 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:30:00,051 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:30:00,051 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:30:00,052 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:30:00,052 - DEBUG - First few rows: No data
+2025-04-02 15:30:00,052 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:30:00,052 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:30:00,057 - DEBUG - First few rows: No data
+2025-04-02 15:30:00,072 - DEBUG - First few rows: No data
+2025-04-02 15:30:00,237 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:30:00,238 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:30:00,238 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:30:00,239 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:30:00,239 - DEBUG - First few rows: No data
+2025-04-02 15:30:00,239 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:30:00,239 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:30:00,246 - DEBUG - First few rows: No data
+2025-04-02 15:30:00,257 - DEBUG - First few rows: No data
+2025-04-02 15:30:01,179 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:30:01,179 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:30:01,180 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:30:01,180 - DEBUG - First few rows: No data
+2025-04-02 15:30:01,181 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:30:01,181 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:30:01,186 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:30:01,197 - DEBUG - First few rows: No data
+2025-04-02 15:30:01,213 - DEBUG - First few rows: No data
+2025-04-02 15:30:02,191 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:30:02,191 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:30:02,192 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:30:02,193 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:30:02,193 - DEBUG - First few rows: No data
+2025-04-02 15:30:02,193 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:30:02,193 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:30:02,199 - DEBUG - First few rows: No data
+2025-04-02 15:30:02,205 - DEBUG - First few rows: No data
+2025-04-02 15:30:03,360 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:30:03,360 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:30:03,360 - DEBUG - First few rows: No data
+2025-04-02 15:30:03,400 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:30:03,406 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:30:03,406 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:30:03,409 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:30:03,409 - DEBUG - First few rows: No data
+2025-04-02 15:30:03,409 - DEBUG - First few rows: No data
+2025-04-02 15:30:04,335 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:30:04,335 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:30:04,335 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:30:04,335 - DEBUG - First few rows: No data
+2025-04-02 15:30:04,336 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:30:04,336 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:30:04,341 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:30:04,347 - DEBUG - First few rows: No data
+2025-04-02 15:30:04,365 - DEBUG - First few rows: No data
+2025-04-02 15:30:05,331 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:30:05,331 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:30:05,332 - DEBUG - First few rows: No data
+2025-04-02 15:30:05,349 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:30:05,349 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:30:05,359 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:30:05,367 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:30:05,368 - DEBUG - First few rows: No data
+2025-04-02 15:30:05,368 - DEBUG - First few rows: No data
+2025-04-02 15:30:06,331 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:30:06,331 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:30:06,332 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:30:06,332 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:30:06,332 - DEBUG - First few rows: No data
+2025-04-02 15:30:06,332 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:30:06,332 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:30:06,339 - DEBUG - First few rows: No data
+2025-04-02 15:30:06,344 - DEBUG - First few rows: No data
+2025-04-02 15:30:07,336 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:30:07,336 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:30:07,336 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:30:07,337 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:30:07,337 - DEBUG - First few rows: No data
+2025-04-02 15:30:07,337 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:30:07,337 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:30:07,343 - DEBUG - First few rows: No data
+2025-04-02 15:30:07,349 - DEBUG - First few rows: No data
+2025-04-02 15:30:08,333 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:30:08,334 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:30:08,335 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:30:08,335 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:30:08,335 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:30:08,335 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:30:08,335 - DEBUG - First few rows: No data
+2025-04-02 15:30:08,335 - DEBUG - First few rows: No data
+2025-04-02 15:30:08,336 - DEBUG - First few rows: No data
+2025-04-02 15:30:09,334 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:30:09,334 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:30:09,334 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:30:09,334 - DEBUG - First few rows: No data
+2025-04-02 15:30:09,335 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:30:09,335 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:30:09,340 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:30:09,346 - DEBUG - First few rows: No data
+2025-04-02 15:30:09,362 - DEBUG - First few rows: No data
+2025-04-02 15:30:10,333 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:30:10,333 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:30:10,334 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:30:10,334 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:30:10,334 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:30:10,334 - DEBUG - First few rows: No data
+2025-04-02 15:30:10,334 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:30:10,334 - DEBUG - First few rows: No data
+2025-04-02 15:30:10,339 - DEBUG - First few rows: No data
+2025-04-02 15:30:11,332 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:30:11,333 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:30:11,333 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:30:11,333 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:30:11,333 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:30:11,333 - DEBUG - First few rows: No data
+2025-04-02 15:30:11,333 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:30:11,334 - DEBUG - First few rows: No data
+2025-04-02 15:30:11,343 - DEBUG - First few rows: No data
+2025-04-02 15:30:12,332 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:30:12,332 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:30:12,333 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:30:12,333 - DEBUG - First few rows: No data
+2025-04-02 15:30:12,334 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:30:12,334 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:30:12,348 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:30:12,364 - DEBUG - First few rows: No data
+2025-04-02 15:30:12,372 - DEBUG - First few rows: No data
+2025-04-02 15:30:13,335 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:30:13,335 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:30:13,336 - DEBUG - First few rows: No data
+2025-04-02 15:30:13,336 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:30:13,336 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:30:13,342 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:30:13,358 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:30:13,371 - DEBUG - First few rows: No data
+2025-04-02 15:30:13,371 - DEBUG - First few rows: No data
+2025-04-02 15:30:15,856 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:30:15,857 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:30:15,857 - DEBUG - First few rows: No data
+2025-04-02 15:30:15,858 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:30:15,863 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:30:15,874 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:30:15,891 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:30:15,892 - DEBUG - First few rows: No data
+2025-04-02 15:30:15,892 - DEBUG - First few rows: No data
+2025-04-02 15:30:15,974 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:30:15,974 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:30:15,974 - DEBUG - DataFrame columns: Empty DataFrame
+2025-04-02 15:30:15,975 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:30:15,975 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:30:15,975 - DEBUG - DataFrame shape: (0, 7)
+2025-04-02 15:30:15,975 - DEBUG - First few rows: No data
+2025-04-02 15:30:15,975 - DEBUG - First few rows: No data
+2025-04-02 15:30:15,975 - DEBUG - First few rows: No data
