@@ -5,21 +5,14 @@ import asyncio
 import plotly.express as px
 import dash_bootstrap_components as dbc
 from database import recent_data
-import logging
-
-# Setup basic logging
-logging.basicConfig(
-    filename='dashboard_debug.log',
-    level=logging.DEBUG,
-    format='%(asctime)s - %(levelname)s - %(message)s'
-)
-
+from div import log_setup, log
+log_setup()
 
 app = dash.Dash(__name__,
-external_stylesheets=[dbc.themes.BOOTSTRAP, 'https://use.fontawesome.com/releases/v5.8.1/css/all.css'],
-requests_pathname_prefix="/dashboard/",
-assets_folder="assets",
-serve_locally=True
+    external_stylesheets=[dbc.themes.BOOTSTRAP, 'https://use.fontawesome.com/releases/v5.8.1/css/all.css'],
+    requests_pathname_prefix="/dashboard/",
+    assets_folder="assets",
+    serve_locally=True
 )
 server = app.server
 ### dashboard components
@@ -107,8 +100,8 @@ def graph_layout():
 def create_dummy_graph(y_reading):
     from datetime import datetime
     dummy_df = pd.DataFrame({
-        'timestamp': [datetime.now().strftime("%Y-%m-%d %H:%M:%S")],
-        y_reading: [0]
+        'timestamp': [datetime.now().strftime("%Y-%m-%d %H:%M:%S"),datetime.now().strftime("%Y-%m-%d %H:%M:%S")],
+        y_reading: [0,0]
     })
     fig = px.line(dummy_df, x='timestamp', y=y_reading)
     fig.update_layout(annotations=[{
@@ -118,13 +111,13 @@ def create_dummy_graph(y_reading):
         'yref': 'paper',
         'x': 0.5,
         'y': 0.5
-    }])
+    }],
+    **graph_layout()
+    )
     return fig
 def create_sensor_graph(y_reading):
     data = recent_data()
-    logging.debug(f"DataFrame columns: {data.columns.tolist() if not data.empty else 'Empty DataFrame'}")
-    logging.debug(f"DataFrame shape: {data.shape}")
-    logging.debug(f"First few rows: {data.head().to_dict() if not data.empty else 'No data'}")
+    #log(data)
     if data.empty:
         return create_dummy_graph(y_reading)
     if y_reading not in data.columns:

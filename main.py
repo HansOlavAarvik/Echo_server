@@ -11,8 +11,6 @@ from UDP_recieve import UDP_main
 
 app = FastAPI(title="ECHO Monitor API")
 
-
-
 udp_thread = threading.Thread(target=UDP_main, daemon=True)
 udp_thread.start()
 

@@ -1,7 +1,6 @@
 import socket
-#import json
-#import random
 from data_process import handle_json_data
+from div import log_setup, log
 
 def udp_start_socket():
     sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM) #IPv4,  User Datagram Protocol
@@ -14,11 +13,13 @@ def udp_start_socket():
 
 def UDP_main():
     sock, server_adress = udp_start_socket()
+    log_setup()
     while True:
         data, address = sock.recvfrom(4096)
+        log(address)
+        log(data)
         try:
             handle_json_data(data, address)
         except:
             print(f"Error processing sensor data")
-            print(f"Raw data: {data}")
-
+            
