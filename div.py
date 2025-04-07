@@ -12,10 +12,9 @@ def log_setup():
     console.setLevel(logging.DEBUG)
     console.setFormatter(logging.Formatter('%(asctime)s - %(levelname)s - %(message)s'))
     logging.getLogger('').addHandler(console)
-    
     logging.debug("Logging initialized")
 
 def log(*args):
-    """Log debugging information. Pass multiple arguments to be logged separately."""
+
     message = " ".join(str(arg) for arg in args)
     logging.debug(message)

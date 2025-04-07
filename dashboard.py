@@ -3,7 +3,10 @@ from dash import html, dcc, callback, Input, Output
 import pandas as pd
 import asyncio
 import plotly.express as px
+import plotly.graph_objects as go
+from plotly.subplots import make_subplots
 import dash_bootstrap_components as dbc
+from datetime import datetime
 from database import recent_data
 from div import log_setup, log
 log_setup()
@@ -12,7 +15,8 @@ app = dash.Dash(__name__,
     external_stylesheets=[dbc.themes.BOOTSTRAP, 'https://use.fontawesome.com/releases/v5.8.1/css/all.css'],
     requests_pathname_prefix="/dashboard/",
     assets_folder="assets",
-    serve_locally=True
+    serve_locally=True,
+    suppress_callback_exceptions=True
 )
 server = app.server
 ### dashboard components
@@ -98,38 +102,88 @@ def graph_layout():
              }
 ### fetch data and draw graph
 def create_dummy_graph(y_reading):
-    from datetime import datetime
     dummy_df = pd.DataFrame({
-        'timestamp': [datetime.now().strftime("%Y-%m-%d %H:%M:%S"),datetime.now().strftime("%Y-%m-%d %H:%M:%S")],
-        y_reading: [0,0]
+        'timestamp': [
+            (datetime.now() - pd.Timedelta(minutes=1)).strftime("%Y-%m-%d %H:%M:%S"),
+            datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        ],
+        y_reading: [0, 0]
     })
-    fig = px.line(dummy_df, x='timestamp', y=y_reading)
-    fig.update_layout(annotations=[{
-        'text': f"No data available for {y_reading}",
-        'showarrow': False,
-        'xref': 'paper',
-        'yref': 'paper',
-        'x': 0.5,
-        'y': 0.5
-    }],
-    **graph_layout()
+    
+    # Use graph_objects directly instead of express to avoid the Plotly error
+    fig = go.Figure()
+    fig.add_trace(go.Scatter(x=dummy_df['timestamp'], y=dummy_df[y_reading], mode='lines'))
+    
+    fig.update_layout(
+        annotations=[{
+            'text': f"No data available for {y_reading}",
+            'showarrow': False,
+            'xref': 'paper',
+            'yref': 'paper',
+            'x': 0.5,
+            'y': 0.5
+        }],
+        **graph_layout()
     )
     return fig
-def create_sensor_graph(y_reading):
+
+def create_sensor_graph(y_reading,y_reading_secondary = None):
     data = recent_data()
     #log(data)
     if data.empty:
         return create_dummy_graph(y_reading)
     if y_reading not in data.columns:
-        #print(f"Missing column: {y_reading}")
+        log(f"Missing required column: {y_reading} or timestamp")
         return create_dummy_graph(y_reading)
     if "timestamp" not in data.columns:
-         #print("Missing timestamp column")
-         return create_dummy_graph(y_reading)
-    fig = px.line(data, x="timestamp", y=y_reading)
-    fig.update_layout(graph_layout())
-    return fig         
-          
+         log(f"Missing required column: {y_reading} or timestamp")
+         return create_dummy_graph(y_reading)   
+    if y_reading_secondary is not None:
+        fig = create_multi_plot_graph(y_reading,y_reading_secondary, data)
+    else:
+        fig = create_single_plot_graph(y_reading, data)
+    return fig
+             
+def create_multi_plot_graph(y_reading,y_reading_secondary,data):
+    fig = make_subplots(specs=[[{"secondary_y": True}]])
+
+    y1_min, y1_max = min(data[y_reading]), max(data[y_reading])
+    y2_min, y2_max = min(data[y_reading_secondary]), max(data[y_reading_secondary])
+    y_min = min(y1_min, y2_min)
+    y_max = max(y1_max, y2_max)
+    y_range = [y_min - 0.1 * (y_max - y_min), y_max + 0.1 * (y_max - y_min)]
+
+    
+    fig.add_trace(
+        go.Scatter(
+            x=data["timestamp"], 
+            y=data[y_reading], 
+            mode='lines+markers',
+            name=y_reading
+        ),
+        secondary_y=False
+    )
+    fig.add_trace(go.Scatter(
+        x=data["timestamp"], 
+        y=data[y_reading_secondary], 
+        mode='lines+markers',
+        name=y_reading_secondary
+        ),secondary_y=True
+    )
+    fig.update_yaxes(title_text=y_reading,range=y_range, secondary_y=False)
+    fig.update_yaxes(title_text=y_reading_secondary,range=y_range, secondary_y=True)
+    fig.update_layout(**graph_layout())
+    return fig   
+def create_single_plot_graph(y_reading,data):
+    fig = go.Figure()
+    fig.add_trace(go.Scatter(
+            x=data["timestamp"], 
+            y=data[y_reading], 
+            mode='lines+markers',
+            name=y_reading
+    ))
+    fig.update_layout(**graph_layout())
+    return fig
 
 ### callback functions
 @callback(
@@ -137,13 +191,13 @@ def create_sensor_graph(y_reading):
     Input('interval-component', 'n_intervals')
 )
 def update_temperature_graph(n_intervals):
-    return create_sensor_graph("Inside_temperature")
+    return create_sensor_graph("Inside_temperature","Outside_temperature")
 @callback(
     Output('humidity_graph', 'figure'),
     Input('interval-component', 'n_intervals')
 )
 def update_humidity_graph(n_intervals):
-    return create_sensor_graph("Inside_humidity")
+    return create_sensor_graph("Inside_humidity","Outside_humidity")
 @callback(
     Output('vibration_graph', 'figure'),
     Input('interval-component', 'n_intervals')
