@@ -1093,6 +1093,18 @@ typing-extensions = {version = ">=4.0", markers = "python_version < \"3.11\""}
 standard = ["colorama (>=0.4) ; sys_platform == \"win32\"", "httptools (>=0.6.3)", "python-dotenv (>=0.13)", "pyyaml (>=5.1)", "uvloop (>=0.14.0,!=0.15.0,!=0.15.1) ; sys_platform != \"win32\" and sys_platform != \"cygwin\" and platform_python_implementation != \"PyPy\"", "watchfiles (>=0.13)", "websockets (>=10.4)"]
 
 [[package]]
+name = "wave"
+version = "0.0.2"
+description = "Whole Architecture Verification"
+optional = false
+python-versions = "*"
+groups = ["main"]
+files = [
+    {file = "Wave-0.0.2.tar.gz", hash = "sha256:5a895bb85e04e38c82dba90d66a5ae8f488b50c58f3fc4df868a5bcdcabb8632"},
+    {file = "Wave-0.0.2.zip", hash = "sha256:5187f49497287d218cc83d4cd1e5299dc31485ab3ed32abbaa9e95d8f73c4095"},
+]
+
+[[package]]
 name = "werkzeug"
 version = "3.0.6"
 description = "The comprehensive WSGI web application library."
@@ -1133,4 +1145,4 @@ type = ["pytest-mypy"]
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.9,<4.0"
-content-hash = "204ba2f27dad54bd35135d439ba4910d68b727f146e89ce81ac60208bb51acb7"
+content-hash = "8da8f87bc4346b1dcbdedfc994e7e898b9fad6ecb97e14a564a4b124c2936cd1"

@@ -18,7 +18,8 @@ def _initialize_if_needed():
             'Inside_humidity',
             'Outside_humidity',
             'Time_of_flight',
-            'Vibration'
+            'Vibration',
+            "DB"
         ])
         with open(DATA_FILE, 'w') as f:
             df.to_json(f, date_format='iso')
@@ -81,16 +82,14 @@ def recent_data(minutes=5):
                         ])
                     df = pd.read_json(content, convert_dates=['timestamp'])
                 
-                # Ensure timestamp is a datetime
+
                 if 'timestamp' in df.columns and len(df) > 0:
-                    # Convert timestamps if they're not already datetime
                     if not pd.api.types.is_datetime64_any_dtype(df['timestamp']):
                         df['timestamp'] = pd.to_datetime(df['timestamp'])
                     
-                    # Filter to only show recent data
+
                     now = pd.Timestamp.now()
                     cutoff = now - pd.Timedelta(minutes=minutes)
-                    # Only filter if we have data with proper timestamps
                     if not df.empty and not all(pd.isna(df['timestamp'])):
                         df = df[df['timestamp'] >= cutoff]
                 
@@ -99,7 +98,6 @@ def recent_data(minutes=5):
                 return df
             except Exception as e:
                 log(f"Error reading data: {str(e)}")
-                # Return empty dataframe on error
                 return pd.DataFrame(columns=[
                     'timestamp', 
                     'Inside_temperature', 

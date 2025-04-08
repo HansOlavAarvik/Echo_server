@@ -94,11 +94,15 @@ def create_tof():
         ])
     )
     ]))
-
+def create_audio():
+        return wrap(html.Div([
+        html.H3("Audio"),
+        dcc.Graph(id="audio_graph",className="mt-4")
+    ]))
 ### common graph layout
 def graph_layout():
     return {"height": 300,
-             "margin": {"t": 10, "b": 30, "l": 10, "r": 10}
+             "margin": {"t": 10, "b": 30, "l": 10, "r": 10},
              }
 ### fetch data and draw graph
 def create_dummy_graph(y_reading):
@@ -126,7 +130,6 @@ def create_dummy_graph(y_reading):
         **graph_layout()
     )
     return fig
-
 def create_sensor_graph(y_reading,y_reading_secondary = None):
     data = recent_data()
     #log(data)
@@ -136,14 +139,13 @@ def create_sensor_graph(y_reading,y_reading_secondary = None):
         log(f"Missing required column: {y_reading} or timestamp")
         return create_dummy_graph(y_reading)
     if "timestamp" not in data.columns:
-         log(f"Missing required column: {y_reading} or timestamp")
-         return create_dummy_graph(y_reading)   
+        log(f"Missing required column: {y_reading} or timestamp")
+        return create_dummy_graph(y_reading)   
     if y_reading_secondary is not None:
         fig = create_multi_plot_graph(y_reading,y_reading_secondary, data)
     else:
         fig = create_single_plot_graph(y_reading, data)
-    return fig
-             
+    return fig            
 def create_multi_plot_graph(y_reading,y_reading_secondary,data):
     fig = make_subplots(specs=[[{"secondary_y": True}]])
 
@@ -159,7 +161,8 @@ def create_multi_plot_graph(y_reading,y_reading_secondary,data):
             x=data["timestamp"], 
             y=data[y_reading], 
             mode='lines+markers',
-            name=y_reading
+            name=y_reading,
+            connectgaps=True
         ),
         secondary_y=False
     )
@@ -167,12 +170,13 @@ def create_multi_plot_graph(y_reading,y_reading_secondary,data):
         x=data["timestamp"], 
         y=data[y_reading_secondary], 
         mode='lines+markers',
-        name=y_reading_secondary
+        name=y_reading_secondary,
+        connectgaps=True
         ),secondary_y=True
     )
+    fig.update_layout(**graph_layout())
     fig.update_yaxes(title_text=y_reading,range=y_range, secondary_y=False)
     fig.update_yaxes(title_text=y_reading_secondary,range=y_range, secondary_y=True)
-    fig.update_layout(**graph_layout())
     return fig   
 def create_single_plot_graph(y_reading,data):
     fig = go.Figure()
@@ -180,7 +184,8 @@ def create_single_plot_graph(y_reading,data):
             x=data["timestamp"], 
             y=data[y_reading], 
             mode='lines+markers',
-            name=y_reading
+            name=y_reading,
+            connectgaps=True
     ))
     fig.update_layout(**graph_layout())
     return fig
@@ -204,7 +209,12 @@ def update_humidity_graph(n_intervals):
 )
 def update_vibration_graph(n_intervals):
     return create_sensor_graph("Vibration")
-
+@callback(
+    Output('audio_graph', 'figure'),
+    Input('interval-component', 'n_intervals')
+)
+def update_audio_graph(n_intervals):
+    return create_sensor_graph("DB")
 
 ### layout 
 app.layout = dbc.Container([
@@ -214,6 +224,7 @@ app.layout = dbc.Container([
     create_humid(),
     create_vib(),
     create_tof(),
+    create_audio(),
     create_acoustics(),
     create_interval()
 ], fluid=True)

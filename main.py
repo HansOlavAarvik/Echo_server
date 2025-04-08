@@ -8,19 +8,26 @@ import threading
 import database
 from div import log
 import dashboard
-from UDP_recieve import UDP_main
+from UDP_recieve import UDP_main_json, UDP_main_audio
 
 app = FastAPI(title="ECHO Monitor API")
 
-udp_thread = None
+udp_json_thread = None
+udp_audio_thread = None
 
 @app.on_event("startup")
-async def startup_event():
-    global udp_thread
+async def startup_json_receiver():
+    global udp_json_thread
     log("Starting UDP receiver thread...")
-    udp_thread = threading.Thread(target=UDP_main, daemon=True)
-    udp_thread.start()
-    # Allow some time for the UDP thread to initialize
+    udp_json_thread = threading.Thread(target=UDP_main_json, daemon=True)
+    udp_json_thread.start()
+    time.sleep(0.5) 
+@app.on_event("startup")
+async def startup_audio_reciever():
+    global udp_json_thread
+    log("Starting UDP receiver thread...")
+    udp_json_thread = threading.Thread(target=UDP_main_audio, daemon=True)
+    udp_json_thread.start()
     time.sleep(0.5)
 
 

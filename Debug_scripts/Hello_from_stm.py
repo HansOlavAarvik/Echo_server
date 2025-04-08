@@ -1,6 +1,6 @@
 import socket
 
-def receive_udp_data(ip_address="0.0.0.0", port=6000):
+def receive_udp_data(ip_address="0.0.0.0", port=6002):
     sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
     server_address = (ip_address, port)
     print(f"Starting UDP server on {ip_address}:{port}")
