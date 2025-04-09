@@ -9,7 +9,6 @@ import dash_bootstrap_components as dbc
 from datetime import datetime
 from database import recent_data
 from div import log_setup, log
-
 from audio_player import create_audio_player, register_callbacks
 log_setup()
 

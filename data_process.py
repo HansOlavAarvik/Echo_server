@@ -93,7 +93,7 @@ def add_audio_chunk(chunk):
     global audio_buffer, buffer_counter
     audio_buffer.extend(chunk)
     buffer_counter += 1
-    if buffer_counter >= 10:
+    if buffer_counter >= 40:
         buffer_counter = 0
         calculate_db()
     if len(audio_buffer) >= max_buffer_size:
@@ -129,7 +129,7 @@ def calculate_db():
         rms = np.sqrt(np.mean(squared))
 
         if rms <= 0 or rms < 1e-10:
-            log(f"Audio signal too quiet for dB calculation (RMS: {rms})")
+            #log(f"Audio signal too quiet for dB calculation (RMS: {rms})")
             db = -60.0  # very low db == silence
         else:
             db = 20 * math.log10(rms / max_amplitude)
