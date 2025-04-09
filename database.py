@@ -3,24 +3,28 @@ from datetime import datetime
 import os
 import json
 import threading
+from div import log
+from io import StringIO
 
-# Use a file as a shared data store that works across process boundaries
+# Use a file as a shared data store for "slow" sensor data like temp, humid, tof
 DATA_FILE = "sensor_data.json"
 _lock = threading.Lock() #lock for single thread use of dataframe
+
+COLUMNS = [
+    'timestamp', 
+    'Inside_temperature', 
+    'Outside_temperature',
+    'Inside_humidity',
+    'Outside_humidity',
+    'Time_of_flight',
+    'Vibration',
+    'DB'
+]
 
 def _initialize_if_needed():
     """Create the data file if it doesn't exist"""
     if not os.path.exists(DATA_FILE):
-        df = pd.DataFrame(columns=[
-            'timestamp', 
-            'Inside_temperature', 
-            'Outside_temperature',
-            'Inside_humidity',
-            'Outside_humidity',
-            'Time_of_flight',
-            'Vibration',
-            "DB"
-        ])
+        df = pd.DataFrame(columns=COLUMNS)
         with open(DATA_FILE, 'w') as f:
             df.to_json(f, date_format='iso')
 
@@ -31,17 +35,24 @@ def add_data(data_dict):
         df = pd.concat([df, new_row], ignore_index=True)
         df = group_by_timestamp(df)
         save_to_file(df)
-
+    return True
 
 def open_file():
+    _initialize_if_needed()
     try:
         with open(DATA_FILE, 'r') as f:
-            return pd.read_json(f, convert_dates=['timestamp'])
+            content = f.read()
+            if not content or content == '[]':
+                return pd.DataFrame(columns=COLUMNS)
+            df = pd.read_json(StringIO(content), convert_dates=['timestamp'])
+            # Ensure timestamp is datetime
+            if 'timestamp' in df.columns and not pd.api.types.is_datetime64_any_dtype(df['timestamp']):
+                df['timestamp'] = pd.to_datetime(df['timestamp'])
+            return df    
     except Exception as e:
-        _initialize_if_needed()
-        with open(DATA_FILE, 'r') as f:
-            return pd.read_json(f, convert_dates=['timestamp'])
-
+        log(f"Error opening data file: {str(e)}")
+        return pd.DataFrame(columns=COLUMNS)
+    
 def save_to_file(df):     
         if len(df) > 100:
             df = df.tail(100)
@@ -49,64 +60,35 @@ def save_to_file(df):
             df.to_json(f, date_format='iso', orient='records')
 
 def group_by_timestamp(df):
+    if df is None or df.empty:
+        return pd.DataFrame(columns=COLUMNS)
     df['timestamp'] = pd.to_datetime(df['timestamp'])
-    df['timestamp'] = df['timestamp'].dt.floor('s')
-
-    merged_df = df.groupby('timestamp', as_index=False).agg({
-        'Inside_temperature': 'mean',
-        'Outside_temperature': 'mean',
-        'Inside_humidity': 'mean',
-        'Outside_humidity': 'mean',
-        'Time_of_flight': 'mean',
-        'Vibration': 'mean'
-    })
-    return merged_df
+    df['timestamp'] = df['timestamp'].dt.floor('s') #round time to nearest second
+    try:
+        aggregations = {col: 'mean' for col in df.columns if col != 'timestamp'}
+        merged_df = df.groupby('timestamp', as_index=False).agg(aggregations)
+        return merged_df
+    except Exception as e:
+        log(f"Error in grouping data: {str(e)}")
+        return df
 
 def recent_data(minutes=5):
-    from div import log
+    """Get data from the last N minutes"""
     try:
         with _lock:
-            _initialize_if_needed()
-            try:
-                with open(DATA_FILE, 'r') as f:
-                    content = f.read()
-                    if not content or content == '[]':
-                        return pd.DataFrame(columns=[
-                            'timestamp', 
-                            'Inside_temperature', 
-                            'Outside_temperature',
-                            'Inside_humidity',
-                            'Outside_humidity',
-                            'Time_of_flight',
-                            'Vibration'
-                        ])
-                    df = pd.read_json(content, convert_dates=['timestamp'])
-                
-
-                if 'timestamp' in df.columns and len(df) > 0:
-                    if not pd.api.types.is_datetime64_any_dtype(df['timestamp']):
-                        df['timestamp'] = pd.to_datetime(df['timestamp'])
-                    
-
-                    now = pd.Timestamp.now()
-                    cutoff = now - pd.Timedelta(minutes=minutes)
-                    if not df.empty and not all(pd.isna(df['timestamp'])):
-                        df = df[df['timestamp'] >= cutoff]
-                
-                log(f"Returning dataframe with {len(df)} rows")
-                log(df)
+            df = open_file()
+            if df is None:
+                log("DataFrame is None, returning empty DataFrame")
+                return pd.DataFrame(columns=COLUMNS)
+            if df.empty:
                 return df
-            except Exception as e:
-                log(f"Error reading data: {str(e)}")
-                return pd.DataFrame(columns=[
-                    'timestamp', 
-                    'Inside_temperature', 
-                    'Outside_temperature',
-                    'Inside_humidity',
-                    'Outside_humidity',
-                    'Time_of_flight',
-                    'Vibration'
-                ])
+            now = pd.Timestamp.now() # Filter for recent data
+            cutoff = now - pd.Timedelta(minutes=minutes)
+            if not df.empty and 'timestamp' in df.columns:
+                df = df[df['timestamp'] >= cutoff]
+            
+            log(f"Returning dataframe with {len(df)} rows")
+            return df
     except Exception as e:
         log(f"Error in recent_data: {str(e)}")
-        return pd.DataFrame()
+        return pd.DataFrame(columns=COLUMNS)
