@@ -1,16 +1,17 @@
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.wsgi import WSGIMiddleware
 from pydantic import BaseModel
-#from typing import List, Optional
-#import pandas as pd
 import time
 import threading
 import database
 from div import log
 import dashboard
 from UDP_recieve import UDP_main_json, UDP_main_audio
+from audio_API import router as audio_router
+
 
 app = FastAPI(title="ECHO Monitor API")
+app.include_router(audio_router)
 
 udp_json_thread = None
 udp_audio_thread = None

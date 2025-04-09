@@ -9,6 +9,8 @@ import dash_bootstrap_components as dbc
 from datetime import datetime
 from database import recent_data
 from div import log_setup, log
+
+from audio_player import create_audio_player, register_callbacks
 log_setup()
 
 app = dash.Dash(__name__,
@@ -216,6 +218,8 @@ def update_vibration_graph(n_intervals):
 def update_audio_graph(n_intervals):
     return create_sensor_graph("DB")
 
+register_callbacks(app)
+
 ### layout 
 app.layout = dbc.Container([
     create_header(),
@@ -225,9 +229,9 @@ app.layout = dbc.Container([
     create_vib(),
     create_tof(),
     create_audio(),
-    create_acoustics(),
+    create_audio_player(wrap),  # Add the new audio player component
+    #create_acoustics(),    
     create_interval()
 ], fluid=True)
-
 
 

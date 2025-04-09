@@ -118,7 +118,7 @@ def save_buffer():
 def calculate_db():
     global audio_buffer
     try:
-        # Make sure we have enough data
+        # Make sure there is enough data
         if len(audio_buffer) < 1000:
             log("Not enough audio samples for dB calculation")
             return np.nan
@@ -146,3 +146,54 @@ def calculate_db():
     except Exception as e:
         log(f"Error calculating dB level: {str(e)}")
         return np.nan
+    
+
+
+# Add this function to get audio file metadata
+def get_audio_metadata(file_path):
+    """Get metadata from an audio file"""
+    try:
+        with wave.open(file_path, 'rb') as wav_file:
+            channels = wav_file.getnchannels()
+            sample_width = wav_file.getsampwidth()
+            framerate = wav_file.getframerate()
+            n_frames = wav_file.getnframes()
+            duration = n_frames / framerate
+            
+            return {
+                "channels": channels,
+                "sample_width": sample_width,
+                "framerate": framerate,
+                "n_frames": n_frames,
+                "duration": duration,
+                "file_size": os.path.getsize(file_path)
+            }
+    except Exception as e:
+        log(f"Error getting audio metadata: {e}")
+        return {}
+
+
+    ### future work, automatic cleanup of audio files
+    # def cleanup_old_audio_files(max_files=100, max_age_days=7):
+    # """Delete old audio files to prevent filling up disk space"""
+    # try:
+    #     files = glob.glob(os.path.join(AUDIO_DIR, "*.wav"))
+        
+    #     # Sort by creation time (oldest first)
+    #     files.sort(key=os.path.getctime)
+        
+    #     # Delete files exceeding the maximum count
+    #     if len(files) > max_files:
+    #         files_to_delete = files[:len(files) - max_files]
+    #         for file in files_to_delete:
+    #             os.remove(file)
+    #             log(f"Deleted old audio file: {file}")
+        
+    #     # Delete files older than max_age_days
+    #     cutoff_time = time.time() - (max_age_days * 24 * 60 * 60)
+    #     for file in files:
+    #         if os.path.getctime(file) < cutoff_time:
+    #             os.remove(file)
+    #             log(f"Deleted aged audio file: {file}")
+    # except Exception as e:
+    #     log(f"Error cleaning up audio files: {e}")
