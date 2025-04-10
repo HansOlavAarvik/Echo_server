@@ -9,13 +9,14 @@ import dash_bootstrap_components as dbc
 from datetime import datetime
 from database import recent_data
 from div import log_setup, log
-from Frontend.audio_player import create_audio_player, register_callbacks
+from audio_player import create_audio_player, register_callbacks
+import os
 log_setup()
 
 app = dash.Dash(__name__,
     external_stylesheets=[dbc.themes.BOOTSTRAP, 'https://use.fontawesome.com/releases/v5.8.1/css/all.css'],
     requests_pathname_prefix="/dashboard/",
-    assets_folder="assets",
+    assets_folder=os.path.join(os.path.dirname(os.path.dirname(__file__)), "assets"),
     serve_locally=True,
     suppress_callback_exceptions=True
 )
@@ -25,7 +26,8 @@ def create_interval():
     return dcc.Interval(
         id="interval-component",
         interval=1000,
-        n_intervals=0
+        n_intervals=0,
+        disabled=False
     )
 def wrap(*input):
     return dbc.Row([
@@ -142,8 +144,10 @@ def create_dummy_graph(y_reading):
     return fig
 def create_sensor_graph(y_reading,y_reading_secondary = None):
     data = recent_data()
-    #log(data)
+    log(f"Dashboard data retrieved for {y_reading}: shape={data.shape if not data.empty else 'empty'}")
     if data.empty:
+        log(f"Data types: {data.dtypes}")
+        log(f"Null values: {data.isnull().sum().to_dict()}")
         return create_dummy_graph(y_reading)
     if y_reading not in data.columns:
         log(f"Missing required column: {y_reading} or timestamp")
@@ -206,6 +210,7 @@ def create_single_plot_graph(y_reading,data):
     Input('interval-component', 'n_intervals')
 )
 def update_temperature_graph(n_intervals):
+    log(f"Temperature update triggered, interval: {n_intervals}")
     return create_sensor_graph("Inside_temperature","Outside_temperature")
 @callback(
     Output('humidity_graph', 'figure'),
@@ -239,6 +244,15 @@ def update_door_status(n_clicks):
     return
 register_callbacks(app)
 
+
+@app.callback(  # Note: using @app.callback instead of @callback
+    Output('debug-div', 'children'),
+    Input('client-debug-interval', 'n_intervals')
+)
+def debug_callback(n):
+    time_now = datetime.now().strftime('%H:%M:%S.%f')[:-3]
+    log(f"Debug callback fired at {time_now}, n_intervals={n}")
+    return f"Debug div updated: {time_now}"
 ### layout run
 app.layout = dbc.Container([
     create_header(),
@@ -249,8 +263,10 @@ app.layout = dbc.Container([
     create_tof(),
     create_audio(),
     create_audio_player(wrap),
-
-    create_interval()
+    create_interval(),
+    html.Div(id='debug-div', style={'margin': '20px', 'padding': '10px', 'border': '1px solid #ccc'}),
+    dcc.Interval(id='client-debug-interval', interval=1000, n_intervals=0),
+ 
 ], fluid=True)
 
 

@@ -47,18 +47,15 @@ def open_file():
             # Check if the content appears to be valid JSON
             try:
                 json_data = json.loads(content)
-                log(f"JSON parsed successfully, contains {len(json_data)} records")
+                #(f"JSON parsed successfully, contains {len(json_data)} records")
             except json.JSONDecodeError as je:
                 log(f"JSON parsing error: {str(je)}")
             
-            # Try pandas read_json
             try:
                 df = pd.read_json(StringIO(content), convert_dates=['timestamp'])
-                log(f"DataFrame created with shape: {df.shape}")
-                log(f"DataFrame columns: {df.columns.tolist()}")
+
             except Exception as e:
                 log(f"Error in pd.read_json: {str(e)}")
-                
                 # Alternative: try manual JSON parsing
                 log("Attempting manual JSON parsing")
                 json_data = json.loads(content)
@@ -106,8 +103,8 @@ def recent_data(minutes=5):
             if not df.empty and 'timestamp' in df.columns:
                 df = df[df['timestamp'] >= cutoff]
             
-            log(f"Returning dataframe with {len(df)} rows")
+            #log(f"Returning dataframe with {len(df)} rows")
             return df
     except Exception as e:
-        log(f"Error in recent_data: {str(e)}")
+        #log(f"Error in recent_data: {str(e)}")
         return pd.DataFrame(columns=COLUMNS)

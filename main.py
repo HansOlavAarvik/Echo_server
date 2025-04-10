@@ -5,7 +5,7 @@ import time
 import threading
 import database
 from div import log
-import Frontend.dashboard as dashboard
+from dashboard import server as dashboard_server
 from UDP_recieve import UDP_main_json, UDP_main_audio
 from audio_API import router as audio_router
 
@@ -44,7 +44,7 @@ def data_status():
         "columns": list(df.columns) if not df.empty else []
     }
 
-app.mount("/dashboard", WSGIMiddleware(dashboard.server))
+app.mount("/dashboard", WSGIMiddleware(dashboard_server))
 # Run the app
 if __name__ == "__main__":
     import uvicorn

@@ -119,7 +119,7 @@ def register_callbacks(app):
         
         # Play selected file
         @app.callback(
-            Output("audio-element", "src"),
+            Output("play-selected-btn", "disabled"),
             Input("play-selected-btn", "n_clicks"),
             State("audio-files-dropdown", "value"),
             prevent_initial_call=True

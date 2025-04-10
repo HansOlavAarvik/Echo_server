@@ -29,8 +29,7 @@ def handle_json_data(data, address):
         if max_length == 0:
             return True  # No data to process
         for i in range(max_length):# Process each reading
-            # Create reading object with timestamp
-            reading = {'timestamp': timestamps[i].isoformat()}
+            reading = {'timestamp': timestamps[i].isoformat()}# Create reading object with timestamp
             for key in KEYS_LIST: # Extract values for each sensor key and add to timestamp
                 reading[key] = validate_and_extract(json_data, key, i)
             add_data(reading)   
@@ -72,14 +71,17 @@ def validate_and_extract(data, key, index):
                     index < len(data[key])):
         value = data[key][index]
         scaled_value = scale_if_needed(key, value)
-        return scaled_value
+        return value ##scaled_value
     else:
         return np.nan
-
+    
 def scale_if_needed(key, value):
     """Scale sensor values as all values are sent from microcontroller as 16bit int"""
-    if math.isnan(value):
-        return value
+    # Check for None or np.nan first
+    if value is None or (isinstance(value, float) and np.isnan(value)):
+        return np.nan
+        
+    # Now we know value is a number and not None
     if key == "Time_of_flight":
         return value/10
     elif key in ["Inside_temperature", "Outside_temperature"]:
@@ -96,8 +98,6 @@ def handle_audio_data(data,adress):
 def process_vibration_data(data):
     return
 
-
-
 audio_buffer = bytearray()
 file_counter = 0
 base_filename = "audio_recording"
@@ -111,7 +111,7 @@ def add_audio_chunk(chunk):
         buffer_counter = 0
         calculate_db()
     if len(audio_buffer) >= max_buffer_size:
-        log("saving audio data")
+        #log("saving audio data")
         save_buffer()
 def save_buffer():
     global audio_buffer, file_counter
@@ -134,7 +134,7 @@ def calculate_db():
     try:
         # Make sure there is enough data
         if len(audio_buffer) < 1000:
-            log("Not enough audio samples for dB calculation")
+            #log("Not enough audio samples for dB calculation")
             return np.nan
         time = datetime.now()
         samples = np.frombuffer(audio_buffer[-1000:], np.int16)
@@ -147,7 +147,7 @@ def calculate_db():
             db = -60.0  # very low db == silence
         else:
             db = 20 * math.log10(rms / max_amplitude)
-            log(f"Calculated dB level: {db}")
+            #log(f"Calculated dB level: {db}")
         db_data = {
             'timestamp': time.isoformat()
         }
