@@ -5,7 +5,7 @@ import time
 import threading
 import database
 from div import log
-import dashboard
+import Frontend.dashboard as dashboard
 from UDP_recieve import UDP_main_json, UDP_main_audio
 from audio_API import router as audio_router
 

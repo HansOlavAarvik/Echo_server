@@ -28,8 +28,7 @@ def handle_json_data(data, address):
         max_length, timestamps = calculate_timestamps(json_data, current_time) 
         if max_length == 0:
             return True  # No data to process
-        # Process each reading
-        for i in range(max_length):
+        for i in range(max_length):# Process each reading
             # Create reading object with timestamp
             reading = {'timestamp': timestamps[i].isoformat()}
             for key in KEYS_LIST: # Extract values for each sensor key and add to timestamp
@@ -71,10 +70,25 @@ def validate_and_extract(data, key, index):
         isinstance(data[key], list) and
                     data[key] and                   
                     index < len(data[key])):
-        return data[key][index]
+        value = data[key][index]
+        scaled_value = scale_if_needed(key, value)
+        return scaled_value
     else:
         return np.nan
-    
+
+def scale_if_needed(key, value):
+    """Scale sensor values as all values are sent from microcontroller as 16bit int"""
+    if math.isnan(value):
+        return value
+    if key == "Time_of_flight":
+        return value/10
+    elif key in ["Inside_temperature", "Outside_temperature"]:
+        return value/100 
+    elif key in ["Inside_humidity", "Outside_humidity"]:
+        return value/100
+    else:
+        return value
+
 def handle_audio_data(data,adress):
     add_audio_chunk(data)
     return

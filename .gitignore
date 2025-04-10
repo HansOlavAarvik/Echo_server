@@ -1,2 +1,3 @@
 sensor_data.json
-.wav
+*.wav
+*.log

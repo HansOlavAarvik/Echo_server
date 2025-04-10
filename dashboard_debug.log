@@ -1,1369 +1,267 @@
-2025-04-09 15:55:48,291 - DEBUG - Logging initialized
-2025-04-09 15:56:43,303 - DEBUG - Logging initialized
-2025-04-09 15:56:44,497 - DEBUG - Logging initialized
-2025-04-09 15:56:44,547 - DEBUG - Using selector: SelectSelector
-2025-04-09 15:56:44,574 - DEBUG - Starting UDP receiver thread...
-2025-04-09 15:56:44,575 - DEBUG - Binding to UDP port 6002 to receive JSON data
-2025-04-09 15:56:44,575 - DEBUG - Logging initialized
-2025-04-09 15:56:45,076 - DEBUG - Starting UDP receiver thread...
-2025-04-09 15:56:45,078 - DEBUG - Binding to UDP port 6001 to receive Audio data
-2025-04-09 15:57:29,437 - DEBUG - Logging initialized
-2025-04-09 15:57:29,450 - DEBUG - Audio player callbacks registered successfully
-2025-04-09 15:57:30,621 - DEBUG - Logging initialized
-2025-04-09 15:57:30,634 - DEBUG - Audio player callbacks registered successfully
-2025-04-09 15:57:30,670 - DEBUG - Using selector: SelectSelector
-2025-04-09 15:57:30,697 - DEBUG - Starting UDP receiver thread...
-2025-04-09 15:57:30,698 - DEBUG - Binding to UDP port 6002 to receive JSON data
-2025-04-09 15:57:30,698 - DEBUG - Logging initialized
-2025-04-09 15:57:31,199 - DEBUG - Starting UDP receiver thread...
-2025-04-09 15:57:31,201 - DEBUG - Binding to UDP port 6001 to receive Audio data
-2025-04-09 15:58:05,148 - DEBUG - Logging initialized
-2025-04-09 15:58:06,299 - DEBUG - Logging initialized
-2025-04-09 15:58:06,341 - DEBUG - Using selector: SelectSelector
-2025-04-09 15:58:06,363 - DEBUG - Starting UDP receiver thread...
-2025-04-09 15:58:06,364 - DEBUG - Binding to UDP port 6002 to receive JSON data
-2025-04-09 15:58:06,364 - DEBUG - Logging initialized
-2025-04-09 15:58:06,865 - DEBUG - Starting UDP receiver thread...
-2025-04-09 15:58:06,867 - DEBUG - Binding to UDP port 6001 to receive Audio data
-2025-04-09 15:59:04,451 - DEBUG - Logging initialized
-2025-04-09 15:59:05,613 - DEBUG - Logging initialized
-2025-04-09 15:59:05,654 - DEBUG - Using selector: SelectSelector
-2025-04-09 15:59:05,681 - DEBUG - Starting UDP receiver thread...
-2025-04-09 15:59:05,682 - DEBUG - Binding to UDP port 6002 to receive JSON data
-2025-04-09 15:59:05,682 - DEBUG - Logging initialized
-2025-04-09 15:59:06,182 - DEBUG - Starting UDP receiver thread...
-2025-04-09 15:59:06,183 - DEBUG - Binding to UDP port 6001 to receive Audio data
-2025-04-09 16:00:49,185 - DEBUG - Logging initialized
-2025-04-09 16:00:53,163 - DEBUG - Logging initialized
-2025-04-09 16:00:53,294 - DEBUG - Using selector: SelectSelector
-2025-04-09 16:00:53,367 - DEBUG - Starting UDP receiver thread...
-2025-04-09 16:00:53,367 - DEBUG - Binding to UDP port 6002 to receive JSON data
-2025-04-09 16:00:53,367 - DEBUG - Logging initialized
-2025-04-09 16:00:53,871 - DEBUG - Starting UDP receiver thread...
-2025-04-09 16:00:53,874 - DEBUG - Binding to UDP port 6001 to receive Audio data
-2025-04-09 16:00:54,654 - ERROR - Exception on /_dash-update-component [POST]
-Traceback (most recent call last):
-  File "C:\Users\hoaa9\AppData\Local\pypoetry\Cache\virtualenvs\server-test-OkwKYMy_-py3.12\Lib\site-packages\dash\dash.py", line 1326, in dispatch
-    cb = self.callback_map[output]
-         ~~~~~~~~~~~~~~~~~^^^^^^^^
-KeyError: 'temperature_graph.figure'
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "C:\Users\hoaa9\AppData\Local\pypoetry\Cache\virtualenvs\server-test-OkwKYMy_-py3.12\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
-    response = self.full_dispatch_request()
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\hoaa9\AppData\Local\pypoetry\Cache\virtualenvs\server-test-OkwKYMy_-py3.12\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\hoaa9\AppData\Local\pypoetry\Cache\virtualenvs\server-test-OkwKYMy_-py3.12\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
-    rv = self.dispatch_request()
-         ^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\hoaa9\AppData\Local\pypoetry\Cache\virtualenvs\server-test-OkwKYMy_-py3.12\Lib\site-packages\flask\app.py", line 865, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\hoaa9\AppData\Local\pypoetry\Cache\virtualenvs\server-test-OkwKYMy_-py3.12\Lib\site-packages\dash\dash.py", line 1400, in dispatch
-    raise KeyError(msg) from missing_callback_function
-KeyError: "Callback function not found for output 'temperature_graph.figure', perhaps you forgot to prepend the '@'?"
-2025-04-09 16:00:54,708 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:00:54,749 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:00:54,770 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:00:54,784 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:00:54,841 - ERROR - Exception on /_dash-update-component [POST]
-Traceback (most recent call last):
-  File "C:\Users\hoaa9\AppData\Local\pypoetry\Cache\virtualenvs\server-test-OkwKYMy_-py3.12\Lib\site-packages\dash\dash.py", line 1326, in dispatch
-    cb = self.callback_map[output]
-         ~~~~~~~~~~~~~~~~~^^^^^^^^
-KeyError: 'audio-files-dropdown.options'
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "C:\Users\hoaa9\AppData\Local\pypoetry\Cache\virtualenvs\server-test-OkwKYMy_-py3.12\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
-    response = self.full_dispatch_request()
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\hoaa9\AppData\Local\pypoetry\Cache\virtualenvs\server-test-OkwKYMy_-py3.12\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\hoaa9\AppData\Local\pypoetry\Cache\virtualenvs\server-test-OkwKYMy_-py3.12\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
-    rv = self.dispatch_request()
-         ^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\hoaa9\AppData\Local\pypoetry\Cache\virtualenvs\server-test-OkwKYMy_-py3.12\Lib\site-packages\flask\app.py", line 865, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\hoaa9\AppData\Local\pypoetry\Cache\virtualenvs\server-test-OkwKYMy_-py3.12\Lib\site-packages\dash\dash.py", line 1400, in dispatch
-    raise KeyError(msg) from missing_callback_function
-KeyError: "Callback function not found for output 'audio-files-dropdown.options', perhaps you forgot to prepend the '@'?"
-2025-04-09 16:00:54,862 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:00:54,901 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:00:55,069 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:00:55,105 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:00:55,125 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:00:55,147 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:00:55,179 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:00:55,210 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:00:55,231 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:00:55,268 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:00:55,289 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:00:55,311 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:00:55,330 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:00:55,352 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:00:55,379 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:00:55,410 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:00:55,425 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:00:55,454 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:00:55,485 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:00:55,505 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:00:56,368 - ERROR - Exception on /_dash-update-component [POST]
-Traceback (most recent call last):
-  File "C:\Users\hoaa9\AppData\Local\pypoetry\Cache\virtualenvs\server-test-OkwKYMy_-py3.12\Lib\site-packages\dash\dash.py", line 1326, in dispatch
-    cb = self.callback_map[output]
-         ~~~~~~~~~~~~~~~~~^^^^^^^^
-KeyError: 'audio-files-dropdown.options'
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "C:\Users\hoaa9\AppData\Local\pypoetry\Cache\virtualenvs\server-test-OkwKYMy_-py3.12\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
-    response = self.full_dispatch_request()
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\hoaa9\AppData\Local\pypoetry\Cache\virtualenvs\server-test-OkwKYMy_-py3.12\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\hoaa9\AppData\Local\pypoetry\Cache\virtualenvs\server-test-OkwKYMy_-py3.12\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
-    rv = self.dispatch_request()
-         ^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\hoaa9\AppData\Local\pypoetry\Cache\virtualenvs\server-test-OkwKYMy_-py3.12\Lib\site-packages\flask\app.py", line 865, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\hoaa9\AppData\Local\pypoetry\Cache\virtualenvs\server-test-OkwKYMy_-py3.12\Lib\site-packages\dash\dash.py", line 1400, in dispatch
-    raise KeyError(msg) from missing_callback_function
-KeyError: "Callback function not found for output 'audio-files-dropdown.options', perhaps you forgot to prepend the '@'?"
-2025-04-09 16:00:56,395 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:00:56,422 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:00:56,445 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:00:56,466 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:00:57,034 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:00:57,075 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:00:57,096 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:00:57,117 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:00:57,532 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:00:57,555 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:00:57,602 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:00:57,639 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:00:58,852 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:00:58,875 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:00:58,904 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:00:58,925 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:00:59,522 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:00:59,535 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:00:59,555 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:00:59,576 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:00,524 - ERROR - Exception on /_dash-update-component [POST]
-Traceback (most recent call last):
-  File "C:\Users\hoaa9\AppData\Local\pypoetry\Cache\virtualenvs\server-test-OkwKYMy_-py3.12\Lib\site-packages\dash\dash.py", line 1326, in dispatch
-    cb = self.callback_map[output]
-         ~~~~~~~~~~~~~~~~~^^^^^^^^
-KeyError: 'audio-files-dropdown.options'
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "C:\Users\hoaa9\AppData\Local\pypoetry\Cache\virtualenvs\server-test-OkwKYMy_-py3.12\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
-    response = self.full_dispatch_request()
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\hoaa9\AppData\Local\pypoetry\Cache\virtualenvs\server-test-OkwKYMy_-py3.12\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\hoaa9\AppData\Local\pypoetry\Cache\virtualenvs\server-test-OkwKYMy_-py3.12\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
-    rv = self.dispatch_request()
-         ^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\hoaa9\AppData\Local\pypoetry\Cache\virtualenvs\server-test-OkwKYMy_-py3.12\Lib\site-packages\flask\app.py", line 865, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\hoaa9\AppData\Local\pypoetry\Cache\virtualenvs\server-test-OkwKYMy_-py3.12\Lib\site-packages\dash\dash.py", line 1400, in dispatch
-    raise KeyError(msg) from missing_callback_function
-KeyError: "Callback function not found for output 'audio-files-dropdown.options', perhaps you forgot to prepend the '@'?"
-2025-04-09 16:01:00,539 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:00,558 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:00,574 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:00,588 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:01,529 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:01,547 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:01,574 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:01,597 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:02,520 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:02,530 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:02,542 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:02,555 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:02,982 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:03,016 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:03,033 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:03,053 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:03,977 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:03,988 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:03,999 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:04,010 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:04,980 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:04,990 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:05,001 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:05,014 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:05,988 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:05,998 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:06,011 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:06,024 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:06,989 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:06,999 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:07,009 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:07,020 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:07,988 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:07,997 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:08,010 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:08,027 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:08,978 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:08,987 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:09,001 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:09,013 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:09,978 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:09,988 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:10,005 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:10,018 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:10,985 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:10,998 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:11,012 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:11,024 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:11,986 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:11,995 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:12,004 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:12,015 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:12,976 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:12,985 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:12,996 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:13,008 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:13,984 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:13,993 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:14,002 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:14,014 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:14,976 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:14,985 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:14,996 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:15,005 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:15,982 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:15,990 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:16,000 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:16,012 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:16,975 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:16,983 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:16,993 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:17,003 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:17,981 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:17,990 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:17,999 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:18,010 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:18,977 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:18,985 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:18,995 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:19,005 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:19,980 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:19,989 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:19,999 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:20,010 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:20,976 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:20,985 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:20,994 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:21,004 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:21,979 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:21,989 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:22,002 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:22,015 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:22,983 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:22,992 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:23,002 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:23,013 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:23,990 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:24,003 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:24,020 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:24,037 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:24,983 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:24,993 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:25,003 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:25,015 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:25,981 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:25,990 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:26,001 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:26,011 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:26,977 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:26,986 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:26,996 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:27,007 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:27,980 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:27,989 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:28,000 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:28,014 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:28,999 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:29,008 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:29,018 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:29,030 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:29,977 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:29,985 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:29,996 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:30,008 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:32,344 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:32,353 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:32,364 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:32,375 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:32,388 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:32,399 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:32,411 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:32,425 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:56,599 - DEBUG - Logging initialized
-2025-04-09 16:01:57,815 - DEBUG - Logging initialized
-2025-04-09 16:01:57,858 - DEBUG - Using selector: SelectSelector
-2025-04-09 16:01:57,880 - DEBUG - Starting UDP receiver thread...
-2025-04-09 16:01:57,881 - DEBUG - Binding to UDP port 6002 to receive JSON data
-2025-04-09 16:01:57,881 - DEBUG - Logging initialized
-2025-04-09 16:01:58,382 - DEBUG - Starting UDP receiver thread...
-2025-04-09 16:01:58,382 - DEBUG - Binding to UDP port 6001 to receive Audio data
-2025-04-09 16:01:59,113 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:59,119 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:59,168 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:59,177 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:59,186 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:59,196 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:59,208 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:59,217 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:59,226 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:59,236 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:59,246 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:59,256 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:59,267 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:59,278 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:59,288 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:59,298 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:59,308 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:59,319 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:59,329 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:59,339 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:59,350 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:59,361 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:59,371 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:59,382 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:59,393 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:59,402 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:59,412 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:59,423 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:59,432 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:59,442 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:59,451 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:59,462 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:59,475 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:59,484 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:59,494 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:01:59,504 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:02:01,343 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:02:01,353 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:02:01,362 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:02:01,371 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:02:01,387 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:02:01,396 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:02:01,405 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:02:01,415 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:02:03,346 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:02:03,353 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:02:03,363 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:02:03,373 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:02:03,388 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:02:03,396 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:02:03,406 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:02:03,415 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:02:05,358 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:02:05,367 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:02:05,376 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:02:05,386 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:02:05,397 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:02:05,408 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:02:05,417 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:02:05,426 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:02:06,452 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:02:06,461 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:02:06,474 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:02:06,488 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:02:06,989 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:02:07,000 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:02:07,010 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:02:07,021 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:02:07,987 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:02:07,996 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:02:08,005 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:02:08,015 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:02:08,989 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:02:08,998 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:02:09,008 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:02:09,019 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:02:09,989 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:02:09,998 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:02:10,008 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:02:10,019 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:02:10,158 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:02:10,170 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:02:10,184 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:02:10,195 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:02:11,153 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:02:11,161 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:02:11,177 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:02:11,189 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:02:12,153 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:02:12,163 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:02:12,173 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:02:12,182 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:02:13,154 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:02:13,164 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:02:13,175 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:02:13,186 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:02:14,155 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:02:14,165 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:02:14,177 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:02:14,187 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:02:16,923 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:02:16,932 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:02:16,942 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:02:16,952 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:02:16,964 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:02:16,975 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:02:16,984 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:02:16,993 - DEBUG - Returning dataframe with 0 rows
-2025-04-09 16:03:01,709 - DEBUG - Logging initialized
-2025-04-09 16:03:02,907 - DEBUG - Logging initialized
-2025-04-09 16:03:02,953 - DEBUG - Using selector: SelectSelector
-2025-04-09 16:03:02,974 - DEBUG - Starting UDP receiver thread...
-2025-04-09 16:03:02,975 - DEBUG - Binding to UDP port 6002 to receive JSON data
-2025-04-09 16:03:02,975 - DEBUG - Logging initialized
-2025-04-09 16:03:03,476 - DEBUG - Starting UDP receiver thread...
-2025-04-09 16:03:03,477 - DEBUG - Binding to UDP port 6001 to receive Audio data
-2025-04-09 16:03:04,106 - DEBUG - Calculated dB level: -39.319881943344726
-2025-04-09 16:03:04,131 - ERROR - Exception on /_dash-update-component [POST]
-Traceback (most recent call last):
-  File "C:\Users\hoaa9\AppData\Local\pypoetry\Cache\virtualenvs\server-test-OkwKYMy_-py3.12\Lib\site-packages\dash\dash.py", line 1326, in dispatch
-    cb = self.callback_map[output]
-         ~~~~~~~~~~~~~~~~~^^^^^^^^
-KeyError: 'audio_graph.figure'
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "C:\Users\hoaa9\AppData\Local\pypoetry\Cache\virtualenvs\server-test-OkwKYMy_-py3.12\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
-    response = self.full_dispatch_request()
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\hoaa9\AppData\Local\pypoetry\Cache\virtualenvs\server-test-OkwKYMy_-py3.12\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\hoaa9\AppData\Local\pypoetry\Cache\virtualenvs\server-test-OkwKYMy_-py3.12\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
-    rv = self.dispatch_request()
-         ^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\hoaa9\AppData\Local\pypoetry\Cache\virtualenvs\server-test-OkwKYMy_-py3.12\Lib\site-packages\flask\app.py", line 865, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\hoaa9\AppData\Local\pypoetry\Cache\virtualenvs\server-test-OkwKYMy_-py3.12\Lib\site-packages\dash\dash.py", line 1400, in dispatch
-    raise KeyError(msg) from missing_callback_function
-KeyError: "Callback function not found for output 'audio_graph.figure', perhaps you forgot to prepend the '@'?"
-2025-04-09 16:03:04,131 - ERROR - Exception on /_dash-update-component [POST]
-Traceback (most recent call last):
-  File "C:\Users\hoaa9\AppData\Local\pypoetry\Cache\virtualenvs\server-test-OkwKYMy_-py3.12\Lib\site-packages\dash\dash.py", line 1326, in dispatch
-    cb = self.callback_map[output]
-         ~~~~~~~~~~~~~~~~~^^^^^^^^
-KeyError: 'vibration_graph.figure'
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "C:\Users\hoaa9\AppData\Local\pypoetry\Cache\virtualenvs\server-test-OkwKYMy_-py3.12\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
-    response = self.full_dispatch_request()
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\hoaa9\AppData\Local\pypoetry\Cache\virtualenvs\server-test-OkwKYMy_-py3.12\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\hoaa9\AppData\Local\pypoetry\Cache\virtualenvs\server-test-OkwKYMy_-py3.12\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
-    rv = self.dispatch_request()
-         ^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\hoaa9\AppData\Local\pypoetry\Cache\virtualenvs\server-test-OkwKYMy_-py3.12\Lib\site-packages\flask\app.py", line 865, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\hoaa9\AppData\Local\pypoetry\Cache\virtualenvs\server-test-OkwKYMy_-py3.12\Lib\site-packages\dash\dash.py", line 1400, in dispatch
-    raise KeyError(msg) from missing_callback_function
-KeyError: "Callback function not found for output 'vibration_graph.figure', perhaps you forgot to prepend the '@'?"
-2025-04-09 16:03:04,132 - ERROR - Exception on /_dash-update-component [POST]
-Traceback (most recent call last):
-  File "C:\Users\hoaa9\AppData\Local\pypoetry\Cache\virtualenvs\server-test-OkwKYMy_-py3.12\Lib\site-packages\dash\dash.py", line 1326, in dispatch
-    cb = self.callback_map[output]
-         ~~~~~~~~~~~~~~~~~^^^^^^^^
-KeyError: 'audio_graph.figure'
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "C:\Users\hoaa9\AppData\Local\pypoetry\Cache\virtualenvs\server-test-OkwKYMy_-py3.12\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
-    response = self.full_dispatch_request()
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\hoaa9\AppData\Local\pypoetry\Cache\virtualenvs\server-test-OkwKYMy_-py3.12\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\hoaa9\AppData\Local\pypoetry\Cache\virtualenvs\server-test-OkwKYMy_-py3.12\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
-    rv = self.dispatch_request()
-         ^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\hoaa9\AppData\Local\pypoetry\Cache\virtualenvs\server-test-OkwKYMy_-py3.12\Lib\site-packages\flask\app.py", line 865, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\hoaa9\AppData\Local\pypoetry\Cache\virtualenvs\server-test-OkwKYMy_-py3.12\Lib\site-packages\dash\dash.py", line 1400, in dispatch
-    raise KeyError(msg) from missing_callback_function
-KeyError: "Callback function not found for output 'audio_graph.figure', perhaps you forgot to prepend the '@'?"
-2025-04-09 16:03:04,132 - ERROR - Exception on /_dash-update-component [POST]
-Traceback (most recent call last):
-  File "C:\Users\hoaa9\AppData\Local\pypoetry\Cache\virtualenvs\server-test-OkwKYMy_-py3.12\Lib\site-packages\dash\dash.py", line 1326, in dispatch
-    cb = self.callback_map[output]
-         ~~~~~~~~~~~~~~~~~^^^^^^^^
-KeyError: 'humidity_graph.figure'
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "C:\Users\hoaa9\AppData\Local\pypoetry\Cache\virtualenvs\server-test-OkwKYMy_-py3.12\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
-    response = self.full_dispatch_request()
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\hoaa9\AppData\Local\pypoetry\Cache\virtualenvs\server-test-OkwKYMy_-py3.12\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\hoaa9\AppData\Local\pypoetry\Cache\virtualenvs\server-test-OkwKYMy_-py3.12\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
-    rv = self.dispatch_request()
-         ^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\hoaa9\AppData\Local\pypoetry\Cache\virtualenvs\server-test-OkwKYMy_-py3.12\Lib\site-packages\flask\app.py", line 865, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\hoaa9\AppData\Local\pypoetry\Cache\virtualenvs\server-test-OkwKYMy_-py3.12\Lib\site-packages\dash\dash.py", line 1400, in dispatch
-    raise KeyError(msg) from missing_callback_function
-KeyError: "Callback function not found for output 'humidity_graph.figure', perhaps you forgot to prepend the '@'?"
-2025-04-09 16:03:04,132 - ERROR - Exception on /_dash-update-component [POST]
-Traceback (most recent call last):
-  File "C:\Users\hoaa9\AppData\Local\pypoetry\Cache\virtualenvs\server-test-OkwKYMy_-py3.12\Lib\site-packages\dash\dash.py", line 1326, in dispatch
-    cb = self.callback_map[output]
-         ~~~~~~~~~~~~~~~~~^^^^^^^^
-KeyError: 'vibration_graph.figure'
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "C:\Users\hoaa9\AppData\Local\pypoetry\Cache\virtualenvs\server-test-OkwKYMy_-py3.12\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
-    response = self.full_dispatch_request()
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\hoaa9\AppData\Local\pypoetry\Cache\virtualenvs\server-test-OkwKYMy_-py3.12\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\hoaa9\AppData\Local\pypoetry\Cache\virtualenvs\server-test-OkwKYMy_-py3.12\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
-    rv = self.dispatch_request()
-         ^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\hoaa9\AppData\Local\pypoetry\Cache\virtualenvs\server-test-OkwKYMy_-py3.12\Lib\site-packages\flask\app.py", line 865, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\hoaa9\AppData\Local\pypoetry\Cache\virtualenvs\server-test-OkwKYMy_-py3.12\Lib\site-packages\dash\dash.py", line 1400, in dispatch
-    raise KeyError(msg) from missing_callback_function
-KeyError: "Callback function not found for output 'vibration_graph.figure', perhaps you forgot to prepend the '@'?"
-2025-04-09 16:03:04,144 - DEBUG - Returning dataframe with 1 rows
-2025-04-09 16:03:04,177 - DEBUG - Returning dataframe with 1 rows
-2025-04-09 16:03:04,185 - DEBUG - Returning dataframe with 1 rows
-2025-04-09 16:03:04,189 - DEBUG - Returning dataframe with 1 rows
-2025-04-09 16:03:04,193 - DEBUG - Returning dataframe with 1 rows
-2025-04-09 16:03:04,197 - DEBUG - Returning dataframe with 1 rows
-2025-04-09 16:03:04,265 - DEBUG - Returning dataframe with 1 rows
-2025-04-09 16:03:04,274 - DEBUG - Returning dataframe with 1 rows
-2025-04-09 16:03:04,287 - DEBUG - Returning dataframe with 1 rows
-2025-04-09 16:03:04,304 - DEBUG - Returning dataframe with 1 rows
-2025-04-09 16:03:04,489 - DEBUG - Returning dataframe with 1 rows
-2025-04-09 16:03:04,508 - DEBUG - Returning dataframe with 1 rows
-2025-04-09 16:03:04,518 - DEBUG - Returning dataframe with 1 rows
-2025-04-09 16:03:04,539 - DEBUG - Returning dataframe with 1 rows
-2025-04-09 16:03:04,558 - DEBUG - Returning dataframe with 1 rows
-2025-04-09 16:03:04,567 - DEBUG - Returning dataframe with 1 rows
-2025-04-09 16:03:04,577 - DEBUG - Returning dataframe with 1 rows
-2025-04-09 16:03:04,587 - DEBUG - Returning dataframe with 1 rows
-2025-04-09 16:03:04,606 - DEBUG - Returning dataframe with 1 rows
-2025-04-09 16:03:04,625 - DEBUG - Returning dataframe with 1 rows
-2025-04-09 16:03:04,634 - DEBUG - Returning dataframe with 1 rows
-2025-04-09 16:03:04,645 - DEBUG - Returning dataframe with 1 rows
-2025-04-09 16:03:04,665 - DEBUG - Returning dataframe with 1 rows
-2025-04-09 16:03:04,683 - DEBUG - Returning dataframe with 1 rows
-2025-04-09 16:03:04,693 - DEBUG - Returning dataframe with 1 rows
-2025-04-09 16:03:04,746 - DEBUG - Calculated dB level: -39.84303418331011
-2025-04-09 16:03:04,790 - DEBUG - Returning dataframe with 1 rows
-2025-04-09 16:03:04,809 - DEBUG - Returning dataframe with 1 rows
-2025-04-09 16:03:04,828 - DEBUG - Returning dataframe with 1 rows
-2025-04-09 16:03:04,838 - DEBUG - Returning dataframe with 1 rows
-2025-04-09 16:03:05,385 - DEBUG - Calculated dB level: -39.33789985729928
-2025-04-09 16:03:06,025 - DEBUG - Calculated dB level: -39.437341672470694
-2025-04-09 16:03:06,356 - DEBUG - Returning dataframe with 7 rows
-2025-04-09 16:03:06,374 - DEBUG - Returning dataframe with 7 rows
-2025-04-09 16:03:06,394 - DEBUG - Returning dataframe with 7 rows
-2025-04-09 16:03:06,404 - DEBUG - Returning dataframe with 7 rows
-2025-04-09 16:03:06,443 - DEBUG - Returning dataframe with 7 rows
-2025-04-09 16:03:06,461 - DEBUG - Returning dataframe with 7 rows
-2025-04-09 16:03:06,479 - DEBUG - Returning dataframe with 7 rows
-2025-04-09 16:03:06,488 - DEBUG - Returning dataframe with 7 rows
-2025-04-09 16:03:06,665 - DEBUG - Calculated dB level: -40.415847618652705
-2025-04-09 16:03:07,305 - DEBUG - Calculated dB level: -39.58487137459366
-2025-04-09 16:03:07,944 - DEBUG - Calculated dB level: -45.24894076654534
-2025-04-09 16:03:08,357 - DEBUG - Returning dataframe with 8 rows
-2025-04-09 16:03:08,387 - DEBUG - Returning dataframe with 8 rows
-2025-04-09 16:03:08,407 - DEBUG - Returning dataframe with 8 rows
-2025-04-09 16:03:08,417 - DEBUG - Returning dataframe with 8 rows
-2025-04-09 16:03:08,426 - DEBUG - Returning dataframe with 8 rows
-2025-04-09 16:03:08,445 - DEBUG - Returning dataframe with 8 rows
-2025-04-09 16:03:08,464 - DEBUG - Returning dataframe with 8 rows
-2025-04-09 16:03:08,475 - DEBUG - Returning dataframe with 8 rows
-2025-04-09 16:03:08,587 - DEBUG - Calculated dB level: -43.33600121372434
-2025-04-09 16:03:09,167 - DEBUG - Returning dataframe with 9 rows
-2025-04-09 16:03:09,185 - DEBUG - Returning dataframe with 9 rows
-2025-04-09 16:03:09,203 - DEBUG - Returning dataframe with 9 rows
-2025-04-09 16:03:09,213 - DEBUG - Returning dataframe with 9 rows
-2025-04-09 16:03:09,223 - DEBUG - Calculated dB level: -53.54057984415156
-2025-04-09 16:03:09,863 - DEBUG - Calculated dB level: -39.79258224906782
-2025-04-09 16:03:10,167 - DEBUG - Returning dataframe with 10 rows
-2025-04-09 16:03:10,175 - DEBUG - Returning dataframe with 10 rows
-2025-04-09 16:03:10,185 - DEBUG - Returning dataframe with 10 rows
-2025-04-09 16:03:10,206 - DEBUG - Returning dataframe with 10 rows
-2025-04-09 16:03:10,503 - DEBUG - Calculated dB level: -52.523477666735225
-2025-04-09 16:03:11,142 - DEBUG - Calculated dB level: -46.54234951431537
-2025-04-09 16:03:11,165 - DEBUG - Returning dataframe with 12 rows
-2025-04-09 16:03:11,183 - DEBUG - Returning dataframe with 12 rows
-2025-04-09 16:03:11,192 - DEBUG - Returning dataframe with 12 rows
-2025-04-09 16:03:11,212 - DEBUG - Returning dataframe with 12 rows
-2025-04-09 16:03:11,782 - DEBUG - Calculated dB level: -54.324897732688825
-2025-04-09 16:03:12,160 - DEBUG - Returning dataframe with 12 rows
-2025-04-09 16:03:12,178 - DEBUG - Returning dataframe with 12 rows
-2025-04-09 16:03:12,198 - DEBUG - Returning dataframe with 12 rows
-2025-04-09 16:03:12,208 - DEBUG - Returning dataframe with 12 rows
-2025-04-09 16:03:12,421 - DEBUG - Calculated dB level: -51.261671195515305
-2025-04-09 16:03:13,061 - DEBUG - Calculated dB level: -39.56186944301639
-2025-04-09 16:03:13,171 - DEBUG - Returning dataframe with 14 rows
-2025-04-09 16:03:13,190 - DEBUG - Returning dataframe with 14 rows
-2025-04-09 16:03:13,210 - DEBUG - Returning dataframe with 14 rows
-2025-04-09 16:03:13,219 - DEBUG - Returning dataframe with 14 rows
-2025-04-09 16:03:13,477 - DEBUG - saving audio data
-2025-04-09 16:03:13,701 - DEBUG - Calculated dB level: -49.615169298268775
-2025-04-09 16:03:14,156 - DEBUG - Returning dataframe with 14 rows
-2025-04-09 16:03:14,165 - DEBUG - Returning dataframe with 14 rows
-2025-04-09 16:03:14,185 - DEBUG - Returning dataframe with 14 rows
-2025-04-09 16:03:14,205 - DEBUG - Returning dataframe with 14 rows
-2025-04-09 16:03:14,342 - DEBUG - Calculated dB level: -40.605273881220086
-2025-04-09 16:03:14,980 - DEBUG - Calculated dB level: -49.937524123061635
-2025-04-09 16:03:15,153 - DEBUG - Returning dataframe with 15 rows
-2025-04-09 16:03:15,171 - DEBUG - Returning dataframe with 15 rows
-2025-04-09 16:03:15,189 - DEBUG - Returning dataframe with 15 rows
-2025-04-09 16:03:15,199 - DEBUG - Returning dataframe with 15 rows
-2025-04-09 16:03:15,620 - DEBUG - Calculated dB level: -39.380369118240345
-2025-04-09 16:03:16,156 - DEBUG - Returning dataframe with 16 rows
-2025-04-09 16:03:16,174 - DEBUG - Returning dataframe with 16 rows
-2025-04-09 16:03:16,194 - DEBUG - Returning dataframe with 16 rows
-2025-04-09 16:03:16,204 - DEBUG - Returning dataframe with 16 rows
-2025-04-09 16:03:16,259 - DEBUG - Calculated dB level: -45.62957882045999
-2025-04-09 16:03:16,899 - DEBUG - Calculated dB level: -44.11800890820437
-2025-04-09 16:03:17,161 - DEBUG - Returning dataframe with 17 rows
-2025-04-09 16:03:17,170 - DEBUG - Returning dataframe with 17 rows
-2025-04-09 16:03:17,179 - DEBUG - Returning dataframe with 17 rows
-2025-04-09 16:03:17,200 - DEBUG - Returning dataframe with 17 rows
-2025-04-09 16:03:17,543 - DEBUG - Calculated dB level: -41.54701598622351
-2025-04-09 16:03:18,155 - DEBUG - Returning dataframe with 18 rows
-2025-04-09 16:03:18,171 - DEBUG - Returning dataframe with 18 rows
-2025-04-09 16:03:18,184 - DEBUG - Calculated dB level: -42.18274615586731
-2025-04-09 16:03:18,190 - DEBUG - Returning dataframe with 18 rows
-2025-04-09 16:03:18,199 - DEBUG - Returning dataframe with 18 rows
-2025-04-09 16:03:18,818 - DEBUG - Calculated dB level: -39.54642498854072
-2025-04-09 16:03:19,458 - DEBUG - Calculated dB level: -39.3283553117656
-2025-04-09 16:03:20,097 - DEBUG - Calculated dB level: -44.988433942756714
-2025-04-09 16:03:20,355 - DEBUG - Returning dataframe with 21 rows
-2025-04-09 16:03:20,373 - DEBUG - Returning dataframe with 21 rows
-2025-04-09 16:03:20,392 - DEBUG - Returning dataframe with 21 rows
-2025-04-09 16:03:20,400 - DEBUG - Returning dataframe with 21 rows
-2025-04-09 16:03:20,412 - DEBUG - Returning dataframe with 21 rows
-2025-04-09 16:03:20,430 - DEBUG - Returning dataframe with 21 rows
-2025-04-09 16:03:20,449 - DEBUG - Returning dataframe with 21 rows
-2025-04-09 16:03:20,460 - DEBUG - Returning dataframe with 21 rows
-2025-04-09 16:03:20,736 - DEBUG - Calculated dB level: -40.66937333632369
-2025-04-09 16:03:50,972 - DEBUG - Logging initialized
-2025-04-09 16:03:50,984 - DEBUG - Audio player callbacks registered successfully
-2025-04-09 16:03:52,154 - DEBUG - Logging initialized
-2025-04-09 16:03:52,169 - DEBUG - Audio player callbacks registered successfully
-2025-04-09 16:03:52,204 - DEBUG - Using selector: SelectSelector
-2025-04-09 16:03:52,233 - DEBUG - Starting UDP receiver thread...
-2025-04-09 16:03:52,234 - DEBUG - Binding to UDP port 6002 to receive JSON data
-2025-04-09 16:03:52,234 - DEBUG - Logging initialized
-2025-04-09 16:03:52,734 - DEBUG - Starting UDP receiver thread...
-2025-04-09 16:03:52,735 - DEBUG - Binding to UDP port 6001 to receive Audio data
-2025-04-09 16:03:53,275 - ERROR - Exception on /_dash-update-component [POST]
-Traceback (most recent call last):
-  File "C:\Users\hoaa9\AppData\Local\pypoetry\Cache\virtualenvs\server-test-OkwKYMy_-py3.12\Lib\site-packages\dash\dash.py", line 1326, in dispatch
-    cb = self.callback_map[output]
-         ~~~~~~~~~~~~~~~~~^^^^^^^^
-KeyError: 'vibration_graph.figure'
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "C:\Users\hoaa9\AppData\Local\pypoetry\Cache\virtualenvs\server-test-OkwKYMy_-py3.12\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
-    response = self.full_dispatch_request()
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\hoaa9\AppData\Local\pypoetry\Cache\virtualenvs\server-test-OkwKYMy_-py3.12\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\hoaa9\AppData\Local\pypoetry\Cache\virtualenvs\server-test-OkwKYMy_-py3.12\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
-    rv = self.dispatch_request()
-         ^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\hoaa9\AppData\Local\pypoetry\Cache\virtualenvs\server-test-OkwKYMy_-py3.12\Lib\site-packages\flask\app.py", line 865, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\hoaa9\AppData\Local\pypoetry\Cache\virtualenvs\server-test-OkwKYMy_-py3.12\Lib\site-packages\dash\dash.py", line 1400, in dispatch
-    raise KeyError(msg) from missing_callback_function
-KeyError: "Callback function not found for output 'vibration_graph.figure', perhaps you forgot to prepend the '@'?"
-2025-04-09 16:03:53,275 - ERROR - Exception on /_dash-update-component [POST]
-Traceback (most recent call last):
-  File "C:\Users\hoaa9\AppData\Local\pypoetry\Cache\virtualenvs\server-test-OkwKYMy_-py3.12\Lib\site-packages\dash\dash.py", line 1326, in dispatch
-    cb = self.callback_map[output]
-         ~~~~~~~~~~~~~~~~~^^^^^^^^
-KeyError: 'audio_graph.figure'
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "C:\Users\hoaa9\AppData\Local\pypoetry\Cache\virtualenvs\server-test-OkwKYMy_-py3.12\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
-    response = self.full_dispatch_request()
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\hoaa9\AppData\Local\pypoetry\Cache\virtualenvs\server-test-OkwKYMy_-py3.12\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\hoaa9\AppData\Local\pypoetry\Cache\virtualenvs\server-test-OkwKYMy_-py3.12\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
-    rv = self.dispatch_request()
-         ^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\hoaa9\AppData\Local\pypoetry\Cache\virtualenvs\server-test-OkwKYMy_-py3.12\Lib\site-packages\flask\app.py", line 865, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\hoaa9\AppData\Local\pypoetry\Cache\virtualenvs\server-test-OkwKYMy_-py3.12\Lib\site-packages\dash\dash.py", line 1400, in dispatch
-    raise KeyError(msg) from missing_callback_function
-KeyError: "Callback function not found for output 'audio_graph.figure', perhaps you forgot to prepend the '@'?"
-2025-04-09 16:03:53,276 - ERROR - Exception on /_dash-update-component [POST]
-Traceback (most recent call last):
-  File "C:\Users\hoaa9\AppData\Local\pypoetry\Cache\virtualenvs\server-test-OkwKYMy_-py3.12\Lib\site-packages\dash\dash.py", line 1326, in dispatch
-    cb = self.callback_map[output]
-         ~~~~~~~~~~~~~~~~~^^^^^^^^
-KeyError: 'humidity_graph.figure'
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "C:\Users\hoaa9\AppData\Local\pypoetry\Cache\virtualenvs\server-test-OkwKYMy_-py3.12\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
-    response = self.full_dispatch_request()
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\hoaa9\AppData\Local\pypoetry\Cache\virtualenvs\server-test-OkwKYMy_-py3.12\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\hoaa9\AppData\Local\pypoetry\Cache\virtualenvs\server-test-OkwKYMy_-py3.12\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
-    rv = self.dispatch_request()
-         ^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\hoaa9\AppData\Local\pypoetry\Cache\virtualenvs\server-test-OkwKYMy_-py3.12\Lib\site-packages\flask\app.py", line 865, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\hoaa9\AppData\Local\pypoetry\Cache\virtualenvs\server-test-OkwKYMy_-py3.12\Lib\site-packages\dash\dash.py", line 1400, in dispatch
-    raise KeyError(msg) from missing_callback_function
-KeyError: "Callback function not found for output 'humidity_graph.figure', perhaps you forgot to prepend the '@'?"
-2025-04-09 16:03:53,287 - DEBUG - Returning dataframe with 21 rows
-2025-04-09 16:03:53,295 - DEBUG - Returning dataframe with 21 rows
-2025-04-09 16:03:53,304 - DEBUG - Returning dataframe with 21 rows
-2025-04-09 16:03:53,309 - DEBUG - Returning dataframe with 21 rows
-2025-04-09 16:03:53,321 - DEBUG - Returning dataframe with 21 rows
-2025-04-09 16:03:53,337 - DEBUG - Returning dataframe with 21 rows
-2025-04-09 16:03:53,374 - DEBUG - Calculated dB level: -42.93363768475116
-2025-04-09 16:03:53,401 - DEBUG - Returning dataframe with 22 rows
-2025-04-09 16:03:53,410 - DEBUG - Returning dataframe with 22 rows
-2025-04-09 16:03:53,419 - DEBUG - Returning dataframe with 22 rows
-2025-04-09 16:03:53,426 - DEBUG - Returning dataframe with 22 rows
-2025-04-09 16:03:53,439 - DEBUG - Returning dataframe with 22 rows
-2025-04-09 16:03:53,451 - DEBUG - Returning dataframe with 22 rows
-2025-04-09 16:03:53,651 - DEBUG - Returning dataframe with 27 rows
-2025-04-09 16:03:53,669 - DEBUG - Returning dataframe with 27 rows
-2025-04-09 16:03:53,687 - DEBUG - Returning dataframe with 27 rows
-2025-04-09 16:03:53,696 - DEBUG - Returning dataframe with 27 rows
-2025-04-09 16:03:53,715 - DEBUG - Returning dataframe with 27 rows
-2025-04-09 16:03:53,725 - DEBUG - Returning dataframe with 27 rows
-2025-04-09 16:03:53,751 - DEBUG - Returning dataframe with 27 rows
-2025-04-09 16:03:53,759 - DEBUG - Returning dataframe with 27 rows
-2025-04-09 16:03:53,778 - DEBUG - Returning dataframe with 27 rows
-2025-04-09 16:03:53,797 - DEBUG - Returning dataframe with 27 rows
-2025-04-09 16:03:53,806 - DEBUG - Returning dataframe with 27 rows
-2025-04-09 16:03:53,816 - DEBUG - Returning dataframe with 27 rows
-2025-04-09 16:03:53,834 - DEBUG - Returning dataframe with 27 rows
-2025-04-09 16:03:53,854 - DEBUG - Returning dataframe with 27 rows
-2025-04-09 16:03:53,865 - DEBUG - Returning dataframe with 27 rows
-2025-04-09 16:03:53,874 - DEBUG - Returning dataframe with 27 rows
-2025-04-09 16:03:53,894 - DEBUG - Returning dataframe with 27 rows
-2025-04-09 16:03:53,912 - DEBUG - Returning dataframe with 27 rows
-2025-04-09 16:03:53,922 - DEBUG - Returning dataframe with 27 rows
-2025-04-09 16:03:53,931 - DEBUG - Returning dataframe with 27 rows
-2025-04-09 16:03:53,950 - DEBUG - Returning dataframe with 27 rows
-2025-04-09 16:03:53,970 - DEBUG - Returning dataframe with 27 rows
-2025-04-09 16:03:53,979 - DEBUG - Returning dataframe with 27 rows
-2025-04-09 16:03:54,013 - DEBUG - Calculated dB level: -45.90368519513099
-2025-04-09 16:03:54,053 - DEBUG - Returning dataframe with 28 rows
-2025-04-09 16:03:54,072 - DEBUG - Returning dataframe with 28 rows
-2025-04-09 16:03:54,090 - DEBUG - Returning dataframe with 28 rows
-2025-04-09 16:03:54,100 - DEBUG - Returning dataframe with 28 rows
-2025-04-09 16:03:54,653 - DEBUG - Calculated dB level: -47.04825624285954
-2025-04-09 16:03:54,689 - DEBUG - Returning dataframe with 28 rows
-2025-04-09 16:03:54,708 - DEBUG - Returning dataframe with 28 rows
-2025-04-09 16:03:54,728 - DEBUG - Returning dataframe with 28 rows
-2025-04-09 16:03:54,738 - DEBUG - Returning dataframe with 28 rows
-2025-04-09 16:03:55,155 - DEBUG - Returning dataframe with 28 rows
-2025-04-09 16:03:55,172 - DEBUG - Returning dataframe with 28 rows
-2025-04-09 16:03:55,192 - DEBUG - Returning dataframe with 28 rows
-2025-04-09 16:03:55,202 - DEBUG - Returning dataframe with 28 rows
-2025-04-09 16:03:55,293 - DEBUG - Calculated dB level: -48.35813012989493
-2025-04-09 16:03:55,933 - DEBUG - Calculated dB level: -43.724682438273604
-2025-04-09 16:03:56,168 - DEBUG - Returning dataframe with 29 rows
-2025-04-09 16:03:56,185 - DEBUG - Returning dataframe with 29 rows
-2025-04-09 16:03:56,202 - DEBUG - Returning dataframe with 29 rows
-2025-04-09 16:03:56,212 - DEBUG - Returning dataframe with 29 rows
-2025-04-09 16:03:56,572 - DEBUG - Calculated dB level: -41.30177616182793
-2025-04-09 16:03:57,203 - DEBUG - Returning dataframe with 30 rows
-2025-04-09 16:03:57,214 - DEBUG - Calculated dB level: -54.582208205065044
-2025-04-09 16:03:57,222 - DEBUG - Returning dataframe with 30 rows
-2025-04-09 16:03:57,240 - DEBUG - Returning dataframe with 30 rows
-2025-04-09 16:03:57,251 - DEBUG - Returning dataframe with 30 rows
-2025-04-09 16:03:57,851 - DEBUG - Calculated dB level: -49.9452397425156
-2025-04-09 16:03:58,168 - DEBUG - Returning dataframe with 31 rows
-2025-04-09 16:03:58,186 - DEBUG - Returning dataframe with 31 rows
-2025-04-09 16:03:58,204 - DEBUG - Returning dataframe with 31 rows
-2025-04-09 16:03:58,213 - DEBUG - Returning dataframe with 31 rows
-2025-04-09 16:03:58,491 - DEBUG - Calculated dB level: -50.734446179636564
-2025-04-09 16:03:59,131 - DEBUG - Calculated dB level: -44.160834471073834
-2025-04-09 16:03:59,162 - DEBUG - Returning dataframe with 33 rows
-2025-04-09 16:03:59,180 - DEBUG - Returning dataframe with 33 rows
-2025-04-09 16:03:59,198 - DEBUG - Returning dataframe with 33 rows
-2025-04-09 16:03:59,207 - DEBUG - Returning dataframe with 33 rows
-2025-04-09 16:03:59,770 - DEBUG - Calculated dB level: -41.92244357251959
-2025-04-09 16:04:00,152 - DEBUG - Returning dataframe with 33 rows
-2025-04-09 16:04:00,169 - DEBUG - Returning dataframe with 33 rows
-2025-04-09 16:04:00,188 - DEBUG - Returning dataframe with 33 rows
-2025-04-09 16:04:00,202 - DEBUG - Returning dataframe with 33 rows
-2025-04-09 16:04:00,410 - DEBUG - Calculated dB level: -41.8342390232159
-2025-04-09 16:04:01,049 - DEBUG - Calculated dB level: -56.76084037588122
-2025-04-09 16:04:01,157 - DEBUG - Returning dataframe with 35 rows
-2025-04-09 16:04:01,174 - DEBUG - Returning dataframe with 35 rows
-2025-04-09 16:04:01,192 - DEBUG - Returning dataframe with 35 rows
-2025-04-09 16:04:01,201 - DEBUG - Returning dataframe with 35 rows
-2025-04-09 16:04:01,689 - DEBUG - Calculated dB level: -59.05089009515397
-2025-04-09 16:04:02,156 - DEBUG - Returning dataframe with 35 rows
-2025-04-09 16:04:02,174 - DEBUG - Returning dataframe with 35 rows
-2025-04-09 16:04:02,183 - DEBUG - Returning dataframe with 35 rows
-2025-04-09 16:04:02,194 - DEBUG - Returning dataframe with 35 rows
-2025-04-09 16:04:02,329 - DEBUG - Calculated dB level: -57.90787608689298
-2025-04-09 16:04:02,745 - DEBUG - saving audio data
-2025-04-09 16:04:02,968 - DEBUG - Calculated dB level: -46.605290271154516
-2025-04-09 16:04:03,163 - DEBUG - Returning dataframe with 36 rows
-2025-04-09 16:04:03,180 - DEBUG - Returning dataframe with 36 rows
-2025-04-09 16:04:03,200 - DEBUG - Returning dataframe with 36 rows
-2025-04-09 16:04:03,210 - DEBUG - Returning dataframe with 36 rows
-2025-04-09 16:04:03,578 - DEBUG - Returning dataframe with 36 rows
-2025-04-09 16:04:03,604 - DEBUG - Returning dataframe with 36 rows
-2025-04-09 16:04:03,616 - DEBUG - Calculated dB level: -41.61246403198247
-2025-04-09 16:04:03,627 - DEBUG - Returning dataframe with 36 rows
-2025-04-09 16:04:03,636 - DEBUG - Returning dataframe with 36 rows
-2025-04-09 16:04:04,247 - DEBUG - Calculated dB level: -49.068915830868136
-2025-04-09 16:04:04,575 - DEBUG - Returning dataframe with 38 rows
-2025-04-09 16:04:04,594 - DEBUG - Returning dataframe with 38 rows
-2025-04-09 16:04:04,616 - DEBUG - Returning dataframe with 38 rows
-2025-04-09 16:04:04,626 - DEBUG - Returning dataframe with 38 rows
-2025-04-09 16:04:04,887 - DEBUG - Calculated dB level: -53.89546817985816
-2025-04-09 16:04:05,527 - DEBUG - Calculated dB level: -47.1285320836095
-2025-04-09 16:04:05,597 - DEBUG - Returning dataframe with 39 rows
-2025-04-09 16:04:05,614 - DEBUG - Returning dataframe with 39 rows
-2025-04-09 16:04:05,634 - DEBUG - Returning dataframe with 39 rows
-2025-04-09 16:04:05,644 - DEBUG - Returning dataframe with 39 rows
-2025-04-09 16:04:06,166 - DEBUG - Calculated dB level: -45.04649188183117
-2025-04-09 16:04:06,574 - DEBUG - Returning dataframe with 40 rows
-2025-04-09 16:04:06,596 - DEBUG - Returning dataframe with 40 rows
-2025-04-09 16:04:06,615 - DEBUG - Returning dataframe with 40 rows
-2025-04-09 16:04:06,625 - DEBUG - Returning dataframe with 40 rows
-2025-04-09 16:04:06,806 - DEBUG - Calculated dB level: -44.809206473543696
-2025-04-09 16:04:07,446 - DEBUG - Calculated dB level: -59.854150299149524
-2025-04-09 16:04:07,581 - DEBUG - Returning dataframe with 41 rows
-2025-04-09 16:04:07,599 - DEBUG - Returning dataframe with 41 rows
-2025-04-09 16:04:07,617 - DEBUG - Returning dataframe with 41 rows
-2025-04-09 16:04:07,627 - DEBUG - Returning dataframe with 41 rows
-2025-04-09 16:04:08,085 - DEBUG - Calculated dB level: -52.52561742084241
-2025-04-09 16:04:08,591 - DEBUG - Returning dataframe with 42 rows
-2025-04-09 16:04:08,612 - DEBUG - Returning dataframe with 42 rows
-2025-04-09 16:04:08,631 - DEBUG - Returning dataframe with 42 rows
-2025-04-09 16:04:08,642 - DEBUG - Returning dataframe with 42 rows
-2025-04-09 16:04:08,725 - DEBUG - Calculated dB level: -39.405703087557995
-2025-04-09 16:04:09,365 - DEBUG - Calculated dB level: -48.172216454377136
-2025-04-09 16:04:09,578 - DEBUG - Returning dataframe with 43 rows
-2025-04-09 16:04:09,595 - DEBUG - Returning dataframe with 43 rows
-2025-04-09 16:04:09,615 - DEBUG - Returning dataframe with 43 rows
-2025-04-09 16:04:09,625 - DEBUG - Returning dataframe with 43 rows
-2025-04-09 16:04:10,005 - DEBUG - Calculated dB level: -52.904055072959714
-2025-04-09 16:04:10,579 - DEBUG - Returning dataframe with 44 rows
-2025-04-09 16:04:10,596 - DEBUG - Returning dataframe with 44 rows
-2025-04-09 16:04:10,621 - DEBUG - Returning dataframe with 44 rows
-2025-04-09 16:04:10,630 - DEBUG - Returning dataframe with 44 rows
-2025-04-09 16:04:10,643 - DEBUG - Calculated dB level: -42.59801712069783
-2025-04-09 16:04:11,284 - DEBUG - Calculated dB level: -40.35674822372779
-2025-04-09 16:04:11,603 - DEBUG - Returning dataframe with 45 rows
-2025-04-09 16:04:11,623 - DEBUG - Returning dataframe with 45 rows
-2025-04-09 16:04:11,642 - DEBUG - Returning dataframe with 45 rows
-2025-04-09 16:04:11,652 - DEBUG - Returning dataframe with 45 rows
-2025-04-09 16:04:11,923 - DEBUG - Calculated dB level: -54.29412676362095
-2025-04-09 16:04:12,563 - DEBUG - Calculated dB level: -55.014971697662205
-2025-04-09 16:04:12,593 - DEBUG - Returning dataframe with 46 rows
-2025-04-09 16:04:12,611 - DEBUG - Returning dataframe with 46 rows
-2025-04-09 16:04:12,631 - DEBUG - Returning dataframe with 46 rows
-2025-04-09 16:04:12,641 - DEBUG - Returning dataframe with 46 rows
-2025-04-09 16:04:12,754 - DEBUG - saving audio data
-2025-04-09 16:04:13,202 - DEBUG - Calculated dB level: -55.36704570408203
-2025-04-09 16:04:13,574 - DEBUG - Returning dataframe with 47 rows
-2025-04-09 16:04:13,593 - DEBUG - Returning dataframe with 47 rows
-2025-04-09 16:04:13,602 - DEBUG - Returning dataframe with 47 rows
-2025-04-09 16:04:13,623 - DEBUG - Returning dataframe with 47 rows
-2025-04-09 16:04:13,841 - DEBUG - Calculated dB level: -43.74746169924421
-2025-04-09 16:04:14,482 - DEBUG - Calculated dB level: -40.76948080854292
-2025-04-09 16:04:14,593 - DEBUG - Returning dataframe with 48 rows
-2025-04-09 16:04:14,613 - DEBUG - Returning dataframe with 48 rows
-2025-04-09 16:04:14,634 - DEBUG - Returning dataframe with 48 rows
-2025-04-09 16:04:14,644 - DEBUG - Returning dataframe with 48 rows
-2025-04-09 16:04:15,121 - DEBUG - Calculated dB level: -46.462245921330414
-2025-04-09 16:04:15,576 - DEBUG - Returning dataframe with 49 rows
-2025-04-09 16:04:15,593 - DEBUG - Returning dataframe with 49 rows
-2025-04-09 16:04:15,614 - DEBUG - Returning dataframe with 49 rows
-2025-04-09 16:04:15,624 - DEBUG - Returning dataframe with 49 rows
-2025-04-09 16:04:15,761 - DEBUG - Calculated dB level: -43.14883665731929
-2025-04-09 16:04:16,401 - DEBUG - Calculated dB level: -41.4810663182368
-2025-04-09 16:04:16,575 - DEBUG - Returning dataframe with 50 rows
-2025-04-09 16:04:16,602 - DEBUG - Returning dataframe with 50 rows
-2025-04-09 16:04:16,623 - DEBUG - Returning dataframe with 50 rows
-2025-04-09 16:04:16,633 - DEBUG - Returning dataframe with 50 rows
-2025-04-09 16:04:17,040 - DEBUG - Calculated dB level: -41.945670872032885
-2025-04-09 16:04:17,600 - DEBUG - Returning dataframe with 51 rows
-2025-04-09 16:04:17,616 - DEBUG - Returning dataframe with 51 rows
-2025-04-09 16:04:17,636 - DEBUG - Returning dataframe with 51 rows
-2025-04-09 16:04:17,646 - DEBUG - Returning dataframe with 51 rows
-2025-04-09 16:04:17,679 - DEBUG - Calculated dB level: -58.14362801297706
-2025-04-09 16:04:18,320 - DEBUG - Calculated dB level: -57.24032469068722
-2025-04-09 16:04:18,579 - DEBUG - Returning dataframe with 52 rows
-2025-04-09 16:04:18,597 - DEBUG - Returning dataframe with 52 rows
-2025-04-09 16:04:18,618 - DEBUG - Returning dataframe with 52 rows
-2025-04-09 16:04:18,628 - DEBUG - Returning dataframe with 52 rows
-2025-04-09 16:04:18,959 - DEBUG - Calculated dB level: -60.433483106999205
-2025-04-09 16:04:19,591 - DEBUG - Returning dataframe with 52 rows
-2025-04-09 16:04:19,600 - DEBUG - Calculated dB level: -54.97538868199829
-2025-04-09 16:04:19,600 - DEBUG - Returning dataframe with 52 rows
-2025-04-09 16:04:19,610 - DEBUG - Returning dataframe with 52 rows
-2025-04-09 16:04:19,631 - DEBUG - Returning dataframe with 52 rows
-2025-04-09 16:04:20,239 - DEBUG - Calculated dB level: -44.53624858470267
-2025-04-09 16:04:20,602 - DEBUG - Returning dataframe with 54 rows
-2025-04-09 16:04:20,627 - DEBUG - Returning dataframe with 54 rows
-2025-04-09 16:04:20,652 - DEBUG - Returning dataframe with 54 rows
-2025-04-09 16:04:20,662 - DEBUG - Returning dataframe with 54 rows
-2025-04-09 16:04:20,878 - DEBUG - Calculated dB level: -41.101986338371745
-2025-04-09 16:04:21,518 - DEBUG - Calculated dB level: -42.20050524500361
-2025-04-09 16:04:21,595 - DEBUG - Returning dataframe with 55 rows
-2025-04-09 16:04:21,613 - DEBUG - Returning dataframe with 55 rows
-2025-04-09 16:04:21,634 - DEBUG - Returning dataframe with 55 rows
-2025-04-09 16:04:21,644 - DEBUG - Returning dataframe with 55 rows
-2025-04-09 16:04:22,158 - DEBUG - Calculated dB level: -46.65665400394195
-2025-04-09 16:04:22,583 - DEBUG - Returning dataframe with 56 rows
-2025-04-09 16:04:22,601 - DEBUG - Returning dataframe with 56 rows
-2025-04-09 16:04:22,619 - DEBUG - Returning dataframe with 56 rows
-2025-04-09 16:04:22,629 - DEBUG - Returning dataframe with 56 rows
-2025-04-09 16:04:22,765 - DEBUG - saving audio data
-2025-04-09 16:04:22,797 - DEBUG - Calculated dB level: -39.39270277047385
-2025-04-09 16:04:23,437 - DEBUG - Calculated dB level: -52.71794291125089
-2025-04-09 16:04:23,596 - DEBUG - Returning dataframe with 57 rows
-2025-04-09 16:04:23,618 - DEBUG - Returning dataframe with 57 rows
-2025-04-09 16:04:23,644 - DEBUG - Returning dataframe with 57 rows
-2025-04-09 16:04:23,655 - DEBUG - Returning dataframe with 57 rows
-2025-04-09 16:04:24,076 - DEBUG - Calculated dB level: -40.52671875502508
-2025-04-09 16:04:24,580 - DEBUG - Returning dataframe with 58 rows
-2025-04-09 16:04:24,598 - DEBUG - Returning dataframe with 58 rows
-2025-04-09 16:04:24,617 - DEBUG - Returning dataframe with 58 rows
-2025-04-09 16:04:24,627 - DEBUG - Returning dataframe with 58 rows
-2025-04-09 16:04:24,715 - DEBUG - Calculated dB level: -46.010336832570566
-2025-04-09 16:04:25,356 - DEBUG - Calculated dB level: -44.97911539420052
-2025-04-09 16:04:25,578 - DEBUG - Returning dataframe with 59 rows
-2025-04-09 16:04:25,594 - DEBUG - Returning dataframe with 59 rows
-2025-04-09 16:04:25,613 - DEBUG - Returning dataframe with 59 rows
-2025-04-09 16:04:25,623 - DEBUG - Returning dataframe with 59 rows
-2025-04-09 16:04:25,995 - DEBUG - Calculated dB level: -67.26473321953077
-2025-04-09 16:04:26,600 - DEBUG - Returning dataframe with 59 rows
-2025-04-09 16:04:26,617 - DEBUG - Returning dataframe with 59 rows
-2025-04-09 16:04:26,635 - DEBUG - Returning dataframe with 59 rows
-2025-04-09 16:04:26,636 - DEBUG - Calculated dB level: -52.71650462994181
-2025-04-09 16:04:26,646 - DEBUG - Returning dataframe with 59 rows
-2025-04-09 16:04:27,275 - DEBUG - Calculated dB level: -45.494221053097746
-2025-04-09 16:04:27,589 - DEBUG - Returning dataframe with 61 rows
-2025-04-09 16:04:27,606 - DEBUG - Returning dataframe with 61 rows
-2025-04-09 16:04:27,625 - DEBUG - Returning dataframe with 61 rows
-2025-04-09 16:04:27,634 - DEBUG - Returning dataframe with 61 rows
-2025-04-09 16:04:27,914 - DEBUG - Calculated dB level: -40.71941129996353
-2025-04-09 16:04:28,553 - DEBUG - Calculated dB level: -39.42612143894861
-2025-04-09 16:04:28,595 - DEBUG - Returning dataframe with 62 rows
-2025-04-09 16:04:28,613 - DEBUG - Returning dataframe with 62 rows
-2025-04-09 16:04:28,640 - DEBUG - Returning dataframe with 62 rows
-2025-04-09 16:04:28,655 - DEBUG - Returning dataframe with 62 rows
-2025-04-09 16:04:29,193 - DEBUG - Calculated dB level: -40.11388323318323
-2025-04-09 16:04:29,600 - DEBUG - Returning dataframe with 63 rows
-2025-04-09 16:04:29,618 - DEBUG - Returning dataframe with 63 rows
-2025-04-09 16:04:29,637 - DEBUG - Returning dataframe with 63 rows
-2025-04-09 16:04:29,646 - DEBUG - Returning dataframe with 63 rows
-2025-04-09 16:04:29,832 - DEBUG - Calculated dB level: -41.02664143107958
-2025-04-09 16:04:30,472 - DEBUG - Calculated dB level: -46.15502048887846
-2025-04-09 16:04:30,582 - DEBUG - Returning dataframe with 64 rows
-2025-04-09 16:04:30,599 - DEBUG - Returning dataframe with 64 rows
-2025-04-09 16:04:30,619 - DEBUG - Returning dataframe with 64 rows
-2025-04-09 16:04:30,628 - DEBUG - Returning dataframe with 64 rows
-2025-04-09 16:04:31,112 - DEBUG - Calculated dB level: -41.955291598496736
-2025-04-09 16:04:31,585 - DEBUG - Returning dataframe with 65 rows
-2025-04-09 16:04:31,601 - DEBUG - Returning dataframe with 65 rows
-2025-04-09 16:04:31,619 - DEBUG - Returning dataframe with 65 rows
-2025-04-09 16:04:31,629 - DEBUG - Returning dataframe with 65 rows
-2025-04-09 16:04:31,752 - DEBUG - Calculated dB level: -52.760500092458315
-2025-04-09 16:04:32,392 - DEBUG - Calculated dB level: -52.536213078925755
-2025-04-09 16:04:32,588 - DEBUG - Returning dataframe with 66 rows
-2025-04-09 16:04:32,597 - DEBUG - Returning dataframe with 66 rows
-2025-04-09 16:04:32,607 - DEBUG - Returning dataframe with 66 rows
-2025-04-09 16:04:32,626 - DEBUG - Returning dataframe with 66 rows
-2025-04-09 16:04:32,775 - DEBUG - saving audio data
-2025-04-09 16:04:33,031 - DEBUG - Calculated dB level: -40.21893051221685
-2025-04-09 16:04:33,583 - DEBUG - Returning dataframe with 67 rows
-2025-04-09 16:04:33,600 - DEBUG - Returning dataframe with 67 rows
-2025-04-09 16:04:33,620 - DEBUG - Returning dataframe with 67 rows
-2025-04-09 16:04:33,631 - DEBUG - Returning dataframe with 67 rows
-2025-04-09 16:04:33,670 - DEBUG - Calculated dB level: -43.951081592079795
-2025-04-09 16:04:34,311 - DEBUG - Calculated dB level: -52.127206052659105
-2025-04-09 16:04:34,577 - DEBUG - Returning dataframe with 68 rows
-2025-04-09 16:04:34,595 - DEBUG - Returning dataframe with 68 rows
-2025-04-09 16:04:34,613 - DEBUG - Returning dataframe with 68 rows
-2025-04-09 16:04:34,624 - DEBUG - Returning dataframe with 68 rows
-2025-04-09 16:04:34,951 - DEBUG - Calculated dB level: -53.34490060359756
-2025-04-09 16:04:35,589 - DEBUG - Returning dataframe with 68 rows
-2025-04-09 16:04:35,601 - DEBUG - Calculated dB level: -41.48965994963625
-2025-04-09 16:04:35,607 - DEBUG - Returning dataframe with 68 rows
-2025-04-09 16:04:35,617 - DEBUG - Returning dataframe with 68 rows
-2025-04-09 16:04:35,626 - DEBUG - Returning dataframe with 68 rows
-2025-04-09 16:04:36,229 - DEBUG - Calculated dB level: -48.047581784612525
-2025-04-09 16:04:36,583 - DEBUG - Returning dataframe with 70 rows
-2025-04-09 16:04:36,600 - DEBUG - Returning dataframe with 70 rows
-2025-04-09 16:04:36,621 - DEBUG - Returning dataframe with 70 rows
-2025-04-09 16:04:36,631 - DEBUG - Returning dataframe with 70 rows
-2025-04-09 16:04:36,878 - DEBUG - Calculated dB level: -42.93790993469665
-2025-04-09 16:04:37,509 - DEBUG - Calculated dB level: -50.159754789159734
-2025-04-09 16:04:37,587 - DEBUG - Returning dataframe with 71 rows
-2025-04-09 16:04:37,605 - DEBUG - Returning dataframe with 71 rows
-2025-04-09 16:04:37,630 - DEBUG - Returning dataframe with 71 rows
-2025-04-09 16:04:37,639 - DEBUG - Returning dataframe with 71 rows
-2025-04-09 16:04:38,148 - DEBUG - Calculated dB level: -40.396556712142875
-2025-04-09 16:04:38,606 - DEBUG - Returning dataframe with 72 rows
-2025-04-09 16:04:38,624 - DEBUG - Returning dataframe with 72 rows
-2025-04-09 16:04:38,642 - DEBUG - Returning dataframe with 72 rows
-2025-04-09 16:04:38,651 - DEBUG - Returning dataframe with 72 rows
-2025-04-09 16:04:38,788 - DEBUG - Calculated dB level: -44.19342843110199
-2025-04-09 16:04:39,428 - DEBUG - Calculated dB level: -49.18138292945603
-2025-04-09 16:04:39,586 - DEBUG - Returning dataframe with 73 rows
-2025-04-09 16:04:39,603 - DEBUG - Returning dataframe with 73 rows
-2025-04-09 16:04:39,621 - DEBUG - Returning dataframe with 73 rows
-2025-04-09 16:04:39,631 - DEBUG - Returning dataframe with 73 rows
-2025-04-09 16:04:40,067 - DEBUG - Calculated dB level: -42.5905067654067
-2025-04-09 16:04:40,589 - DEBUG - Returning dataframe with 74 rows
-2025-04-09 16:04:40,607 - DEBUG - Returning dataframe with 74 rows
-2025-04-09 16:04:40,627 - DEBUG - Returning dataframe with 74 rows
-2025-04-09 16:04:40,637 - DEBUG - Returning dataframe with 74 rows
-2025-04-09 16:04:40,706 - DEBUG - Calculated dB level: -57.41862664813682
-2025-04-09 16:04:41,347 - DEBUG - Calculated dB level: -54.69811591915632
-2025-04-09 16:04:41,599 - DEBUG - Returning dataframe with 75 rows
-2025-04-09 16:04:41,617 - DEBUG - Returning dataframe with 75 rows
-2025-04-09 16:04:41,635 - DEBUG - Returning dataframe with 75 rows
-2025-04-09 16:04:41,644 - DEBUG - Returning dataframe with 75 rows
-2025-04-09 16:04:41,986 - DEBUG - Calculated dB level: -64.09152994891497
-2025-04-09 16:04:42,593 - DEBUG - Returning dataframe with 75 rows
-2025-04-09 16:04:42,615 - DEBUG - Returning dataframe with 75 rows
-2025-04-09 16:04:42,679 - DEBUG - Calculated dB level: -49.781976541853446
-2025-04-09 16:04:42,685 - DEBUG - Returning dataframe with 75 rows
-2025-04-09 16:04:42,694 - DEBUG - Returning dataframe with 75 rows
-2025-04-09 16:04:42,786 - DEBUG - saving audio data
-2025-04-09 16:04:43,266 - DEBUG - Calculated dB level: -42.1968675445305
-2025-04-09 16:04:43,592 - DEBUG - Returning dataframe with 77 rows
-2025-04-09 16:04:43,609 - DEBUG - Returning dataframe with 77 rows
-2025-04-09 16:04:43,627 - DEBUG - Returning dataframe with 77 rows
-2025-04-09 16:04:43,637 - DEBUG - Returning dataframe with 77 rows
-2025-04-09 16:04:43,904 - DEBUG - Calculated dB level: -43.62575599544127
-2025-04-09 16:04:44,544 - DEBUG - Calculated dB level: -46.68284701942014
-2025-04-09 16:04:44,602 - DEBUG - Returning dataframe with 78 rows
-2025-04-09 16:04:44,619 - DEBUG - Returning dataframe with 78 rows
-2025-04-09 16:04:44,639 - DEBUG - Returning dataframe with 78 rows
-2025-04-09 16:04:44,649 - DEBUG - Returning dataframe with 78 rows
-2025-04-09 16:04:45,184 - DEBUG - Calculated dB level: -39.929335926290534
-2025-04-09 16:04:45,585 - DEBUG - Returning dataframe with 79 rows
-2025-04-09 16:04:45,603 - DEBUG - Returning dataframe with 79 rows
-2025-04-09 16:04:45,623 - DEBUG - Returning dataframe with 79 rows
-2025-04-09 16:04:45,633 - DEBUG - Returning dataframe with 79 rows
-2025-04-09 16:04:45,824 - DEBUG - Calculated dB level: -40.423685484469644
-2025-04-09 16:04:46,463 - DEBUG - Calculated dB level: -40.35691166822835
-2025-04-09 16:04:46,579 - DEBUG - Returning dataframe with 80 rows
-2025-04-09 16:04:46,595 - DEBUG - Returning dataframe with 80 rows
-2025-04-09 16:04:46,614 - DEBUG - Returning dataframe with 80 rows
-2025-04-09 16:04:46,625 - DEBUG - Returning dataframe with 80 rows
-2025-04-09 16:04:47,103 - DEBUG - Calculated dB level: -51.57582528392418
-2025-04-09 16:04:47,587 - DEBUG - Returning dataframe with 81 rows
-2025-04-09 16:04:47,605 - DEBUG - Returning dataframe with 81 rows
-2025-04-09 16:04:47,614 - DEBUG - Returning dataframe with 81 rows
-2025-04-09 16:04:47,624 - DEBUG - Returning dataframe with 81 rows
-2025-04-09 16:04:47,743 - DEBUG - Calculated dB level: -52.758459786054104
-2025-04-09 16:04:48,383 - DEBUG - Calculated dB level: -40.08540983673349
-2025-04-09 16:04:48,581 - DEBUG - Returning dataframe with 82 rows
-2025-04-09 16:04:48,599 - DEBUG - Returning dataframe with 82 rows
-2025-04-09 16:04:48,619 - DEBUG - Returning dataframe with 82 rows
-2025-04-09 16:04:48,628 - DEBUG - Returning dataframe with 82 rows
-2025-04-09 16:04:49,022 - DEBUG - Calculated dB level: -53.58540863918421
-2025-04-09 16:04:49,580 - DEBUG - Returning dataframe with 83 rows
-2025-04-09 16:04:49,598 - DEBUG - Returning dataframe with 83 rows
-2025-04-09 16:04:49,616 - DEBUG - Returning dataframe with 83 rows
-2025-04-09 16:04:49,626 - DEBUG - Returning dataframe with 83 rows
-2025-04-09 16:04:49,662 - DEBUG - Calculated dB level: -48.76791420398695
-2025-04-09 16:04:50,301 - DEBUG - Calculated dB level: -48.69856591687249
-2025-04-09 16:04:50,599 - DEBUG - Returning dataframe with 84 rows
-2025-04-09 16:04:50,616 - DEBUG - Returning dataframe with 84 rows
-2025-04-09 16:04:50,635 - DEBUG - Returning dataframe with 84 rows
-2025-04-09 16:04:50,661 - DEBUG - Returning dataframe with 84 rows
-2025-04-09 16:04:50,941 - DEBUG - Calculated dB level: -62.66568679813677
-2025-04-09 16:04:51,578 - DEBUG - Returning dataframe with 84 rows
-2025-04-09 16:04:51,591 - DEBUG - Calculated dB level: -39.22704708235593
-2025-04-09 16:04:51,596 - DEBUG - Returning dataframe with 84 rows
-2025-04-09 16:04:51,615 - DEBUG - Returning dataframe with 84 rows
-2025-04-09 16:04:51,624 - DEBUG - Returning dataframe with 84 rows
-2025-04-09 16:04:52,220 - DEBUG - Calculated dB level: -36.497070721541235
-2025-04-09 16:04:52,582 - DEBUG - Returning dataframe with 86 rows
-2025-04-09 16:04:52,600 - DEBUG - Returning dataframe with 86 rows
-2025-04-09 16:04:52,619 - DEBUG - Returning dataframe with 86 rows
-2025-04-09 16:04:52,628 - DEBUG - Returning dataframe with 86 rows
-2025-04-09 16:04:52,795 - DEBUG - saving audio data
-2025-04-09 16:04:52,859 - DEBUG - Calculated dB level: -55.63411772565699
-2025-04-09 16:04:53,499 - DEBUG - Calculated dB level: -53.28242097204541
-2025-04-09 16:04:53,597 - DEBUG - Returning dataframe with 87 rows
-2025-04-09 16:04:53,616 - DEBUG - Returning dataframe with 87 rows
-2025-04-09 16:04:53,636 - DEBUG - Returning dataframe with 87 rows
-2025-04-09 16:04:53,645 - DEBUG - Returning dataframe with 87 rows
-2025-04-09 16:04:54,139 - DEBUG - Calculated dB level: -46.14397219082457
-2025-04-09 16:04:54,580 - DEBUG - Returning dataframe with 88 rows
-2025-04-09 16:04:54,597 - DEBUG - Returning dataframe with 88 rows
-2025-04-09 16:04:54,618 - DEBUG - Returning dataframe with 88 rows
-2025-04-09 16:04:54,628 - DEBUG - Returning dataframe with 88 rows
-2025-04-09 16:04:54,779 - DEBUG - Calculated dB level: -43.110236019147976
-2025-04-09 16:04:55,419 - DEBUG - Calculated dB level: -39.55461892706221
-2025-04-09 16:04:55,577 - DEBUG - Returning dataframe with 89 rows
-2025-04-09 16:04:55,597 - DEBUG - Returning dataframe with 89 rows
-2025-04-09 16:04:55,615 - DEBUG - Returning dataframe with 89 rows
-2025-04-09 16:04:55,625 - DEBUG - Returning dataframe with 89 rows
-2025-04-09 16:04:56,058 - DEBUG - Calculated dB level: -48.486658623564566
-2025-04-09 16:04:56,589 - DEBUG - Returning dataframe with 90 rows
-2025-04-09 16:04:56,607 - DEBUG - Returning dataframe with 90 rows
-2025-04-09 16:04:56,617 - DEBUG - Returning dataframe with 90 rows
-2025-04-09 16:04:56,636 - DEBUG - Returning dataframe with 90 rows
-2025-04-09 16:04:56,698 - DEBUG - Calculated dB level: -42.51044362088191
-2025-04-09 16:04:57,337 - DEBUG - Calculated dB level: -43.41813605614233
-2025-04-09 16:04:57,583 - DEBUG - Returning dataframe with 91 rows
-2025-04-09 16:04:57,602 - DEBUG - Returning dataframe with 91 rows
-2025-04-09 16:04:57,612 - DEBUG - Returning dataframe with 91 rows
-2025-04-09 16:04:57,632 - DEBUG - Returning dataframe with 91 rows
-2025-04-09 16:04:57,977 - DEBUG - Calculated dB level: -40.47311371736758
-2025-04-09 16:04:58,577 - DEBUG - Returning dataframe with 91 rows
-2025-04-09 16:04:58,595 - DEBUG - Returning dataframe with 91 rows
-2025-04-09 16:04:58,619 - DEBUG - Calculated dB level: -47.22464938603973
-2025-04-09 16:04:58,620 - DEBUG - Returning dataframe with 91 rows
-2025-04-09 16:04:58,630 - DEBUG - Returning dataframe with 91 rows
-2025-04-09 16:04:59,256 - DEBUG - Calculated dB level: -48.30657539878236
-2025-04-09 16:04:59,588 - DEBUG - Returning dataframe with 93 rows
-2025-04-09 16:04:59,606 - DEBUG - Returning dataframe with 93 rows
-2025-04-09 16:04:59,625 - DEBUG - Returning dataframe with 93 rows
-2025-04-09 16:04:59,634 - DEBUG - Returning dataframe with 93 rows
-2025-04-09 16:04:59,896 - DEBUG - Calculated dB level: -39.00175280272463
-2025-04-09 16:05:00,535 - DEBUG - Calculated dB level: -41.3159824720642
-2025-04-09 16:05:00,585 - DEBUG - Returning dataframe with 94 rows
-2025-04-09 16:05:00,602 - DEBUG - Returning dataframe with 94 rows
-2025-04-09 16:05:00,620 - DEBUG - Returning dataframe with 94 rows
-2025-04-09 16:05:00,634 - DEBUG - Returning dataframe with 94 rows
-2025-04-09 16:05:01,175 - DEBUG - Calculated dB level: -41.679823221973095
-2025-04-09 16:05:01,577 - DEBUG - Returning dataframe with 95 rows
-2025-04-09 16:05:01,595 - DEBUG - Returning dataframe with 95 rows
-2025-04-09 16:05:01,613 - DEBUG - Returning dataframe with 95 rows
-2025-04-09 16:05:01,623 - DEBUG - Returning dataframe with 95 rows
-2025-04-09 16:05:01,815 - DEBUG - Calculated dB level: -39.41670730359574
-2025-04-09 16:05:02,454 - DEBUG - Calculated dB level: -41.232699546676955
-2025-04-09 16:05:02,593 - DEBUG - Returning dataframe with 96 rows
-2025-04-09 16:05:02,611 - DEBUG - Returning dataframe with 96 rows
-2025-04-09 16:05:02,630 - DEBUG - Returning dataframe with 96 rows
-2025-04-09 16:05:02,640 - DEBUG - Returning dataframe with 96 rows
-2025-04-09 16:05:02,806 - DEBUG - saving audio data
-2025-04-09 16:05:03,094 - DEBUG - Calculated dB level: -43.08811423458032
-2025-04-09 16:05:03,578 - DEBUG - Returning dataframe with 97 rows
-2025-04-09 16:05:03,597 - DEBUG - Returning dataframe with 97 rows
-2025-04-09 16:05:03,617 - DEBUG - Returning dataframe with 97 rows
-2025-04-09 16:05:03,627 - DEBUG - Returning dataframe with 97 rows
-2025-04-09 16:05:03,734 - DEBUG - Calculated dB level: -47.669391883752176
-2025-04-09 16:05:04,373 - DEBUG - Calculated dB level: -40.47137428517179
-2025-04-09 16:05:04,579 - DEBUG - Returning dataframe with 98 rows
-2025-04-09 16:05:04,598 - DEBUG - Returning dataframe with 98 rows
-2025-04-09 16:05:04,617 - DEBUG - Returning dataframe with 98 rows
-2025-04-09 16:05:04,628 - DEBUG - Returning dataframe with 98 rows
-2025-04-09 16:05:05,012 - DEBUG - Calculated dB level: -43.78655265848553
-2025-04-09 16:05:05,588 - DEBUG - Returning dataframe with 99 rows
-2025-04-09 16:05:05,606 - DEBUG - Returning dataframe with 99 rows
-2025-04-09 16:05:05,626 - DEBUG - Returning dataframe with 99 rows
-2025-04-09 16:05:05,635 - DEBUG - Returning dataframe with 99 rows
-2025-04-09 16:05:05,665 - DEBUG - Calculated dB level: -41.61767124833217
-2025-04-09 16:05:06,293 - DEBUG - Calculated dB level: -58.19094133346255
-2025-04-09 16:05:06,585 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:06,602 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:06,621 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:06,630 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:06,931 - DEBUG - Calculated dB level: -51.42800516766124
-2025-04-09 16:05:07,584 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:07,584 - DEBUG - Calculated dB level: -64.0108264844312
-2025-04-09 16:05:07,600 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:07,618 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:07,628 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:08,211 - DEBUG - Calculated dB level: -40.842862511016094
-2025-04-09 16:05:08,600 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:08,617 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:08,635 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:08,645 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:08,851 - DEBUG - Calculated dB level: -39.59659482315687
-2025-04-09 16:05:09,490 - DEBUG - Calculated dB level: -63.45323292813574
-2025-04-09 16:05:09,591 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:09,608 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:09,627 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:09,635 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:10,130 - DEBUG - Calculated dB level: -48.870033134146425
-2025-04-09 16:05:10,580 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:10,598 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:10,616 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:10,626 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:10,769 - DEBUG - Calculated dB level: -51.73932148372835
-2025-04-09 16:05:11,409 - DEBUG - Calculated dB level: -47.422797002444
-2025-04-09 16:05:11,590 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:11,598 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:11,620 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:11,630 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:12,049 - DEBUG - Calculated dB level: -36.74820265923228
-2025-04-09 16:05:12,587 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:12,605 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:12,624 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:12,634 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:12,688 - DEBUG - Calculated dB level: -42.24291729553437
-2025-04-09 16:05:12,816 - DEBUG - saving audio data
-2025-04-09 16:05:13,328 - DEBUG - Calculated dB level: -57.017123244358096
-2025-04-09 16:05:13,583 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:13,601 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:13,620 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:13,629 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:13,967 - DEBUG - Calculated dB level: -42.0059365934035
-2025-04-09 16:05:14,599 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:14,612 - DEBUG - Calculated dB level: -40.42121031356964
-2025-04-09 16:05:14,617 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:14,637 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:14,646 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:15,247 - DEBUG - Calculated dB level: -44.966032563640155
-2025-04-09 16:05:15,588 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:15,606 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:15,624 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:15,634 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:15,887 - DEBUG - Calculated dB level: -39.766030147017446
-2025-04-09 16:05:16,526 - DEBUG - Calculated dB level: -42.721478176519774
-2025-04-09 16:05:16,590 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:16,607 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:16,626 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:16,636 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:17,166 - DEBUG - Calculated dB level: -49.40736759444044
-2025-04-09 16:05:17,588 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:17,622 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:17,641 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:17,650 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:17,806 - DEBUG - Calculated dB level: -49.27693763807522
-2025-04-09 16:05:18,445 - DEBUG - Calculated dB level: -57.30058830121807
-2025-04-09 16:05:18,583 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:18,600 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:18,619 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:18,628 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:19,085 - DEBUG - Calculated dB level: -40.748322890811075
-2025-04-09 16:05:19,584 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:19,608 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:19,633 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:19,646 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:19,724 - DEBUG - Calculated dB level: -41.851103807478424
-2025-04-09 16:05:20,368 - DEBUG - Calculated dB level: -32.47011151530271
-2025-04-09 16:05:20,589 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:20,607 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:20,627 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:20,637 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:21,003 - DEBUG - Calculated dB level: -30.542727755053892
-2025-04-09 16:05:21,577 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:21,595 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:21,621 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:21,632 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:21,643 - DEBUG - Calculated dB level: -39.92107432181663
-2025-04-09 16:05:22,283 - DEBUG - Calculated dB level: -48.478852036260605
-2025-04-09 16:05:22,576 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:22,593 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:22,612 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:22,623 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:22,826 - DEBUG - saving audio data
-2025-04-09 16:05:22,922 - DEBUG - Calculated dB level: -46.97729373529879
-2025-04-09 16:05:23,562 - DEBUG - Calculated dB level: -39.787250121415994
-2025-04-09 16:05:23,615 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:23,635 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:23,655 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:23,665 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:24,202 - DEBUG - Calculated dB level: -53.05937048080147
-2025-04-09 16:05:24,589 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:24,607 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:24,629 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:24,640 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:24,841 - DEBUG - Calculated dB level: -48.64299632323367
-2025-04-09 16:05:25,481 - DEBUG - Calculated dB level: -47.43613943458793
-2025-04-09 16:05:25,584 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:25,602 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:25,629 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:25,642 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:26,121 - DEBUG - Calculated dB level: -61.472766503457954
-2025-04-09 16:05:26,601 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:26,620 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:26,642 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:26,652 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:26,760 - DEBUG - Calculated dB level: -48.063206183220714
-2025-04-09 16:05:27,400 - DEBUG - Calculated dB level: -44.22563117556105
-2025-04-09 16:05:27,592 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:27,611 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:27,633 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:27,646 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:28,040 - DEBUG - Calculated dB level: -41.05243846369071
-2025-04-09 16:05:28,588 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:28,607 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:28,627 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:28,638 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:28,679 - DEBUG - Calculated dB level: -39.34093267922619
-2025-04-09 16:05:29,319 - DEBUG - Calculated dB level: -43.24847862698425
-2025-04-09 16:05:29,602 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:29,623 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:29,699 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:29,709 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:29,958 - DEBUG - Calculated dB level: -40.76898141997793
-2025-04-09 16:05:30,590 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:30,603 - DEBUG - Calculated dB level: -43.426212388024254
-2025-04-09 16:05:30,607 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:30,630 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:30,641 - DEBUG - Returning dataframe with 100 rows
-2025-04-09 16:05:31,238 - DEBUG - Calculated dB level: -40.006069890576995
-2025-04-09 16:05:31,878 - DEBUG - Calculated dB level: -43.64277721094757
+2025-04-10 17:44:08,870 - DEBUG - Logging initialized
+2025-04-10 17:44:08,883 - DEBUG - Audio player callbacks registered successfully
+2025-04-10 17:44:10,157 - DEBUG - Logging initialized
+2025-04-10 17:44:10,170 - DEBUG - Audio player callbacks registered successfully
+2025-04-10 17:44:10,204 - DEBUG - Using selector: SelectSelector
+2025-04-10 17:44:10,229 - DEBUG - Starting UDP receiver thread...
+2025-04-10 17:44:10,230 - DEBUG - Binding to UDP port 6002 to receive JSON data
+2025-04-10 17:44:10,230 - DEBUG - Logging initialized
+2025-04-10 17:44:10,730 - DEBUG - Starting UDP receiver thread...
+2025-04-10 17:44:10,730 - DEBUG - Binding to UDP port 6001 to receive Audio data
+2025-04-10 17:44:11,361 - DEBUG - Calculated dB level: -44.67913766970129
+2025-04-10 17:44:11,999 - DEBUG - Calculated dB level: -53.54395947967853
+2025-04-10 17:44:12,639 - DEBUG - Calculated dB level: -47.71775837293785
+2025-04-10 17:44:13,278 - DEBUG - Calculated dB level: -49.1969058864644
+2025-04-10 17:44:13,931 - DEBUG - Calculated dB level: -51.08772554324539
+2025-04-10 17:44:14,560 - DEBUG - Calculated dB level: -43.98545952679612
+2025-04-10 17:44:15,197 - DEBUG - Calculated dB level: -49.509811070625005
+2025-04-10 17:44:15,837 - DEBUG - Calculated dB level: -52.692512906370865
+2025-04-10 17:44:16,476 - DEBUG - Calculated dB level: -47.400228659818254
+2025-04-10 17:44:17,116 - DEBUG - Calculated dB level: -49.50869762499019
+2025-04-10 17:44:17,756 - DEBUG - Calculated dB level: -49.095594581413884
+2025-04-10 17:44:18,395 - DEBUG - Calculated dB level: -51.458434181093146
+2025-04-10 17:44:19,035 - DEBUG - Calculated dB level: -49.91551981820877
+2025-04-10 17:44:19,674 - DEBUG - Calculated dB level: -45.38852321790646
+2025-04-10 17:44:20,314 - DEBUG - Calculated dB level: -46.77668580217417
+2025-04-10 17:44:20,730 - DEBUG - saving audio data
+2025-04-10 17:44:20,953 - DEBUG - Calculated dB level: -44.57282657802476
+2025-04-10 17:44:21,593 - DEBUG - Calculated dB level: -59.595408273160864
+2025-04-10 17:44:22,241 - DEBUG - Calculated dB level: -48.93426387663076
+2025-04-10 17:44:22,873 - DEBUG - Calculated dB level: -45.23120789428852
+2025-04-10 17:44:23,514 - DEBUG - Calculated dB level: -50.80136498333053
+2025-04-10 17:44:24,152 - DEBUG - Calculated dB level: -48.1411627163395
+2025-04-10 17:44:24,792 - DEBUG - Calculated dB level: -53.98776005362542
+2025-04-10 17:44:25,430 - DEBUG - Calculated dB level: -44.4562326590728
+2025-04-10 17:44:26,081 - DEBUG - Calculated dB level: -44.98534321507713
+2025-04-10 17:46:47,955 - DEBUG - Logging initialized
+2025-04-10 17:46:47,967 - DEBUG - Audio player callbacks registered successfully
+2025-04-10 17:46:49,221 - DEBUG - Logging initialized
+2025-04-10 17:46:49,234 - DEBUG - Audio player callbacks registered successfully
+2025-04-10 17:46:49,267 - DEBUG - Using selector: SelectSelector
+2025-04-10 17:46:49,290 - DEBUG - Starting UDP receiver thread...
+2025-04-10 17:46:49,291 - DEBUG - Binding to UDP port 6002 to receive JSON data
+2025-04-10 17:46:49,291 - DEBUG - Logging initialized
+2025-04-10 17:46:49,792 - DEBUG - Starting UDP receiver thread...
+2025-04-10 17:46:49,793 - DEBUG - Binding to UDP port 6001 to receive Audio data
+2025-04-10 17:46:50,020 - DEBUG - JSON parsed successfully, contains 17 records
+2025-04-10 17:46:50,028 - DEBUG - DataFrame created with shape: (17, 8)
+2025-04-10 17:46:50,028 - DEBUG - DataFrame columns: ['timestamp', 'Inside_temperature', 'Outside_temperature', 'Inside_humidity', 'Outside_humidity', 'Time_of_flight', 'Vibration', 'DB']
+2025-04-10 17:46:50,417 - DEBUG - Calculated dB level: -49.489037956553815
+2025-04-10 17:46:50,424 - DEBUG - JSON parsed successfully, contains 18 records
+2025-04-10 17:46:50,428 - DEBUG - DataFrame created with shape: (18, 8)
+2025-04-10 17:46:50,429 - DEBUG - DataFrame columns: ['timestamp', 'Inside_temperature', 'Outside_temperature', 'Inside_humidity', 'Outside_humidity', 'Time_of_flight', 'Vibration', 'DB']
+2025-04-10 17:46:51,019 - DEBUG - JSON parsed successfully, contains 18 records
+2025-04-10 17:46:51,023 - DEBUG - DataFrame created with shape: (18, 8)
+2025-04-10 17:46:51,023 - DEBUG - DataFrame columns: ['timestamp', 'Inside_temperature', 'Outside_temperature', 'Inside_humidity', 'Outside_humidity', 'Time_of_flight', 'Vibration', 'DB']
+2025-04-10 17:46:51,039 - DEBUG - JSON parsed successfully, contains 18 records
+2025-04-10 17:46:51,043 - DEBUG - DataFrame created with shape: (18, 8)
+2025-04-10 17:46:51,044 - DEBUG - DataFrame columns: ['timestamp', 'Inside_temperature', 'Outside_temperature', 'Inside_humidity', 'Outside_humidity', 'Time_of_flight', 'Vibration', 'DB']
+2025-04-10 17:46:51,056 - DEBUG - Calculated dB level: -45.69200522412136
+2025-04-10 17:46:51,067 - DEBUG - JSON parsed successfully, contains 19 records
+2025-04-10 17:46:51,071 - DEBUG - DataFrame created with shape: (19, 8)
+2025-04-10 17:46:51,072 - DEBUG - DataFrame columns: ['timestamp', 'Inside_temperature', 'Outside_temperature', 'Inside_humidity', 'Outside_humidity', 'Time_of_flight', 'Vibration', 'DB']
+2025-04-10 17:46:51,696 - DEBUG - Calculated dB level: -49.4344115257008
+2025-04-10 17:46:51,705 - DEBUG - JSON parsed successfully, contains 19 records
+2025-04-10 17:46:51,709 - DEBUG - DataFrame created with shape: (19, 8)
+2025-04-10 17:46:51,710 - DEBUG - DataFrame columns: ['timestamp', 'Inside_temperature', 'Outside_temperature', 'Inside_humidity', 'Outside_humidity', 'Time_of_flight', 'Vibration', 'DB']
+2025-04-10 17:46:52,020 - DEBUG - JSON parsed successfully, contains 19 records
+2025-04-10 17:46:52,025 - DEBUG - DataFrame created with shape: (19, 8)
+2025-04-10 17:46:52,025 - DEBUG - DataFrame columns: ['timestamp', 'Inside_temperature', 'Outside_temperature', 'Inside_humidity', 'Outside_humidity', 'Time_of_flight', 'Vibration', 'DB']
+2025-04-10 17:46:52,037 - DEBUG - JSON parsed successfully, contains 19 records
+2025-04-10 17:46:52,041 - DEBUG - DataFrame created with shape: (19, 8)
+2025-04-10 17:46:52,041 - DEBUG - DataFrame columns: ['timestamp', 'Inside_temperature', 'Outside_temperature', 'Inside_humidity', 'Outside_humidity', 'Time_of_flight', 'Vibration', 'DB']
+2025-04-10 17:46:52,336 - DEBUG - Calculated dB level: -49.92985800775182
+2025-04-10 17:46:52,345 - DEBUG - JSON parsed successfully, contains 20 records
+2025-04-10 17:46:52,350 - DEBUG - DataFrame created with shape: (20, 8)
+2025-04-10 17:46:52,350 - DEBUG - DataFrame columns: ['timestamp', 'Inside_temperature', 'Outside_temperature', 'Inside_humidity', 'Outside_humidity', 'Time_of_flight', 'Vibration', 'DB']
+2025-04-10 17:46:52,976 - DEBUG - Calculated dB level: -48.00872301628306
+2025-04-10 17:46:52,985 - DEBUG - JSON parsed successfully, contains 20 records
+2025-04-10 17:46:52,990 - DEBUG - DataFrame created with shape: (20, 8)
+2025-04-10 17:46:52,990 - DEBUG - DataFrame columns: ['timestamp', 'Inside_temperature', 'Outside_temperature', 'Inside_humidity', 'Outside_humidity', 'Time_of_flight', 'Vibration', 'DB']
+2025-04-10 17:46:53,021 - DEBUG - JSON parsed successfully, contains 20 records
+2025-04-10 17:46:53,025 - DEBUG - DataFrame created with shape: (20, 8)
+2025-04-10 17:46:53,025 - DEBUG - DataFrame columns: ['timestamp', 'Inside_temperature', 'Outside_temperature', 'Inside_humidity', 'Outside_humidity', 'Time_of_flight', 'Vibration', 'DB']
+2025-04-10 17:47:05,022 - DEBUG - Logging initialized
+2025-04-10 17:47:05,035 - DEBUG - Audio player callbacks registered successfully
+2025-04-10 17:47:06,263 - DEBUG - Logging initialized
+2025-04-10 17:47:06,276 - DEBUG - Audio player callbacks registered successfully
+2025-04-10 17:47:06,331 - DEBUG - Using selector: SelectSelector
+2025-04-10 17:47:06,361 - DEBUG - Starting UDP receiver thread...
+2025-04-10 17:47:06,362 - DEBUG - Binding to UDP port 6002 to receive JSON data
+2025-04-10 17:47:06,362 - DEBUG - Logging initialized
+2025-04-10 17:47:06,862 - DEBUG - Starting UDP receiver thread...
+2025-04-10 17:47:06,863 - DEBUG - Binding to UDP port 6001 to receive Audio data
+2025-04-10 17:47:07,019 - DEBUG - JSON parsed successfully, contains 21 records
+2025-04-10 17:47:07,027 - DEBUG - DataFrame created with shape: (21, 8)
+2025-04-10 17:47:07,027 - DEBUG - DataFrame columns: ['timestamp', 'Inside_temperature', 'Outside_temperature', 'Inside_humidity', 'Outside_humidity', 'Time_of_flight', 'Vibration', 'DB']
+2025-04-10 17:47:07,040 - DEBUG - JSON parsed successfully, contains 22 records
+2025-04-10 17:47:07,044 - DEBUG - DataFrame created with shape: (22, 8)
+2025-04-10 17:47:07,045 - DEBUG - DataFrame columns: ['timestamp', 'Inside_temperature', 'Outside_temperature', 'Inside_humidity', 'Outside_humidity', 'Time_of_flight', 'Vibration', 'DB']
+2025-04-10 17:47:07,495 - DEBUG - Calculated dB level: -47.648337292679855
+2025-04-10 17:47:07,503 - DEBUG - JSON parsed successfully, contains 23 records
+2025-04-10 17:47:07,507 - DEBUG - DataFrame created with shape: (23, 8)
+2025-04-10 17:47:07,508 - DEBUG - DataFrame columns: ['timestamp', 'Inside_temperature', 'Outside_temperature', 'Inside_humidity', 'Outside_humidity', 'Time_of_flight', 'Vibration', 'DB']
+2025-04-10 17:47:08,019 - DEBUG - JSON parsed successfully, contains 23 records
+2025-04-10 17:47:08,024 - DEBUG - DataFrame created with shape: (23, 8)
+2025-04-10 17:47:08,025 - DEBUG - DataFrame columns: ['timestamp', 'Inside_temperature', 'Outside_temperature', 'Inside_humidity', 'Outside_humidity', 'Time_of_flight', 'Vibration', 'DB']
+2025-04-10 17:47:08,135 - DEBUG - Calculated dB level: -43.905776482705825
+2025-04-10 17:47:08,144 - DEBUG - JSON parsed successfully, contains 24 records
+2025-04-10 17:47:08,148 - DEBUG - DataFrame created with shape: (24, 8)
+2025-04-10 17:47:08,149 - DEBUG - DataFrame columns: ['timestamp', 'Inside_temperature', 'Outside_temperature', 'Inside_humidity', 'Outside_humidity', 'Time_of_flight', 'Vibration', 'DB']
+2025-04-10 17:47:08,774 - DEBUG - Calculated dB level: -50.80537234613418
+2025-04-10 17:47:08,784 - DEBUG - JSON parsed successfully, contains 24 records
+2025-04-10 17:47:08,788 - DEBUG - DataFrame created with shape: (24, 8)
+2025-04-10 17:47:08,789 - DEBUG - DataFrame columns: ['timestamp', 'Inside_temperature', 'Outside_temperature', 'Inside_humidity', 'Outside_humidity', 'Time_of_flight', 'Vibration', 'DB']
+2025-04-10 17:47:09,020 - DEBUG - JSON parsed successfully, contains 24 records
+2025-04-10 17:47:09,024 - DEBUG - DataFrame created with shape: (24, 8)
+2025-04-10 17:47:09,025 - DEBUG - DataFrame columns: ['timestamp', 'Inside_temperature', 'Outside_temperature', 'Inside_humidity', 'Outside_humidity', 'Time_of_flight', 'Vibration', 'DB']
+2025-04-10 17:47:09,037 - DEBUG - JSON parsed successfully, contains 24 records
+2025-04-10 17:47:09,041 - DEBUG - DataFrame created with shape: (24, 8)
+2025-04-10 17:47:09,041 - DEBUG - DataFrame columns: ['timestamp', 'Inside_temperature', 'Outside_temperature', 'Inside_humidity', 'Outside_humidity', 'Time_of_flight', 'Vibration', 'DB']
+2025-04-10 17:47:09,413 - DEBUG - Calculated dB level: -49.18503935556195
+2025-04-10 17:47:09,423 - DEBUG - JSON parsed successfully, contains 25 records
+2025-04-10 17:47:09,427 - DEBUG - DataFrame created with shape: (25, 8)
+2025-04-10 17:47:09,428 - DEBUG - DataFrame columns: ['timestamp', 'Inside_temperature', 'Outside_temperature', 'Inside_humidity', 'Outside_humidity', 'Time_of_flight', 'Vibration', 'DB']
+2025-04-10 17:47:10,020 - DEBUG - JSON parsed successfully, contains 25 records
+2025-04-10 17:47:10,025 - DEBUG - DataFrame created with shape: (25, 8)
+2025-04-10 17:47:10,025 - DEBUG - DataFrame columns: ['timestamp', 'Inside_temperature', 'Outside_temperature', 'Inside_humidity', 'Outside_humidity', 'Time_of_flight', 'Vibration', 'DB']
+2025-04-10 17:47:10,038 - DEBUG - JSON parsed successfully, contains 25 records
+2025-04-10 17:47:10,042 - DEBUG - DataFrame created with shape: (25, 8)
+2025-04-10 17:47:10,042 - DEBUG - DataFrame columns: ['timestamp', 'Inside_temperature', 'Outside_temperature', 'Inside_humidity', 'Outside_humidity', 'Time_of_flight', 'Vibration', 'DB']
+2025-04-10 17:47:10,053 - DEBUG - Calculated dB level: -49.70589016000095
+2025-04-10 17:47:10,061 - DEBUG - JSON parsed successfully, contains 26 records
+2025-04-10 17:47:10,065 - DEBUG - DataFrame created with shape: (26, 8)
+2025-04-10 17:47:10,066 - DEBUG - DataFrame columns: ['timestamp', 'Inside_temperature', 'Outside_temperature', 'Inside_humidity', 'Outside_humidity', 'Time_of_flight', 'Vibration', 'DB']
+2025-04-10 17:47:10,693 - DEBUG - Calculated dB level: -50.27119952514683
+2025-04-10 17:47:10,702 - DEBUG - JSON parsed successfully, contains 26 records
+2025-04-10 17:47:10,706 - DEBUG - DataFrame created with shape: (26, 8)
+2025-04-10 17:47:10,706 - DEBUG - DataFrame columns: ['timestamp', 'Inside_temperature', 'Outside_temperature', 'Inside_humidity', 'Outside_humidity', 'Time_of_flight', 'Vibration', 'DB']
+2025-04-10 17:47:11,019 - DEBUG - JSON parsed successfully, contains 26 records
+2025-04-10 17:47:11,023 - DEBUG - DataFrame created with shape: (26, 8)
+2025-04-10 17:47:11,023 - DEBUG - DataFrame columns: ['timestamp', 'Inside_temperature', 'Outside_temperature', 'Inside_humidity', 'Outside_humidity', 'Time_of_flight', 'Vibration', 'DB']
+2025-04-10 17:47:11,333 - DEBUG - Calculated dB level: -48.88106211723975
+2025-04-10 17:47:11,342 - DEBUG - JSON parsed successfully, contains 27 records
+2025-04-10 17:47:11,347 - DEBUG - DataFrame created with shape: (27, 8)
+2025-04-10 17:47:11,347 - DEBUG - DataFrame columns: ['timestamp', 'Inside_temperature', 'Outside_temperature', 'Inside_humidity', 'Outside_humidity', 'Time_of_flight', 'Vibration', 'DB']
+2025-04-10 17:47:11,972 - DEBUG - Calculated dB level: -48.975261605921844
+2025-04-10 17:47:11,981 - DEBUG - JSON parsed successfully, contains 27 records
+2025-04-10 17:47:11,985 - DEBUG - DataFrame created with shape: (27, 8)
+2025-04-10 17:47:11,986 - DEBUG - DataFrame columns: ['timestamp', 'Inside_temperature', 'Outside_temperature', 'Inside_humidity', 'Outside_humidity', 'Time_of_flight', 'Vibration', 'DB']
+2025-04-10 17:47:12,020 - DEBUG - JSON parsed successfully, contains 27 records
+2025-04-10 17:47:12,023 - DEBUG - DataFrame created with shape: (27, 8)
+2025-04-10 17:47:12,023 - DEBUG - DataFrame columns: ['timestamp', 'Inside_temperature', 'Outside_temperature', 'Inside_humidity', 'Outside_humidity', 'Time_of_flight', 'Vibration', 'DB']
+2025-04-10 17:47:12,035 - DEBUG - JSON parsed successfully, contains 27 records
+2025-04-10 17:47:12,039 - DEBUG - DataFrame created with shape: (27, 8)
+2025-04-10 17:47:12,039 - DEBUG - DataFrame columns: ['timestamp', 'Inside_temperature', 'Outside_temperature', 'Inside_humidity', 'Outside_humidity', 'Time_of_flight', 'Vibration', 'DB']
+2025-04-10 17:47:12,611 - DEBUG - Calculated dB level: -46.76486794713331
+2025-04-10 17:47:12,619 - DEBUG - JSON parsed successfully, contains 28 records
+2025-04-10 17:47:12,623 - DEBUG - DataFrame created with shape: (28, 8)
+2025-04-10 17:47:12,623 - DEBUG - DataFrame columns: ['timestamp', 'Inside_temperature', 'Outside_temperature', 'Inside_humidity', 'Outside_humidity', 'Time_of_flight', 'Vibration', 'DB']
+2025-04-10 17:47:13,019 - DEBUG - JSON parsed successfully, contains 28 records
+2025-04-10 17:47:13,024 - DEBUG - DataFrame created with shape: (28, 8)
+2025-04-10 17:47:13,024 - DEBUG - DataFrame columns: ['timestamp', 'Inside_temperature', 'Outside_temperature', 'Inside_humidity', 'Outside_humidity', 'Time_of_flight', 'Vibration', 'DB']
+2025-04-10 17:47:13,037 - DEBUG - JSON parsed successfully, contains 28 records
+2025-04-10 17:47:13,040 - DEBUG - DataFrame created with shape: (28, 8)
+2025-04-10 17:47:13,041 - DEBUG - DataFrame columns: ['timestamp', 'Inside_temperature', 'Outside_temperature', 'Inside_humidity', 'Outside_humidity', 'Time_of_flight', 'Vibration', 'DB']
+2025-04-10 17:47:13,252 - DEBUG - Calculated dB level: -54.594547780719466
+2025-04-10 17:47:13,261 - DEBUG - JSON parsed successfully, contains 29 records
+2025-04-10 17:47:13,265 - DEBUG - DataFrame created with shape: (29, 8)
+2025-04-10 17:47:13,266 - DEBUG - DataFrame columns: ['timestamp', 'Inside_temperature', 'Outside_temperature', 'Inside_humidity', 'Outside_humidity', 'Time_of_flight', 'Vibration', 'DB']
+2025-04-10 17:47:13,891 - DEBUG - Calculated dB level: -48.48727473469819
+2025-04-10 17:47:13,902 - DEBUG - JSON parsed successfully, contains 29 records
+2025-04-10 17:47:13,906 - DEBUG - DataFrame created with shape: (29, 8)
+2025-04-10 17:47:13,906 - DEBUG - DataFrame columns: ['timestamp', 'Inside_temperature', 'Outside_temperature', 'Inside_humidity', 'Outside_humidity', 'Time_of_flight', 'Vibration', 'DB']
+2025-04-10 17:47:14,019 - DEBUG - JSON parsed successfully, contains 29 records
+2025-04-10 17:47:14,024 - DEBUG - DataFrame created with shape: (29, 8)
+2025-04-10 17:47:14,024 - DEBUG - DataFrame columns: ['timestamp', 'Inside_temperature', 'Outside_temperature', 'Inside_humidity', 'Outside_humidity', 'Time_of_flight', 'Vibration', 'DB']
+2025-04-10 17:47:14,531 - DEBUG - Calculated dB level: -48.715086865136925
+2025-04-10 17:47:14,540 - DEBUG - JSON parsed successfully, contains 30 records
+2025-04-10 17:47:14,545 - DEBUG - DataFrame created with shape: (30, 8)
+2025-04-10 17:47:14,546 - DEBUG - DataFrame columns: ['timestamp', 'Inside_temperature', 'Outside_temperature', 'Inside_humidity', 'Outside_humidity', 'Time_of_flight', 'Vibration', 'DB']
+2025-04-10 17:47:15,019 - DEBUG - JSON parsed successfully, contains 30 records
+2025-04-10 17:47:15,024 - DEBUG - DataFrame created with shape: (30, 8)
+2025-04-10 17:47:15,025 - DEBUG - DataFrame columns: ['timestamp', 'Inside_temperature', 'Outside_temperature', 'Inside_humidity', 'Outside_humidity', 'Time_of_flight', 'Vibration', 'DB']
+2025-04-10 17:47:15,037 - DEBUG - JSON parsed successfully, contains 30 records
+2025-04-10 17:47:15,041 - DEBUG - DataFrame created with shape: (30, 8)
+2025-04-10 17:47:15,041 - DEBUG - DataFrame columns: ['timestamp', 'Inside_temperature', 'Outside_temperature', 'Inside_humidity', 'Outside_humidity', 'Time_of_flight', 'Vibration', 'DB']
+2025-04-10 17:47:15,170 - DEBUG - Calculated dB level: -56.85510611768748
+2025-04-10 17:47:15,180 - DEBUG - JSON parsed successfully, contains 31 records
+2025-04-10 17:47:15,184 - DEBUG - DataFrame created with shape: (31, 8)
+2025-04-10 17:47:15,185 - DEBUG - DataFrame columns: ['timestamp', 'Inside_temperature', 'Outside_temperature', 'Inside_humidity', 'Outside_humidity', 'Time_of_flight', 'Vibration', 'DB']
+2025-04-10 17:47:15,810 - DEBUG - Calculated dB level: -48.50506081903476
+2025-04-10 17:47:15,820 - DEBUG - JSON parsed successfully, contains 31 records
+2025-04-10 17:47:15,824 - DEBUG - DataFrame created with shape: (31, 8)
+2025-04-10 17:47:15,825 - DEBUG - DataFrame columns: ['timestamp', 'Inside_temperature', 'Outside_temperature', 'Inside_humidity', 'Outside_humidity', 'Time_of_flight', 'Vibration', 'DB']
+2025-04-10 17:47:16,020 - DEBUG - JSON parsed successfully, contains 31 records
+2025-04-10 17:47:16,024 - DEBUG - DataFrame created with shape: (31, 8)
+2025-04-10 17:47:16,025 - DEBUG - DataFrame columns: ['timestamp', 'Inside_temperature', 'Outside_temperature', 'Inside_humidity', 'Outside_humidity', 'Time_of_flight', 'Vibration', 'DB']
+2025-04-10 17:47:16,450 - DEBUG - Calculated dB level: -61.482907704930334
+2025-04-10 17:47:16,459 - DEBUG - JSON parsed successfully, contains 32 records
+2025-04-10 17:47:16,464 - DEBUG - DataFrame created with shape: (32, 8)
+2025-04-10 17:47:16,465 - DEBUG - DataFrame columns: ['timestamp', 'Inside_temperature', 'Outside_temperature', 'Inside_humidity', 'Outside_humidity', 'Time_of_flight', 'Vibration', 'DB']
+2025-04-10 17:47:16,866 - DEBUG - saving audio data
+2025-04-10 17:47:17,020 - DEBUG - JSON parsed successfully, contains 32 records
+2025-04-10 17:47:17,024 - DEBUG - DataFrame created with shape: (32, 8)
+2025-04-10 17:47:17,025 - DEBUG - DataFrame columns: ['timestamp', 'Inside_temperature', 'Outside_temperature', 'Inside_humidity', 'Outside_humidity', 'Time_of_flight', 'Vibration', 'DB']
+2025-04-10 17:47:17,037 - DEBUG - JSON parsed successfully, contains 32 records
+2025-04-10 17:47:17,041 - DEBUG - DataFrame created with shape: (32, 8)
+2025-04-10 17:47:17,041 - DEBUG - DataFrame columns: ['timestamp', 'Inside_temperature', 'Outside_temperature', 'Inside_humidity', 'Outside_humidity', 'Time_of_flight', 'Vibration', 'DB']
+2025-04-10 17:47:17,089 - DEBUG - Calculated dB level: -49.709808080342185
+2025-04-10 17:47:17,099 - DEBUG - JSON parsed successfully, contains 33 records
+2025-04-10 17:47:17,103 - DEBUG - DataFrame created with shape: (33, 8)
+2025-04-10 17:47:17,104 - DEBUG - DataFrame columns: ['timestamp', 'Inside_temperature', 'Outside_temperature', 'Inside_humidity', 'Outside_humidity', 'Time_of_flight', 'Vibration', 'DB']
+2025-04-10 17:47:17,729 - DEBUG - Calculated dB level: -48.458947108590955
+2025-04-10 17:47:17,737 - DEBUG - JSON parsed successfully, contains 33 records
+2025-04-10 17:47:17,741 - DEBUG - DataFrame created with shape: (33, 8)
+2025-04-10 17:47:17,742 - DEBUG - DataFrame columns: ['timestamp', 'Inside_temperature', 'Outside_temperature', 'Inside_humidity', 'Outside_humidity', 'Time_of_flight', 'Vibration', 'DB']
+2025-04-10 17:47:18,019 - DEBUG - JSON parsed successfully, contains 33 records
+2025-04-10 17:47:18,023 - DEBUG - DataFrame created with shape: (33, 8)
+2025-04-10 17:47:18,023 - DEBUG - DataFrame columns: ['timestamp', 'Inside_temperature', 'Outside_temperature', 'Inside_humidity', 'Outside_humidity', 'Time_of_flight', 'Vibration', 'DB']
+2025-04-10 17:47:18,035 - DEBUG - JSON parsed successfully, contains 33 records
+2025-04-10 17:47:18,039 - DEBUG - DataFrame created with shape: (33, 8)
+2025-04-10 17:47:18,039 - DEBUG - DataFrame columns: ['timestamp', 'Inside_temperature', 'Outside_temperature', 'Inside_humidity', 'Outside_humidity', 'Time_of_flight', 'Vibration', 'DB']
+2025-04-10 17:47:18,369 - DEBUG - Calculated dB level: -50.325489717673946
+2025-04-10 17:47:18,376 - DEBUG - JSON parsed successfully, contains 34 records
+2025-04-10 17:47:18,380 - DEBUG - DataFrame created with shape: (34, 8)
+2025-04-10 17:47:18,381 - DEBUG - DataFrame columns: ['timestamp', 'Inside_temperature', 'Outside_temperature', 'Inside_humidity', 'Outside_humidity', 'Time_of_flight', 'Vibration', 'DB']
+2025-04-10 17:47:19,008 - DEBUG - Calculated dB level: -51.06186650998158
+2025-04-10 17:47:19,017 - DEBUG - JSON parsed successfully, contains 34 records
+2025-04-10 17:47:19,022 - DEBUG - DataFrame created with shape: (34, 8)
+2025-04-10 17:47:19,022 - DEBUG - DataFrame columns: ['timestamp', 'Inside_temperature', 'Outside_temperature', 'Inside_humidity', 'Outside_humidity', 'Time_of_flight', 'Vibration', 'DB']
+2025-04-10 17:47:19,035 - DEBUG - JSON parsed successfully, contains 35 records
+2025-04-10 17:47:19,038 - DEBUG - DataFrame created with shape: (35, 8)
+2025-04-10 17:47:19,038 - DEBUG - DataFrame columns: ['timestamp', 'Inside_temperature', 'Outside_temperature', 'Inside_humidity', 'Outside_humidity', 'Time_of_flight', 'Vibration', 'DB']
+2025-04-10 17:47:19,050 - DEBUG - JSON parsed successfully, contains 35 records
+2025-04-10 17:47:19,054 - DEBUG - DataFrame created with shape: (35, 8)
+2025-04-10 17:47:19,054 - DEBUG - DataFrame columns: ['timestamp', 'Inside_temperature', 'Outside_temperature', 'Inside_humidity', 'Outside_humidity', 'Time_of_flight', 'Vibration', 'DB']
+2025-04-10 17:47:19,648 - DEBUG - Calculated dB level: -44.99612030179886
+2025-04-10 17:47:19,656 - DEBUG - JSON parsed successfully, contains 35 records
+2025-04-10 17:47:19,660 - DEBUG - DataFrame created with shape: (35, 8)
+2025-04-10 17:47:19,661 - DEBUG - DataFrame columns: ['timestamp', 'Inside_temperature', 'Outside_temperature', 'Inside_humidity', 'Outside_humidity', 'Time_of_flight', 'Vibration', 'DB']
+2025-04-10 17:47:20,019 - DEBUG - JSON parsed successfully, contains 35 records
+2025-04-10 17:47:20,024 - DEBUG - DataFrame created with shape: (35, 8)
+2025-04-10 17:47:20,024 - DEBUG - DataFrame columns: ['timestamp', 'Inside_temperature', 'Outside_temperature', 'Inside_humidity', 'Outside_humidity', 'Time_of_flight', 'Vibration', 'DB']
+2025-04-10 17:47:20,036 - DEBUG - JSON parsed successfully, contains 35 records
+2025-04-10 17:47:20,041 - DEBUG - DataFrame created with shape: (35, 8)
+2025-04-10 17:47:20,041 - DEBUG - DataFrame columns: ['timestamp', 'Inside_temperature', 'Outside_temperature', 'Inside_humidity', 'Outside_humidity', 'Time_of_flight', 'Vibration', 'DB']
+2025-04-10 17:47:20,297 - DEBUG - Calculated dB level: -56.33276060279972
+2025-04-10 17:47:20,307 - DEBUG - JSON parsed successfully, contains 36 records
+2025-04-10 17:47:20,311 - DEBUG - DataFrame created with shape: (36, 8)
+2025-04-10 17:47:20,311 - DEBUG - DataFrame columns: ['timestamp', 'Inside_temperature', 'Outside_temperature', 'Inside_humidity', 'Outside_humidity', 'Time_of_flight', 'Vibration', 'DB']
+2025-04-10 17:47:20,927 - DEBUG - Calculated dB level: -49.487761578649916
+2025-04-10 17:47:20,936 - DEBUG - JSON parsed successfully, contains 36 records
+2025-04-10 17:47:20,940 - DEBUG - DataFrame created with shape: (36, 8)
+2025-04-10 17:47:20,941 - DEBUG - DataFrame columns: ['timestamp', 'Inside_temperature', 'Outside_temperature', 'Inside_humidity', 'Outside_humidity', 'Time_of_flight', 'Vibration', 'DB']
+2025-04-10 17:47:21,019 - DEBUG - JSON parsed successfully, contains 36 records
+2025-04-10 17:47:21,023 - DEBUG - DataFrame created with shape: (36, 8)
+2025-04-10 17:47:21,024 - DEBUG - DataFrame columns: ['timestamp', 'Inside_temperature', 'Outside_temperature', 'Inside_humidity', 'Outside_humidity', 'Time_of_flight', 'Vibration', 'DB']
+2025-04-10 17:47:21,036 - DEBUG - JSON parsed successfully, contains 36 records
+2025-04-10 17:47:21,040 - DEBUG - DataFrame created with shape: (36, 8)
+2025-04-10 17:47:21,040 - DEBUG - DataFrame columns: ['timestamp', 'Inside_temperature', 'Outside_temperature', 'Inside_humidity', 'Outside_humidity', 'Time_of_flight', 'Vibration', 'DB']
+2025-04-10 17:47:21,567 - DEBUG - Calculated dB level: -50.13474117033869
+2025-04-10 17:47:21,577 - DEBUG - JSON parsed successfully, contains 37 records
+2025-04-10 17:47:21,581 - DEBUG - DataFrame created with shape: (37, 8)
+2025-04-10 17:47:21,581 - DEBUG - DataFrame columns: ['timestamp', 'Inside_temperature', 'Outside_temperature', 'Inside_humidity', 'Outside_humidity', 'Time_of_flight', 'Vibration', 'DB']
+2025-04-10 17:47:22,019 - DEBUG - JSON parsed successfully, contains 37 records
+2025-04-10 17:47:22,024 - DEBUG - DataFrame created with shape: (37, 8)
+2025-04-10 17:47:22,024 - DEBUG - DataFrame columns: ['timestamp', 'Inside_temperature', 'Outside_temperature', 'Inside_humidity', 'Outside_humidity', 'Time_of_flight', 'Vibration', 'DB']

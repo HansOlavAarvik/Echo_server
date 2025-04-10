@@ -36,9 +36,13 @@ poetry run python main.py
 ```
 
 ## To do
-- Integrate continious audio player
-- Display audio frequency analasys
-- Take status signal
+### High prio
+- Display Tof data
 - Record alarm threshold
 - Function for sending threshold
+- Display audio frequency analasys
 - Add timeline
+### Low prio
+- Integrate continious audio player
+- Take status signal
+

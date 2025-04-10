@@ -44,8 +44,27 @@ def open_file():
             content = f.read()
             if not content or content == '[]':
                 return pd.DataFrame(columns=COLUMNS)
-            df = pd.read_json(StringIO(content), convert_dates=['timestamp'])
-            # Ensure timestamp is datetime
+            # Check if the content appears to be valid JSON
+            try:
+                json_data = json.loads(content)
+                log(f"JSON parsed successfully, contains {len(json_data)} records")
+            except json.JSONDecodeError as je:
+                log(f"JSON parsing error: {str(je)}")
+            
+            # Try pandas read_json
+            try:
+                df = pd.read_json(StringIO(content), convert_dates=['timestamp'])
+                log(f"DataFrame created with shape: {df.shape}")
+                log(f"DataFrame columns: {df.columns.tolist()}")
+            except Exception as e:
+                log(f"Error in pd.read_json: {str(e)}")
+                
+                # Alternative: try manual JSON parsing
+                log("Attempting manual JSON parsing")
+                json_data = json.loads(content)
+                df = pd.DataFrame(json_data)
+                log(f"Manual parsing created DataFrame with shape: {df.shape}")
+ 
             if 'timestamp' in df.columns and not pd.api.types.is_datetime64_any_dtype(df['timestamp']):
                 df['timestamp'] = pd.to_datetime(df['timestamp'])
             return df    
