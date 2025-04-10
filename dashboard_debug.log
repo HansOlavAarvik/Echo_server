@@ -91,3 +91,2049 @@
 2025-04-11 01:39:21,103 - DEBUG - Logging initialized
 2025-04-11 01:39:21,603 - DEBUG - Starting UDP audio receiver thread...
 2025-04-11 01:39:21,604 - DEBUG - Binding to UDP port 6001 to receive Audio data
+2025-04-11 01:53:33,001 - DEBUG - Logging initialized
+2025-04-11 01:53:33,026 - DEBUG - Audio player callbacks registered successfully
+2025-04-11 01:53:33,056 - DEBUG - Dashboard mounted successfully
+2025-04-11 01:53:33,095 - DEBUG - Using selector: SelectSelector
+2025-04-11 01:53:33,129 - DEBUG - Dashboard mounted successfully
+2025-04-11 01:53:33,131 - DEBUG - Starting UDP receiver thread...
+2025-04-11 01:53:33,132 - DEBUG - Binding to UDP port 6002 to receive JSON data
+2025-04-11 01:53:33,132 - DEBUG - Logging initialized
+2025-04-11 01:53:33,633 - DEBUG - Starting UDP audio receiver thread...
+2025-04-11 01:53:33,633 - DEBUG - Binding to UDP port 6001 to receive Audio data
+2025-04-11 01:53:34,191 - ERROR - Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\dash\dash.py", line 1326, in dispatch
+    cb = self.callback_map[output]
+         ~~~~~~~~~~~~~~~~~^^^^^^^^
+KeyError: 'humidity_graph.figure'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\dash\dash.py", line 1400, in dispatch
+    raise KeyError(msg) from missing_callback_function
+KeyError: "Callback function not found for output 'humidity_graph.figure', perhaps you forgot to prepend the '@'?"
+2025-04-11 01:53:34,192 - ERROR - Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\dash\dash.py", line 1326, in dispatch
+    cb = self.callback_map[output]
+         ~~~~~~~~~~~~~~~~~^^^^^^^^
+KeyError: 'temperature_graph.figure'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\dash\dash.py", line 1400, in dispatch
+    raise KeyError(msg) from missing_callback_function
+KeyError: "Callback function not found for output 'temperature_graph.figure', perhaps you forgot to prepend the '@'?"
+2025-04-11 01:53:34,193 - ERROR - Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\dash\dash.py", line 1326, in dispatch
+    cb = self.callback_map[output]
+         ~~~~~~~~~~~~~~~~~^^^^^^^^
+KeyError: 'humidity_graph.figure'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\dash\dash.py", line 1400, in dispatch
+    raise KeyError(msg) from missing_callback_function
+KeyError: "Callback function not found for output 'humidity_graph.figure', perhaps you forgot to prepend the '@'?"
+2025-04-11 01:53:34,193 - ERROR - Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\dash\dash.py", line 1326, in dispatch
+    cb = self.callback_map[output]
+         ~~~~~~~~~~~~~~~~~^^^^^^^^
+KeyError: 'audio_graph.figure'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\dash\dash.py", line 1400, in dispatch
+    raise KeyError(msg) from missing_callback_function
+KeyError: "Callback function not found for output 'audio_graph.figure', perhaps you forgot to prepend the '@'?"
+2025-04-11 01:53:34,193 - ERROR - Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\dash\dash.py", line 1326, in dispatch
+    cb = self.callback_map[output]
+         ~~~~~~~~~~~~~~~~~^^^^^^^^
+KeyError: 'temperature_graph.figure'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\dash\dash.py", line 1400, in dispatch
+    raise KeyError(msg) from missing_callback_function
+KeyError: "Callback function not found for output 'temperature_graph.figure', perhaps you forgot to prepend the '@'?"
+2025-04-11 01:53:34,213 - DEBUG - Dashboard data retrieved for Vibration: shape=(97, 8)
+2025-04-11 01:53:34,225 - DEBUG - Dashboard data retrieved for Vibration: shape=(97, 8)
+2025-04-11 01:53:34,238 - DEBUG - Dashboard data retrieved for DB: shape=(97, 8)
+2025-04-11 01:53:34,245 - DEBUG - Temperature update triggered, interval: 13
+2025-04-11 01:53:34,258 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(97, 8)
+2025-04-11 01:53:34,294 - DEBUG - Dashboard data retrieved for Vibration: shape=(98, 8)
+2025-04-11 01:53:34,301 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(98, 8)
+2025-04-11 01:53:34,386 - DEBUG - Temperature update triggered, interval: 14
+2025-04-11 01:53:34,393 - DEBUG - Dashboard data retrieved for DB: shape=(98, 8)
+2025-04-11 01:53:34,409 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(98, 8)
+2025-04-11 01:53:34,419 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(98, 8)
+2025-04-11 01:53:34,434 - DEBUG - Dashboard data retrieved for Vibration: shape=(98, 8)
+2025-04-11 01:53:34,448 - DEBUG - Dashboard data retrieved for DB: shape=(98, 8)
+2025-04-11 01:53:34,459 - DEBUG - Temperature update triggered, interval: 15
+2025-04-11 01:53:34,469 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(98, 8)
+2025-04-11 01:53:34,479 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(98, 8)
+2025-04-11 01:53:34,756 - DEBUG - Temperature update triggered, interval: 16
+2025-04-11 01:53:34,770 - DEBUG - Dashboard data retrieved for Vibration: shape=(98, 8)
+2025-04-11 01:53:34,781 - DEBUG - Dashboard data retrieved for DB: shape=(98, 8)
+2025-04-11 01:53:34,797 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(98, 8)
+2025-04-11 01:53:34,826 - DEBUG - Dashboard data retrieved for Vibration: shape=(98, 8)
+2025-04-11 01:53:34,841 - DEBUG - Temperature update triggered, interval: 17
+2025-04-11 01:53:34,842 - DEBUG - Dashboard data retrieved for DB: shape=(98, 8)
+2025-04-11 01:53:34,852 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(98, 8)
+2025-04-11 01:53:34,871 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(98, 8)
+2025-04-11 01:53:34,922 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(98, 8)
+2025-04-11 01:53:34,962 - DEBUG - Temperature update triggered, interval: 18
+2025-04-11 01:53:34,976 - DEBUG - Dashboard data retrieved for Vibration: shape=(98, 8)
+2025-04-11 01:53:34,988 - DEBUG - Dashboard data retrieved for DB: shape=(98, 8)
+2025-04-11 01:53:35,002 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(98, 8)
+2025-04-11 01:53:35,032 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(98, 8)
+2025-04-11 01:53:35,052 - DEBUG - Temperature update triggered, interval: 19
+2025-04-11 01:53:35,062 - DEBUG - Dashboard data retrieved for Vibration: shape=(98, 8)
+2025-04-11 01:53:35,078 - DEBUG - Dashboard data retrieved for DB: shape=(98, 8)
+2025-04-11 01:53:35,095 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(98, 8)
+2025-04-11 01:53:35,113 - DEBUG - Temperature update triggered, interval: 20
+2025-04-11 01:53:35,126 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(98, 8)
+2025-04-11 01:53:35,146 - DEBUG - Dashboard data retrieved for Vibration: shape=(98, 8)
+2025-04-11 01:53:35,171 - DEBUG - Dashboard data retrieved for DB: shape=(98, 8)
+2025-04-11 01:53:35,185 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(98, 8)
+2025-04-11 01:53:35,213 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(98, 8)
+2025-04-11 01:53:35,235 - DEBUG - Dashboard data retrieved for Vibration: shape=(98, 8)
+2025-04-11 01:53:35,246 - DEBUG - Temperature update triggered, interval: 21
+2025-04-11 01:53:35,261 - DEBUG - Dashboard data retrieved for DB: shape=(98, 8)
+2025-04-11 01:53:35,276 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(98, 8)
+2025-04-11 01:53:35,294 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(98, 8)
+2025-04-11 01:53:35,336 - DEBUG - Dashboard data retrieved for Vibration: shape=(98, 8)
+2025-04-11 01:53:35,350 - DEBUG - Dashboard data retrieved for DB: shape=(98, 8)
+2025-04-11 01:53:35,358 - DEBUG - Temperature update triggered, interval: 22
+2025-04-11 01:53:35,368 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(98, 8)
+2025-04-11 01:53:35,391 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(98, 8)
+2025-04-11 01:53:35,429 - DEBUG - Dashboard data retrieved for Vibration: shape=(98, 8)
+2025-04-11 01:53:35,431 - DEBUG - Temperature update triggered, interval: 23
+2025-04-11 01:53:35,445 - DEBUG - Dashboard data retrieved for DB: shape=(98, 8)
+2025-04-11 01:53:35,460 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(98, 8)
+2025-04-11 01:53:35,474 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(98, 8)
+2025-04-11 01:53:35,529 - DEBUG - Temperature update triggered, interval: 24
+2025-04-11 01:53:35,547 - DEBUG - Dashboard data retrieved for Vibration: shape=(98, 8)
+2025-04-11 01:53:35,554 - DEBUG - Dashboard data retrieved for DB: shape=(98, 8)
+2025-04-11 01:53:35,583 - DEBUG - Temperature update triggered, interval: 25
+2025-04-11 01:53:35,598 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(99, 8)
+2025-04-11 01:53:35,614 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(99, 8)
+2025-04-11 01:53:35,725 - DEBUG - Dashboard data retrieved for Vibration: shape=(99, 8)
+2025-04-11 01:53:35,738 - DEBUG - Dashboard data retrieved for DB: shape=(99, 8)
+2025-04-11 01:53:35,751 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(99, 8)
+2025-04-11 01:53:35,764 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(99, 8)
+2025-04-11 01:53:35,811 - DEBUG - Dashboard data retrieved for Vibration: shape=(99, 8)
+2025-04-11 01:53:35,824 - DEBUG - Temperature update triggered, interval: 26
+2025-04-11 01:53:35,828 - DEBUG - Dashboard data retrieved for DB: shape=(99, 8)
+2025-04-11 01:53:35,843 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(99, 8)
+2025-04-11 01:53:35,875 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(99, 8)
+2025-04-11 01:53:35,907 - DEBUG - Dashboard data retrieved for Vibration: shape=(99, 8)
+2025-04-11 01:53:35,909 - DEBUG - Temperature update triggered, interval: 27
+2025-04-11 01:53:35,924 - DEBUG - Dashboard data retrieved for DB: shape=(99, 8)
+2025-04-11 01:53:35,938 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(99, 8)
+2025-04-11 01:53:35,951 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(99, 8)
+2025-04-11 01:53:35,999 - DEBUG - Dashboard data retrieved for Vibration: shape=(99, 8)
+2025-04-11 01:53:36,012 - DEBUG - Temperature update triggered, interval: 28
+2025-04-11 01:53:36,015 - DEBUG - Dashboard data retrieved for DB: shape=(99, 8)
+2025-04-11 01:53:36,030 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(99, 8)
+2025-04-11 01:53:36,047 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(99, 8)
+2025-04-11 01:53:36,093 - DEBUG - Dashboard data retrieved for Vibration: shape=(99, 8)
+2025-04-11 01:53:36,109 - DEBUG - Dashboard data retrieved for DB: shape=(99, 8)
+2025-04-11 01:53:36,110 - DEBUG - Temperature update triggered, interval: 29
+2025-04-11 01:53:36,126 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(99, 8)
+2025-04-11 01:53:36,157 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(99, 8)
+2025-04-11 01:53:36,159 - DEBUG - Temperature update triggered, interval: 30
+2025-04-11 01:53:36,191 - DEBUG - Dashboard data retrieved for Vibration: shape=(99, 8)
+2025-04-11 01:53:36,199 - DEBUG - Dashboard data retrieved for DB: shape=(99, 8)
+2025-04-11 01:53:36,219 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(99, 8)
+2025-04-11 01:53:36,261 - DEBUG - Temperature update triggered, interval: 31
+2025-04-11 01:53:36,274 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:53:36,281 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:53:36,315 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:53:36,328 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:53:36,357 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:53:36,388 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:53:36,389 - DEBUG - Temperature update triggered, interval: 32
+2025-04-11 01:53:36,406 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:53:36,421 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:53:36,434 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:53:36,480 - DEBUG - Temperature update triggered, interval: 33
+2025-04-11 01:53:36,481 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:53:36,488 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:53:36,522 - DEBUG - Temperature update triggered, interval: 34
+2025-04-11 01:53:36,531 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:53:36,545 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:53:36,623 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:53:36,636 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:53:36,650 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:53:36,679 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:53:36,683 - DEBUG - Temperature update triggered, interval: 35
+2025-04-11 01:53:36,710 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:53:36,725 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:53:36,739 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:53:36,752 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:53:36,800 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:53:36,816 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:53:36,817 - DEBUG - Temperature update triggered, interval: 36
+2025-04-11 01:53:36,832 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:53:36,871 - DEBUG - Temperature update triggered, interval: 37
+2025-04-11 01:53:36,886 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:53:36,909 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:53:36,927 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:53:36,942 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:53:36,964 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:53:37,005 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:53:37,006 - DEBUG - Temperature update triggered, interval: 38
+2025-04-11 01:53:37,021 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:53:37,037 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:53:37,067 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:53:37,094 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:53:37,100 - DEBUG - Temperature update triggered, interval: 39
+2025-04-11 01:53:37,114 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:53:37,130 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:53:37,161 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:53:37,193 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:53:37,198 - DEBUG - Temperature update triggered, interval: 40
+2025-04-11 01:53:37,216 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:53:37,232 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:53:37,265 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:53:37,266 - DEBUG - Temperature update triggered, interval: 41
+2025-04-11 01:53:37,295 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:53:37,312 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:53:37,328 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:53:37,361 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:53:37,380 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:53:37,394 - DEBUG - Temperature update triggered, interval: 42
+2025-04-11 01:53:37,408 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:53:37,423 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:53:37,437 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:53:37,482 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:53:37,505 - DEBUG - Temperature update triggered, interval: 43
+2025-04-11 01:53:37,511 - DEBUG - Temperature update triggered, interval: 44
+2025-04-11 01:53:37,542 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:53:37,554 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:53:37,568 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:53:37,614 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:53:37,628 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:53:37,645 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:53:37,684 - DEBUG - Temperature update triggered, interval: 45
+2025-04-11 01:53:37,698 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:53:37,705 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:53:37,738 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:53:37,746 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:53:37,770 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:53:37,829 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:53:37,846 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:53:37,847 - DEBUG - Temperature update triggered, interval: 46
+2025-04-11 01:53:37,864 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:53:37,899 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:53:37,900 - DEBUG - Temperature update triggered, interval: 47
+2025-04-11 01:53:37,932 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:53:37,945 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:53:37,961 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:53:37,990 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:53:38,016 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:53:38,031 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:53:38,121 - DEBUG - Temperature update triggered, interval: 48
+2025-04-11 01:53:38,141 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:53:38,148 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:53:38,198 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:53:38,212 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:53:39,633 - DEBUG - Temperature update triggered, interval: 49
+2025-04-11 01:53:39,649 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:53:39,667 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:53:39,692 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:53:39,707 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:53:39,738 - DEBUG - Temperature update triggered, interval: 50
+2025-04-11 01:53:39,748 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:53:39,760 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:53:39,804 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:53:39,812 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:53:43,301 - DEBUG - Logging initialized
+2025-04-11 01:53:43,324 - DEBUG - Audio player callbacks registered successfully
+2025-04-11 01:53:58,494 - DEBUG - Logging initialized
+2025-04-11 01:53:58,517 - DEBUG - Audio player callbacks registered successfully
+2025-04-11 01:53:58,530 - DEBUG - Dashboard mounted successfully
+2025-04-11 01:53:58,564 - DEBUG - Using selector: SelectSelector
+2025-04-11 01:53:58,594 - DEBUG - Dashboard mounted successfully
+2025-04-11 01:53:58,596 - DEBUG - Starting UDP receiver thread...
+2025-04-11 01:53:58,597 - DEBUG - Binding to UDP port 6002 to receive JSON data
+2025-04-11 01:53:58,597 - DEBUG - Logging initialized
+2025-04-11 01:53:59,097 - DEBUG - Starting UDP audio receiver thread...
+2025-04-11 01:53:59,098 - DEBUG - Binding to UDP port 6001 to receive Audio data
+2025-04-11 01:53:59,652 - ERROR - Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\dash\dash.py", line 1326, in dispatch
+    cb = self.callback_map[output]
+         ~~~~~~~~~~~~~~~~~^^^^^^^^
+KeyError: 'temperature_graph.figure'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\dash\dash.py", line 1400, in dispatch
+    raise KeyError(msg) from missing_callback_function
+KeyError: "Callback function not found for output 'temperature_graph.figure', perhaps you forgot to prepend the '@'?"
+2025-04-11 01:53:59,652 - ERROR - Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\dash\dash.py", line 1326, in dispatch
+    cb = self.callback_map[output]
+         ~~~~~~~~~~~~~~~~~^^^^^^^^
+KeyError: 'humidity_graph.figure'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\dash\dash.py", line 1400, in dispatch
+    raise KeyError(msg) from missing_callback_function
+KeyError: "Callback function not found for output 'humidity_graph.figure', perhaps you forgot to prepend the '@'?"
+2025-04-11 01:53:59,652 - ERROR - Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\dash\dash.py", line 1326, in dispatch
+    cb = self.callback_map[output]
+         ~~~~~~~~~~~~~~~~~^^^^^^^^
+KeyError: 'vibration_graph.figure'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\dash\dash.py", line 1400, in dispatch
+    raise KeyError(msg) from missing_callback_function
+KeyError: "Callback function not found for output 'vibration_graph.figure', perhaps you forgot to prepend the '@'?"
+2025-04-11 01:53:59,653 - ERROR - Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\dash\dash.py", line 1326, in dispatch
+    cb = self.callback_map[output]
+         ~~~~~~~~~~~~~~~~~^^^^^^^^
+KeyError: 'temperature_graph.figure'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\dash\dash.py", line 1400, in dispatch
+    raise KeyError(msg) from missing_callback_function
+KeyError: "Callback function not found for output 'temperature_graph.figure', perhaps you forgot to prepend the '@'?"
+2025-04-11 01:53:59,653 - ERROR - Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\dash\dash.py", line 1326, in dispatch
+    cb = self.callback_map[output]
+         ~~~~~~~~~~~~~~~~~^^^^^^^^
+KeyError: 'humidity_graph.figure'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\dash\dash.py", line 1400, in dispatch
+    raise KeyError(msg) from missing_callback_function
+KeyError: "Callback function not found for output 'humidity_graph.figure', perhaps you forgot to prepend the '@'?"
+2025-04-11 01:53:59,673 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:53:59,680 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:53:59,695 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:53:59,699 - DEBUG - Temperature update triggered, interval: 53
+2025-04-11 01:53:59,710 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:53:59,717 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:53:59,725 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:53:59,841 - DEBUG - Temperature update triggered, interval: 54
+2025-04-11 01:53:59,858 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:53:59,873 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:53:59,885 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:53:59,898 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:53:59,914 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:53:59,926 - DEBUG - Temperature update triggered, interval: 55
+2025-04-11 01:53:59,936 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:53:59,948 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:54:00,208 - DEBUG - Temperature update triggered, interval: 56
+2025-04-11 01:54:00,216 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:54:00,224 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:54:00,237 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:54:00,262 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:54:00,287 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:54:00,302 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:54:00,303 - DEBUG - Temperature update triggered, interval: 57
+2025-04-11 01:54:00,334 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:54:00,366 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:54:00,405 - DEBUG - Temperature update triggered, interval: 58
+2025-04-11 01:54:00,421 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:54:00,428 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:54:00,447 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:54:00,455 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:54:00,504 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:54:00,515 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:54:04,225 - DEBUG - Logging initialized
+2025-04-11 01:54:04,250 - DEBUG - Audio player callbacks registered successfully
+2025-04-11 01:54:04,262 - DEBUG - Dashboard mounted successfully
+2025-04-11 01:54:04,297 - DEBUG - Using selector: SelectSelector
+2025-04-11 01:54:04,327 - DEBUG - Dashboard mounted successfully
+2025-04-11 01:54:04,328 - DEBUG - Starting UDP receiver thread...
+2025-04-11 01:54:04,329 - DEBUG - Binding to UDP port 6002 to receive JSON data
+2025-04-11 01:54:04,330 - DEBUG - Logging initialized
+2025-04-11 01:54:04,831 - DEBUG - Starting UDP audio receiver thread...
+2025-04-11 01:54:04,832 - DEBUG - Binding to UDP port 6001 to receive Audio data
+2025-04-11 01:54:05,388 - ERROR - Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\dash\dash.py", line 1326, in dispatch
+    cb = self.callback_map[output]
+         ~~~~~~~~~~~~~~~~~^^^^^^^^
+KeyError: 'vibration_graph.figure'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\dash\dash.py", line 1400, in dispatch
+    raise KeyError(msg) from missing_callback_function
+KeyError: "Callback function not found for output 'vibration_graph.figure', perhaps you forgot to prepend the '@'?"
+2025-04-11 01:54:05,389 - ERROR - Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\dash\dash.py", line 1326, in dispatch
+    cb = self.callback_map[output]
+         ~~~~~~~~~~~~~~~~~^^^^^^^^
+KeyError: 'vibration_graph.figure'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\dash\dash.py", line 1400, in dispatch
+    raise KeyError(msg) from missing_callback_function
+KeyError: "Callback function not found for output 'vibration_graph.figure', perhaps you forgot to prepend the '@'?"
+2025-04-11 01:54:05,390 - ERROR - Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\dash\dash.py", line 1326, in dispatch
+    cb = self.callback_map[output]
+         ~~~~~~~~~~~~~~~~~^^^^^^^^
+KeyError: 'temperature_graph.figure'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\dash\dash.py", line 1400, in dispatch
+    raise KeyError(msg) from missing_callback_function
+KeyError: "Callback function not found for output 'temperature_graph.figure', perhaps you forgot to prepend the '@'?"
+2025-04-11 01:54:05,390 - ERROR - Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\dash\dash.py", line 1326, in dispatch
+    cb = self.callback_map[output]
+         ~~~~~~~~~~~~~~~~~^^^^^^^^
+KeyError: 'humidity_graph.figure'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\dash\dash.py", line 1400, in dispatch
+    raise KeyError(msg) from missing_callback_function
+KeyError: "Callback function not found for output 'humidity_graph.figure', perhaps you forgot to prepend the '@'?"
+2025-04-11 01:54:05,390 - ERROR - Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\dash\dash.py", line 1326, in dispatch
+    cb = self.callback_map[output]
+         ~~~~~~~~~~~~~~~~~^^^^^^^^
+KeyError: 'temperature_graph.figure'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\dash\dash.py", line 1400, in dispatch
+    raise KeyError(msg) from missing_callback_function
+KeyError: "Callback function not found for output 'temperature_graph.figure', perhaps you forgot to prepend the '@'?"
+2025-04-11 01:54:05,401 - DEBUG - Temperature update triggered, interval: 62
+2025-04-11 01:54:05,408 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:54:05,420 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:54:05,430 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:54:05,439 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:54:05,447 - DEBUG - Temperature update triggered, interval: 63
+2025-04-11 01:54:05,450 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:54:05,458 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:54:05,596 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:54:05,606 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:54:05,614 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:54:05,632 - DEBUG - Temperature update triggered, interval: 64
+2025-04-11 01:54:05,641 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:54:05,651 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:54:05,879 - DEBUG - Temperature update triggered, interval: 65
+2025-04-11 01:54:05,888 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:54:05,900 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:54:05,914 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:54:05,938 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:54:05,957 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:54:05,970 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:54:05,971 - DEBUG - Temperature update triggered, interval: 66
+2025-04-11 01:54:06,002 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:54:06,025 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:54:06,063 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:54:06,065 - DEBUG - Temperature update triggered, interval: 59
+2025-04-11 01:54:06,080 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:54:06,094 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:54:06,126 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:54:06,136 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:54:06,173 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:54:06,211 - DEBUG - Temperature update triggered, interval: 67
+2025-04-11 01:54:06,226 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:54:06,233 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:54:06,251 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:54:06,274 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:54:06,309 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:54:06,317 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:54:07,631 - DEBUG - Temperature update triggered, interval: 68
+2025-04-11 01:54:07,647 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:54:07,654 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:54:07,693 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:54:07,717 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:54:07,744 - DEBUG - Temperature update triggered, interval: 69
+2025-04-11 01:54:07,753 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:54:07,766 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:54:07,809 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:54:07,823 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:54:09,631 - DEBUG - Temperature update triggered, interval: 70
+2025-04-11 01:54:09,651 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:54:09,664 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:54:09,693 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:54:09,722 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:54:09,762 - DEBUG - Temperature update triggered, interval: 71
+2025-04-11 01:54:09,770 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:54:09,788 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:54:09,827 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:54:09,841 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:54:11,632 - DEBUG - Temperature update triggered, interval: 72
+2025-04-11 01:54:11,650 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:54:11,659 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:54:11,774 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:54:11,790 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:54:11,832 - DEBUG - Temperature update triggered, interval: 73
+2025-04-11 01:54:11,842 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:54:11,850 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:54:11,900 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:54:11,907 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:54:13,630 - DEBUG - Temperature update triggered, interval: 74
+2025-04-11 01:54:13,646 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:54:13,659 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:54:13,690 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:54:13,702 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:54:13,744 - DEBUG - Temperature update triggered, interval: 75
+2025-04-11 01:54:13,755 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:54:13,768 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:54:13,799 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:54:13,823 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:54:14,263 - DEBUG - Logging initialized
+2025-04-11 01:54:14,292 - DEBUG - Audio player callbacks registered successfully
+2025-04-11 01:54:14,303 - DEBUG - Dashboard mounted successfully
+2025-04-11 01:54:15,629 - DEBUG - Temperature update triggered, interval: 76
+2025-04-11 01:54:15,646 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:54:15,654 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:54:15,688 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:54:15,706 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:54:15,767 - DEBUG - Temperature update triggered, interval: 77
+2025-04-11 01:54:15,784 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:54:15,792 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:54:15,824 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:54:15,832 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:54:16,201 - DEBUG - Logging initialized
+2025-04-11 01:54:16,227 - DEBUG - Audio player callbacks registered successfully
+2025-04-11 01:54:16,238 - DEBUG - Dashboard mounted successfully
+2025-04-11 01:54:16,276 - DEBUG - Using selector: SelectSelector
+2025-04-11 01:54:16,310 - DEBUG - Dashboard mounted successfully
+2025-04-11 01:54:16,311 - DEBUG - Starting UDP receiver thread...
+2025-04-11 01:54:16,312 - DEBUG - Binding to UDP port 6002 to receive JSON data
+2025-04-11 01:54:16,312 - DEBUG - Logging initialized
+2025-04-11 01:54:16,813 - DEBUG - Starting UDP audio receiver thread...
+2025-04-11 01:54:16,814 - DEBUG - Binding to UDP port 6001 to receive Audio data
+2025-04-11 01:54:17,633 - DEBUG - Temperature update triggered, interval: 78
+2025-04-11 01:54:17,667 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:54:17,674 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:54:17,713 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:54:17,721 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:54:17,773 - DEBUG - Temperature update triggered, interval: 79
+2025-04-11 01:54:17,781 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:54:17,794 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:54:17,822 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:54:17,835 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:54:19,632 - DEBUG - Temperature update triggered, interval: 80
+2025-04-11 01:54:19,649 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:54:19,656 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:54:19,702 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:54:19,720 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:54:19,753 - DEBUG - Temperature update triggered, interval: 81
+2025-04-11 01:54:19,761 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:54:19,768 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:54:19,801 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:54:19,815 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:54:20,665 - DEBUG - Temperature update triggered, interval: 82
+2025-04-11 01:54:20,691 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:54:20,702 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:54:20,771 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:54:20,792 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:54:21,227 - DEBUG - Temperature update triggered, interval: 83
+2025-04-11 01:54:21,247 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:54:21,258 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:54:21,326 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:54:21,333 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:54:22,226 - DEBUG - Temperature update triggered, interval: 84
+2025-04-11 01:54:22,243 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:54:22,250 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:54:22,300 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:54:22,314 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:54:23,229 - DEBUG - Temperature update triggered, interval: 85
+2025-04-11 01:54:23,247 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:54:23,260 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:54:23,289 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:54:23,302 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:54:23,733 - DEBUG - Temperature update triggered, interval: 0
+2025-04-11 01:54:23,755 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:54:23,790 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:54:23,812 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:54:23,840 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:54:24,895 - DEBUG - Temperature update triggered, interval: 1
+2025-04-11 01:54:24,913 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:54:24,927 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:54:24,972 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:54:24,987 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:54:25,683 - DEBUG - Temperature update triggered, interval: 2
+2025-04-11 01:54:25,701 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:54:25,724 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:54:25,761 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:54:25,775 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:54:26,679 - DEBUG - Temperature update triggered, interval: 3
+2025-04-11 01:54:26,697 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:54:26,705 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:54:26,754 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:54:26,768 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:54:27,679 - DEBUG - Temperature update triggered, interval: 4
+2025-04-11 01:54:27,698 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:54:27,704 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:54:27,739 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:54:27,753 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:54:29,637 - DEBUG - Temperature update triggered, interval: 5
+2025-04-11 01:54:29,656 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:54:29,678 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:54:29,725 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:54:29,741 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:54:32,630 - DEBUG - Temperature update triggered, interval: 6
+2025-04-11 01:54:32,649 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:54:32,661 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:54:32,704 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:54:32,723 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:54:34,630 - DEBUG - Temperature update triggered, interval: 7
+2025-04-11 01:54:34,648 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:54:34,657 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:54:34,690 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:54:34,721 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:54:36,631 - DEBUG - Temperature update triggered, interval: 8
+2025-04-11 01:54:36,649 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:54:36,670 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:54:36,695 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:54:36,720 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:54:38,630 - DEBUG - Temperature update triggered, interval: 9
+2025-04-11 01:54:38,646 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:54:38,653 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:54:38,704 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:54:38,718 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:54:39,638 - DEBUG - Temperature update triggered, interval: 10
+2025-04-11 01:54:39,658 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:54:39,690 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:54:39,719 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:54:39,735 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:54:44,120 - DEBUG - Logging initialized
+2025-04-11 01:54:44,144 - DEBUG - Audio player callbacks registered successfully
+2025-04-11 01:54:44,172 - DEBUG - Dashboard mounted successfully
+2025-04-11 01:54:44,207 - DEBUG - Using selector: SelectSelector
+2025-04-11 01:54:44,237 - DEBUG - Dashboard mounted successfully
+2025-04-11 01:54:44,238 - DEBUG - Starting UDP receiver thread...
+2025-04-11 01:54:44,239 - DEBUG - Binding to UDP port 6002 to receive JSON data
+2025-04-11 01:54:44,239 - DEBUG - Logging initialized
+2025-04-11 01:54:44,464 - DEBUG - Error processing JSON data: name 'scaled_valuevalue' is not defined
+2025-04-11 01:54:44,740 - DEBUG - Starting UDP audio receiver thread...
+2025-04-11 01:54:44,741 - DEBUG - Binding to UDP port 6001 to receive Audio data
+2025-04-11 01:54:45,297 - ERROR - Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\dash\dash.py", line 1326, in dispatch
+    cb = self.callback_map[output]
+         ~~~~~~~~~~~~~~~~~^^^^^^^^
+KeyError: 'humidity_graph.figure'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\dash\dash.py", line 1400, in dispatch
+    raise KeyError(msg) from missing_callback_function
+KeyError: "Callback function not found for output 'humidity_graph.figure', perhaps you forgot to prepend the '@'?"
+2025-04-11 01:54:45,298 - ERROR - Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\dash\dash.py", line 1326, in dispatch
+    cb = self.callback_map[output]
+         ~~~~~~~~~~~~~~~~~^^^^^^^^
+KeyError: 'humidity_graph.figure'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\dash\dash.py", line 1400, in dispatch
+    raise KeyError(msg) from missing_callback_function
+KeyError: "Callback function not found for output 'humidity_graph.figure', perhaps you forgot to prepend the '@'?"
+2025-04-11 01:54:45,299 - ERROR - Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\dash\dash.py", line 1326, in dispatch
+    cb = self.callback_map[output]
+         ~~~~~~~~~~~~~~~~~^^^^^^^^
+KeyError: 'temperature_graph.figure'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\dash\dash.py", line 1400, in dispatch
+    raise KeyError(msg) from missing_callback_function
+KeyError: "Callback function not found for output 'temperature_graph.figure', perhaps you forgot to prepend the '@'?"
+2025-04-11 01:54:45,299 - ERROR - Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\dash\dash.py", line 1326, in dispatch
+    cb = self.callback_map[output]
+         ~~~~~~~~~~~~~~~~~^^^^^^^^
+KeyError: 'temperature_graph.figure'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\dash\dash.py", line 1400, in dispatch
+    raise KeyError(msg) from missing_callback_function
+KeyError: "Callback function not found for output 'temperature_graph.figure', perhaps you forgot to prepend the '@'?"
+2025-04-11 01:54:45,299 - ERROR - Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\dash\dash.py", line 1326, in dispatch
+    cb = self.callback_map[output]
+         ~~~~~~~~~~~~~~~~~^^^^^^^^
+KeyError: 'audio_graph.figure'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\dash\dash.py", line 1400, in dispatch
+    raise KeyError(msg) from missing_callback_function
+KeyError: "Callback function not found for output 'audio_graph.figure', perhaps you forgot to prepend the '@'?"
+2025-04-11 01:54:45,332 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:54:45,342 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:54:45,349 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:54:45,465 - DEBUG - Error processing JSON data: name 'scaled_valuevalue' is not defined
+2025-04-11 01:54:46,465 - DEBUG - Error processing JSON data: name 'scaled_valuevalue' is not defined
+2025-04-11 01:54:46,631 - DEBUG - Temperature update triggered, interval: 13
+2025-04-11 01:54:46,652 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:54:46,658 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:54:46,673 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:54:46,686 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:54:47,464 - DEBUG - Error processing JSON data: name 'scaled_valuevalue' is not defined
+2025-04-11 01:54:48,464 - DEBUG - Error processing JSON data: name 'scaled_valuevalue' is not defined
+2025-04-11 01:54:48,632 - DEBUG - Temperature update triggered, interval: 14
+2025-04-11 01:54:48,650 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:54:48,657 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:54:48,690 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:54:48,697 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:54:49,464 - DEBUG - Error processing JSON data: name 'scaled_valuevalue' is not defined
+2025-04-11 01:54:50,464 - DEBUG - Error processing JSON data: name 'scaled_valuevalue' is not defined
+2025-04-11 01:54:50,631 - DEBUG - Temperature update triggered, interval: 15
+2025-04-11 01:54:50,646 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:54:50,653 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:54:50,702 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:54:50,716 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:54:51,464 - DEBUG - Error processing JSON data: name 'scaled_valuevalue' is not defined
+2025-04-11 01:54:52,464 - DEBUG - Error processing JSON data: name 'scaled_valuevalue' is not defined
+2025-04-11 01:54:52,630 - DEBUG - Temperature update triggered, interval: 16
+2025-04-11 01:54:52,648 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:54:52,655 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:54:52,705 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:54:52,713 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:54:55,280 - DEBUG - Logging initialized
+2025-04-11 01:54:55,304 - DEBUG - Audio player callbacks registered successfully
+2025-04-11 01:54:55,331 - DEBUG - Dashboard mounted successfully
+2025-04-11 01:54:55,367 - DEBUG - Using selector: SelectSelector
+2025-04-11 01:54:55,399 - DEBUG - Dashboard mounted successfully
+2025-04-11 01:54:55,400 - DEBUG - Starting UDP receiver thread...
+2025-04-11 01:54:55,401 - DEBUG - Binding to UDP port 6002 to receive JSON data
+2025-04-11 01:54:55,401 - DEBUG - Logging initialized
+2025-04-11 01:54:55,903 - DEBUG - Starting UDP audio receiver thread...
+2025-04-11 01:54:55,904 - DEBUG - Binding to UDP port 6001 to receive Audio data
+2025-04-11 01:54:56,457 - ERROR - Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\dash\dash.py", line 1326, in dispatch
+    cb = self.callback_map[output]
+         ~~~~~~~~~~~~~~~~~^^^^^^^^
+KeyError: 'temperature_graph.figure'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\dash\dash.py", line 1400, in dispatch
+    raise KeyError(msg) from missing_callback_function
+KeyError: "Callback function not found for output 'temperature_graph.figure', perhaps you forgot to prepend the '@'?"
+2025-04-11 01:54:56,458 - ERROR - Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\dash\dash.py", line 1326, in dispatch
+    cb = self.callback_map[output]
+         ~~~~~~~~~~~~~~~~~^^^^^^^^
+KeyError: 'audio_graph.figure'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\dash\dash.py", line 1400, in dispatch
+    raise KeyError(msg) from missing_callback_function
+KeyError: "Callback function not found for output 'audio_graph.figure', perhaps you forgot to prepend the '@'?"
+2025-04-11 01:54:56,459 - ERROR - Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\dash\dash.py", line 1326, in dispatch
+    cb = self.callback_map[output]
+         ~~~~~~~~~~~~~~~~~^^^^^^^^
+KeyError: 'humidity_graph.figure'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\dash\dash.py", line 1400, in dispatch
+    raise KeyError(msg) from missing_callback_function
+KeyError: "Callback function not found for output 'humidity_graph.figure', perhaps you forgot to prepend the '@'?"
+2025-04-11 01:54:56,476 - DEBUG - Dashboard data retrieved for Vibration: shape=(2, 8)
+2025-04-11 01:54:56,495 - DEBUG - Temperature update triggered, interval: 18
+2025-04-11 01:54:56,525 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(3, 8)
+2025-04-11 01:54:56,532 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(3, 8)
+2025-04-11 01:54:56,540 - DEBUG - Dashboard data retrieved for Vibration: shape=(3, 8)
+2025-04-11 01:54:56,548 - DEBUG - Dashboard data retrieved for DB: shape=(3, 8)
+2025-04-11 01:54:58,632 - DEBUG - Temperature update triggered, interval: 19
+2025-04-11 01:54:58,649 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(5, 8)
+2025-04-11 01:54:58,663 - DEBUG - Dashboard data retrieved for Vibration: shape=(5, 8)
+2025-04-11 01:54:58,696 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(5, 8)
+2025-04-11 01:54:58,709 - DEBUG - Dashboard data retrieved for DB: shape=(5, 8)
+2025-04-11 01:55:00,632 - DEBUG - Temperature update triggered, interval: 20
+2025-04-11 01:55:00,652 - DEBUG - Dashboard data retrieved for Vibration: shape=(7, 8)
+2025-04-11 01:55:00,659 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(7, 8)
+2025-04-11 01:55:00,693 - DEBUG - Dashboard data retrieved for DB: shape=(7, 8)
+2025-04-11 01:55:00,708 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(7, 8)
+2025-04-11 01:55:02,632 - DEBUG - Temperature update triggered, interval: 21
+2025-04-11 01:55:02,651 - DEBUG - Dashboard data retrieved for DB: shape=(9, 8)
+2025-04-11 01:55:02,657 - DEBUG - Dashboard data retrieved for Vibration: shape=(9, 8)
+2025-04-11 01:55:02,674 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(9, 8)
+2025-04-11 01:55:02,703 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(9, 8)
+2025-04-11 01:55:04,632 - DEBUG - Temperature update triggered, interval: 22
+2025-04-11 01:55:04,649 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(11, 8)
+2025-04-11 01:55:04,655 - DEBUG - Dashboard data retrieved for DB: shape=(11, 8)
+2025-04-11 01:55:04,691 - DEBUG - Dashboard data retrieved for Vibration: shape=(11, 8)
+2025-04-11 01:55:04,703 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(11, 8)
+2025-04-11 01:55:06,630 - DEBUG - Temperature update triggered, interval: 23
+2025-04-11 01:55:06,647 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(13, 8)
+2025-04-11 01:55:06,653 - DEBUG - Dashboard data retrieved for Vibration: shape=(13, 8)
+2025-04-11 01:55:06,688 - DEBUG - Dashboard data retrieved for DB: shape=(13, 8)
+2025-04-11 01:55:06,694 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(13, 8)
+2025-04-11 01:55:08,630 - DEBUG - Temperature update triggered, interval: 24
+2025-04-11 01:55:08,648 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(15, 8)
+2025-04-11 01:55:08,654 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(15, 8)
+2025-04-11 01:55:08,703 - DEBUG - Dashboard data retrieved for Vibration: shape=(15, 8)
+2025-04-11 01:55:08,716 - DEBUG - Dashboard data retrieved for DB: shape=(15, 8)
+2025-04-11 01:55:09,476 - DEBUG - Temperature update triggered, interval: 25
+2025-04-11 01:55:09,525 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(16, 8)
+2025-04-11 01:55:09,562 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(16, 8)
+2025-04-11 01:55:09,570 - DEBUG - Dashboard data retrieved for Vibration: shape=(16, 8)
+2025-04-11 01:55:09,611 - DEBUG - Dashboard data retrieved for DB: shape=(16, 8)
+2025-04-11 01:55:09,756 - DEBUG - Temperature update triggered, interval: 26
+2025-04-11 01:55:09,776 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(16, 8)
+2025-04-11 01:55:09,783 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(16, 8)
+2025-04-11 01:55:09,852 - DEBUG - Dashboard data retrieved for Vibration: shape=(16, 8)
+2025-04-11 01:55:09,887 - DEBUG - Dashboard data retrieved for DB: shape=(16, 8)
+2025-04-11 01:55:10,681 - DEBUG - Temperature update triggered, interval: 27
+2025-04-11 01:55:10,698 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(17, 8)
+2025-04-11 01:55:10,711 - DEBUG - Dashboard data retrieved for DB: shape=(17, 8)
+2025-04-11 01:55:10,741 - DEBUG - Dashboard data retrieved for Vibration: shape=(17, 8)
+2025-04-11 01:55:10,755 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(17, 8)
+2025-04-11 01:55:11,691 - DEBUG - Temperature update triggered, interval: 28
+2025-04-11 01:55:11,709 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(18, 8)
+2025-04-11 01:55:11,716 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(18, 8)
+2025-04-11 01:55:11,766 - DEBUG - Dashboard data retrieved for Vibration: shape=(18, 8)
+2025-04-11 01:55:11,774 - DEBUG - Dashboard data retrieved for DB: shape=(18, 8)
+2025-04-11 01:55:12,679 - DEBUG - Temperature update triggered, interval: 29
+2025-04-11 01:55:12,695 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(19, 8)
+2025-04-11 01:55:12,723 - DEBUG - Dashboard data retrieved for Vibration: shape=(19, 8)
+2025-04-11 01:55:12,763 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(19, 8)
+2025-04-11 01:55:12,867 - DEBUG - Dashboard data retrieved for DB: shape=(19, 8)
+2025-04-11 01:55:13,682 - DEBUG - Temperature update triggered, interval: 30
+2025-04-11 01:55:13,700 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(20, 8)
+2025-04-11 01:55:13,729 - DEBUG - Dashboard data retrieved for Vibration: shape=(20, 8)
+2025-04-11 01:55:13,736 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(20, 8)
+2025-04-11 01:55:13,765 - DEBUG - Dashboard data retrieved for DB: shape=(20, 8)
+2025-04-11 01:55:14,680 - DEBUG - Temperature update triggered, interval: 31
+2025-04-11 01:55:14,701 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(21, 8)
+2025-04-11 01:55:14,708 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(21, 8)
+2025-04-11 01:55:14,759 - DEBUG - Dashboard data retrieved for DB: shape=(21, 8)
+2025-04-11 01:55:14,766 - DEBUG - Dashboard data retrieved for Vibration: shape=(21, 8)
+2025-04-11 01:55:15,682 - DEBUG - Temperature update triggered, interval: 32
+2025-04-11 01:55:15,701 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(22, 8)
+2025-04-11 01:55:15,709 - DEBUG - Dashboard data retrieved for Vibration: shape=(22, 8)
+2025-04-11 01:55:15,743 - DEBUG - Dashboard data retrieved for DB: shape=(22, 8)
+2025-04-11 01:55:15,751 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(22, 8)
+2025-04-11 01:55:16,682 - DEBUG - Temperature update triggered, interval: 33
+2025-04-11 01:55:16,708 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(23, 8)
+2025-04-11 01:55:16,716 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(23, 8)
+2025-04-11 01:55:16,766 - DEBUG - Dashboard data retrieved for Vibration: shape=(23, 8)
+2025-04-11 01:55:16,778 - DEBUG - Dashboard data retrieved for DB: shape=(23, 8)
+2025-04-11 01:55:17,692 - DEBUG - Temperature update triggered, interval: 34
+2025-04-11 01:55:17,718 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(24, 8)
+2025-04-11 01:55:17,729 - DEBUG - Dashboard data retrieved for DB: shape=(24, 8)
+2025-04-11 01:55:17,783 - DEBUG - Dashboard data retrieved for Vibration: shape=(24, 8)
+2025-04-11 01:55:17,811 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(24, 8)
+2025-04-11 01:55:20,633 - DEBUG - Temperature update triggered, interval: 35
+2025-04-11 01:55:20,651 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(27, 8)
+2025-04-11 01:55:20,660 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(27, 8)
+2025-04-11 01:55:20,713 - DEBUG - Dashboard data retrieved for Vibration: shape=(27, 8)
+2025-04-11 01:55:20,727 - DEBUG - Dashboard data retrieved for DB: shape=(27, 8)
+2025-04-11 01:55:22,630 - DEBUG - Temperature update triggered, interval: 36
+2025-04-11 01:55:22,647 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(29, 8)
+2025-04-11 01:55:22,652 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(29, 8)
+2025-04-11 01:55:22,702 - DEBUG - Dashboard data retrieved for DB: shape=(29, 8)
+2025-04-11 01:55:22,710 - DEBUG - Dashboard data retrieved for Vibration: shape=(29, 8)
+2025-04-11 01:55:24,629 - DEBUG - Temperature update triggered, interval: 37
+2025-04-11 01:55:24,646 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(31, 8)
+2025-04-11 01:55:24,653 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(31, 8)
+2025-04-11 01:55:24,704 - DEBUG - Dashboard data retrieved for Vibration: shape=(31, 8)
+2025-04-11 01:55:24,718 - DEBUG - Dashboard data retrieved for DB: shape=(31, 8)
+2025-04-11 01:55:26,629 - DEBUG - Temperature update triggered, interval: 38
+2025-04-11 01:55:26,659 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(33, 8)
+2025-04-11 01:55:26,666 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(33, 8)
+2025-04-11 01:55:26,714 - DEBUG - Dashboard data retrieved for Vibration: shape=(33, 8)
+2025-04-11 01:55:26,721 - DEBUG - Dashboard data retrieved for DB: shape=(33, 8)
+2025-04-11 01:55:28,629 - DEBUG - Temperature update triggered, interval: 39
+2025-04-11 01:55:28,646 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(35, 8)
+2025-04-11 01:55:28,653 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(35, 8)
+2025-04-11 01:55:28,690 - DEBUG - Dashboard data retrieved for Vibration: shape=(35, 8)
+2025-04-11 01:55:28,708 - DEBUG - Dashboard data retrieved for DB: shape=(35, 8)
+2025-04-11 01:55:30,629 - DEBUG - Temperature update triggered, interval: 40
+2025-04-11 01:55:30,645 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(37, 8)
+2025-04-11 01:55:30,674 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(37, 8)
+2025-04-11 01:55:30,684 - DEBUG - Dashboard data retrieved for Vibration: shape=(37, 8)
+2025-04-11 01:55:30,717 - DEBUG - Dashboard data retrieved for DB: shape=(37, 8)
+2025-04-11 01:55:32,631 - DEBUG - Temperature update triggered, interval: 41
+2025-04-11 01:55:32,648 - DEBUG - Dashboard data retrieved for DB: shape=(39, 8)
+2025-04-11 01:55:32,655 - DEBUG - Dashboard data retrieved for Vibration: shape=(39, 8)
+2025-04-11 01:55:32,672 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(39, 8)
+2025-04-11 01:55:32,687 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(39, 8)
+2025-04-11 01:55:34,631 - DEBUG - Temperature update triggered, interval: 42
+2025-04-11 01:55:34,648 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(41, 8)
+2025-04-11 01:55:34,660 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(41, 8)
+2025-04-11 01:55:34,697 - DEBUG - Dashboard data retrieved for Vibration: shape=(41, 8)
+2025-04-11 01:55:34,718 - DEBUG - Dashboard data retrieved for DB: shape=(41, 8)
+2025-04-11 01:55:36,631 - DEBUG - Temperature update triggered, interval: 43
+2025-04-11 01:55:36,654 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(43, 8)
+2025-04-11 01:55:36,670 - DEBUG - Dashboard data retrieved for Vibration: shape=(43, 8)
+2025-04-11 01:55:36,704 - DEBUG - Dashboard data retrieved for DB: shape=(43, 8)
+2025-04-11 01:55:36,718 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(43, 8)
+2025-04-11 01:55:38,632 - DEBUG - Temperature update triggered, interval: 44
+2025-04-11 01:55:38,650 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(45, 8)
+2025-04-11 01:55:38,662 - DEBUG - Dashboard data retrieved for DB: shape=(45, 8)
+2025-04-11 01:55:38,692 - DEBUG - Dashboard data retrieved for Vibration: shape=(45, 8)
+2025-04-11 01:55:38,699 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(45, 8)
+2025-04-11 01:55:40,633 - DEBUG - Temperature update triggered, interval: 45
+2025-04-11 01:55:40,651 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(47, 8)
+2025-04-11 01:55:40,668 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(47, 8)
+2025-04-11 01:55:40,712 - DEBUG - Dashboard data retrieved for Vibration: shape=(47, 8)
+2025-04-11 01:55:40,726 - DEBUG - Dashboard data retrieved for DB: shape=(47, 8)
+2025-04-11 01:55:42,635 - DEBUG - Temperature update triggered, interval: 46
+2025-04-11 01:55:42,653 - DEBUG - Dashboard data retrieved for DB: shape=(49, 8)
+2025-04-11 01:55:42,661 - DEBUG - Dashboard data retrieved for Vibration: shape=(49, 8)
+2025-04-11 01:55:42,680 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(49, 8)
+2025-04-11 01:55:42,694 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(49, 8)
+2025-04-11 01:55:44,629 - DEBUG - Temperature update triggered, interval: 47
+2025-04-11 01:55:44,646 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(51, 8)
+2025-04-11 01:55:44,659 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(51, 8)
+2025-04-11 01:55:44,705 - DEBUG - Dashboard data retrieved for Vibration: shape=(51, 8)
+2025-04-11 01:55:44,719 - DEBUG - Dashboard data retrieved for DB: shape=(51, 8)
+2025-04-11 01:55:46,631 - DEBUG - Temperature update triggered, interval: 48
+2025-04-11 01:55:46,649 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(53, 8)
+2025-04-11 01:55:46,657 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(53, 8)
+2025-04-11 01:55:46,708 - DEBUG - Dashboard data retrieved for DB: shape=(53, 8)
+2025-04-11 01:55:46,715 - DEBUG - Dashboard data retrieved for Vibration: shape=(53, 8)
+2025-04-11 01:55:48,632 - DEBUG - Temperature update triggered, interval: 49
+2025-04-11 01:55:48,648 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(55, 8)
+2025-04-11 01:55:48,656 - DEBUG - Dashboard data retrieved for DB: shape=(55, 8)
+2025-04-11 01:55:48,689 - DEBUG - Dashboard data retrieved for Vibration: shape=(55, 8)
+2025-04-11 01:55:48,697 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(55, 8)
+2025-04-11 01:55:50,631 - DEBUG - Temperature update triggered, interval: 50
+2025-04-11 01:55:50,648 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(57, 8)
+2025-04-11 01:55:50,669 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(57, 8)
+2025-04-11 01:55:50,710 - DEBUG - Dashboard data retrieved for Vibration: shape=(57, 8)
+2025-04-11 01:55:50,723 - DEBUG - Dashboard data retrieved for DB: shape=(57, 8)
+2025-04-11 01:55:52,629 - DEBUG - Temperature update triggered, interval: 51
+2025-04-11 01:55:52,646 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(59, 8)
+2025-04-11 01:55:52,658 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(59, 8)
+2025-04-11 01:55:52,700 - DEBUG - Dashboard data retrieved for Vibration: shape=(59, 8)
+2025-04-11 01:55:52,713 - DEBUG - Dashboard data retrieved for DB: shape=(59, 8)
+2025-04-11 01:55:54,628 - DEBUG - Temperature update triggered, interval: 52
+2025-04-11 01:55:54,645 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(61, 8)
+2025-04-11 01:55:54,652 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(61, 8)
+2025-04-11 01:55:54,690 - DEBUG - Dashboard data retrieved for Vibration: shape=(61, 8)
+2025-04-11 01:55:54,715 - DEBUG - Dashboard data retrieved for DB: shape=(61, 8)
+2025-04-11 01:55:56,632 - DEBUG - Temperature update triggered, interval: 53
+2025-04-11 01:55:56,651 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(63, 8)
+2025-04-11 01:55:56,658 - DEBUG - Dashboard data retrieved for Vibration: shape=(63, 8)
+2025-04-11 01:55:56,692 - DEBUG - Dashboard data retrieved for DB: shape=(63, 8)
+2025-04-11 01:55:56,705 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(63, 8)
+2025-04-11 01:55:58,631 - DEBUG - Temperature update triggered, interval: 54
+2025-04-11 01:55:58,648 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(65, 8)
+2025-04-11 01:55:58,655 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(65, 8)
+2025-04-11 01:55:58,706 - DEBUG - Dashboard data retrieved for Vibration: shape=(65, 8)
+2025-04-11 01:55:58,713 - DEBUG - Dashboard data retrieved for DB: shape=(65, 8)
+2025-04-11 01:56:00,632 - DEBUG - Temperature update triggered, interval: 55
+2025-04-11 01:56:00,652 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(67, 8)
+2025-04-11 01:56:00,659 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(67, 8)
+2025-04-11 01:56:00,709 - DEBUG - Dashboard data retrieved for Vibration: shape=(67, 8)
+2025-04-11 01:56:00,723 - DEBUG - Dashboard data retrieved for DB: shape=(67, 8)
+2025-04-11 01:56:02,630 - DEBUG - Temperature update triggered, interval: 56
+2025-04-11 01:56:02,651 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(69, 8)
+2025-04-11 01:56:02,658 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(69, 8)
+2025-04-11 01:56:02,707 - DEBUG - Dashboard data retrieved for Vibration: shape=(69, 8)
+2025-04-11 01:56:02,724 - DEBUG - Dashboard data retrieved for DB: shape=(69, 8)
+2025-04-11 01:56:04,631 - DEBUG - Temperature update triggered, interval: 57
+2025-04-11 01:56:04,649 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(71, 8)
+2025-04-11 01:56:04,655 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(71, 8)
+2025-04-11 01:56:04,707 - DEBUG - Dashboard data retrieved for Vibration: shape=(71, 8)
+2025-04-11 01:56:04,715 - DEBUG - Dashboard data retrieved for DB: shape=(71, 8)
+2025-04-11 01:56:06,629 - DEBUG - Temperature update triggered, interval: 58
+2025-04-11 01:56:06,648 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(73, 8)
+2025-04-11 01:56:06,660 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(73, 8)
+2025-04-11 01:56:06,704 - DEBUG - Dashboard data retrieved for Vibration: shape=(73, 8)
+2025-04-11 01:56:06,719 - DEBUG - Dashboard data retrieved for DB: shape=(73, 8)
+2025-04-11 01:56:08,630 - DEBUG - Temperature update triggered, interval: 59
+2025-04-11 01:56:08,648 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(75, 8)
+2025-04-11 01:56:08,655 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(75, 8)
+2025-04-11 01:56:08,682 - DEBUG - Dashboard data retrieved for Vibration: shape=(75, 8)
+2025-04-11 01:56:08,717 - DEBUG - Dashboard data retrieved for DB: shape=(75, 8)
+2025-04-11 01:56:10,631 - DEBUG - Temperature update triggered, interval: 60
+2025-04-11 01:56:10,651 - DEBUG - Dashboard data retrieved for Vibration: shape=(77, 8)
+2025-04-11 01:56:10,665 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(77, 8)
+2025-04-11 01:56:10,692 - DEBUG - Dashboard data retrieved for DB: shape=(77, 8)
+2025-04-11 01:56:10,710 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(77, 8)
+2025-04-11 01:56:12,630 - DEBUG - Temperature update triggered, interval: 61
+2025-04-11 01:56:12,648 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(79, 8)
+2025-04-11 01:56:12,654 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(79, 8)
+2025-04-11 01:56:12,708 - DEBUG - Dashboard data retrieved for DB: shape=(79, 8)
+2025-04-11 01:56:12,716 - DEBUG - Dashboard data retrieved for Vibration: shape=(79, 8)
+2025-04-11 01:56:14,632 - DEBUG - Temperature update triggered, interval: 62
+2025-04-11 01:56:14,653 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(81, 8)
+2025-04-11 01:56:14,660 - DEBUG - Dashboard data retrieved for Vibration: shape=(81, 8)
+2025-04-11 01:56:14,694 - DEBUG - Dashboard data retrieved for DB: shape=(81, 8)
+2025-04-11 01:56:14,701 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(81, 8)
+2025-04-11 01:56:16,631 - DEBUG - Temperature update triggered, interval: 63
+2025-04-11 01:56:16,648 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(83, 8)
+2025-04-11 01:56:16,656 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(83, 8)
+2025-04-11 01:56:16,702 - DEBUG - Dashboard data retrieved for Vibration: shape=(83, 8)
+2025-04-11 01:56:16,710 - DEBUG - Dashboard data retrieved for DB: shape=(83, 8)
+2025-04-11 01:56:33,431 - DEBUG - Logging initialized
+2025-04-11 01:56:33,456 - DEBUG - Audio player callbacks registered successfully
+2025-04-11 01:56:33,468 - DEBUG - Dashboard mounted successfully
+2025-04-11 01:56:33,507 - DEBUG - Using selector: SelectSelector
+2025-04-11 01:56:33,541 - DEBUG - Dashboard mounted successfully
+2025-04-11 01:56:33,542 - DEBUG - Starting UDP receiver thread...
+2025-04-11 01:56:33,543 - DEBUG - Binding to UDP port 6002 to receive JSON data
+2025-04-11 01:56:33,543 - DEBUG - Logging initialized
+2025-04-11 01:56:34,043 - DEBUG - Starting UDP audio receiver thread...
+2025-04-11 01:56:34,043 - DEBUG - Binding to UDP port 6001 to receive Audio data
+2025-04-11 01:56:52,190 - DEBUG - Logging initialized
+2025-04-11 01:56:52,213 - DEBUG - Audio player callbacks registered successfully
+2025-04-11 01:56:52,227 - DEBUG - Dashboard mounted successfully
+2025-04-11 01:56:52,264 - DEBUG - Using selector: SelectSelector
+2025-04-11 01:56:52,295 - DEBUG - Dashboard mounted successfully
+2025-04-11 01:56:52,296 - DEBUG - Starting UDP receiver thread...
+2025-04-11 01:56:52,297 - DEBUG - Binding to UDP port 6002 to receive JSON data
+2025-04-11 01:56:52,298 - DEBUG - Logging initialized
+2025-04-11 01:56:52,797 - DEBUG - Starting UDP audio receiver thread...
+2025-04-11 01:56:52,798 - DEBUG - Binding to UDP port 6001 to receive Audio data
+2025-04-11 01:56:55,591 - DEBUG - Logging initialized
+2025-04-11 01:56:55,617 - DEBUG - Audio player callbacks registered successfully
+2025-04-11 01:56:55,629 - DEBUG - Dashboard mounted successfully
+2025-04-11 01:56:55,663 - DEBUG - Using selector: SelectSelector
+2025-04-11 01:56:55,699 - DEBUG - Dashboard mounted successfully
+2025-04-11 01:56:55,700 - DEBUG - Starting UDP receiver thread...
+2025-04-11 01:56:55,701 - DEBUG - Binding to UDP port 6002 to receive JSON data
+2025-04-11 01:56:55,702 - DEBUG - Logging initialized
+2025-04-11 01:56:56,202 - DEBUG - Starting UDP audio receiver thread...
+2025-04-11 01:56:56,203 - DEBUG - Binding to UDP port 6001 to receive Audio data
+2025-04-11 01:56:56,753 - ERROR - Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\dash\dash.py", line 1326, in dispatch
+    cb = self.callback_map[output]
+         ~~~~~~~~~~~~~~~~~^^^^^^^^
+KeyError: 'humidity_graph.figure'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\dash\dash.py", line 1400, in dispatch
+    raise KeyError(msg) from missing_callback_function
+KeyError: "Callback function not found for output 'humidity_graph.figure', perhaps you forgot to prepend the '@'?"
+2025-04-11 01:56:56,753 - ERROR - Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\dash\dash.py", line 1326, in dispatch
+    cb = self.callback_map[output]
+         ~~~~~~~~~~~~~~~~~^^^^^^^^
+KeyError: 'vibration_graph.figure'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\dash\dash.py", line 1400, in dispatch
+    raise KeyError(msg) from missing_callback_function
+KeyError: "Callback function not found for output 'vibration_graph.figure', perhaps you forgot to prepend the '@'?"
+2025-04-11 01:56:56,755 - ERROR - Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\dash\dash.py", line 1326, in dispatch
+    cb = self.callback_map[output]
+         ~~~~~~~~~~~~~~~~~^^^^^^^^
+KeyError: 'audio_graph.figure'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\dash\dash.py", line 1400, in dispatch
+    raise KeyError(msg) from missing_callback_function
+KeyError: "Callback function not found for output 'audio_graph.figure', perhaps you forgot to prepend the '@'?"
+2025-04-11 01:56:56,755 - ERROR - Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\dash\dash.py", line 1326, in dispatch
+    cb = self.callback_map[output]
+         ~~~~~~~~~~~~~~~~~^^^^^^^^
+KeyError: 'humidity_graph.figure'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\dash\dash.py", line 1400, in dispatch
+    raise KeyError(msg) from missing_callback_function
+KeyError: "Callback function not found for output 'humidity_graph.figure', perhaps you forgot to prepend the '@'?"
+2025-04-11 01:56:56,757 - DEBUG - Temperature update triggered, interval: 66
+2025-04-11 01:56:56,798 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:56:56,810 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:56:56,821 - DEBUG - Temperature update triggered, interval: 67
+2025-04-11 01:56:56,823 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:56:56,833 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:56:56,842 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:56:56,880 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:56:56,964 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:56:56,972 - DEBUG - Temperature update triggered, interval: 68
+2025-04-11 01:56:56,983 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:56:57,001 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:56:57,012 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:56:57,032 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:56:58,630 - DEBUG - Temperature update triggered, interval: 69
+2025-04-11 01:56:58,647 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:56:58,658 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:56:58,702 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:56:58,710 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:57:00,634 - DEBUG - Temperature update triggered, interval: 70
+2025-04-11 01:57:00,653 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:57:00,662 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:57:00,698 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:57:00,712 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:57:01,575 - DEBUG - Logging initialized
+2025-04-11 01:57:01,600 - DEBUG - Audio player callbacks registered successfully
+2025-04-11 01:57:01,613 - DEBUG - Dashboard mounted successfully
+2025-04-11 01:57:02,632 - DEBUG - Temperature update triggered, interval: 71
+2025-04-11 01:57:02,649 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:57:02,655 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:57:02,689 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:57:02,703 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:57:03,497 - DEBUG - Logging initialized
+2025-04-11 01:57:03,521 - DEBUG - Audio player callbacks registered successfully
+2025-04-11 01:57:03,533 - DEBUG - Dashboard mounted successfully
+2025-04-11 01:57:03,571 - DEBUG - Using selector: SelectSelector
+2025-04-11 01:57:03,604 - DEBUG - Dashboard mounted successfully
+2025-04-11 01:57:03,605 - DEBUG - Starting UDP receiver thread...
+2025-04-11 01:57:03,606 - DEBUG - Binding to UDP port 6002 to receive JSON data
+2025-04-11 01:57:03,606 - DEBUG - Logging initialized
+2025-04-11 01:57:04,107 - DEBUG - Starting UDP audio receiver thread...
+2025-04-11 01:57:04,107 - DEBUG - Binding to UDP port 6001 to receive Audio data
+2025-04-11 01:57:04,634 - DEBUG - Temperature update triggered, interval: 72
+2025-04-11 01:57:04,651 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:57:04,658 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:57:04,707 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:57:04,722 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:57:06,631 - DEBUG - Temperature update triggered, interval: 73
+2025-04-11 01:57:06,650 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:57:06,657 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:57:06,706 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:57:06,720 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:57:08,506 - DEBUG - Temperature update triggered, interval: 74
+2025-04-11 01:57:08,553 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:57:08,574 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:57:08,623 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:57:08,639 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:57:08,743 - DEBUG - Temperature update triggered, interval: 75
+2025-04-11 01:57:08,761 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:57:08,775 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:57:08,831 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:57:08,870 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:57:09,681 - DEBUG - Temperature update triggered, interval: 76
+2025-04-11 01:57:09,699 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:57:09,711 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:57:09,757 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:57:09,765 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:57:10,683 - DEBUG - Temperature update triggered, interval: 77
+2025-04-11 01:57:10,701 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:57:10,708 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:57:10,731 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:57:10,757 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:57:11,678 - DEBUG - Temperature update triggered, interval: 78
+2025-04-11 01:57:11,695 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:57:11,707 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:57:11,741 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:57:11,767 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:57:12,180 - DEBUG - Temperature update triggered, interval: 0
+2025-04-11 01:57:12,193 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:57:12,230 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:57:12,262 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:57:12,283 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:57:13,241 - DEBUG - Temperature update triggered, interval: 1
+2025-04-11 01:57:13,258 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:57:13,265 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:57:13,315 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:57:13,329 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:57:14,145 - DEBUG - Temperature update triggered, interval: 2
+2025-04-11 01:57:14,160 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:57:14,173 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:57:14,186 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:57:14,216 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:57:15,135 - DEBUG - Temperature update triggered, interval: 3
+2025-04-11 01:57:15,152 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:57:15,165 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:57:15,212 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:57:15,225 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:57:16,135 - DEBUG - Temperature update triggered, interval: 4
+2025-04-11 01:57:16,153 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:57:16,165 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:57:16,194 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:57:16,202 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:57:17,136 - DEBUG - Temperature update triggered, interval: 5
+2025-04-11 01:57:17,155 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:57:17,185 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:57:17,193 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:57:17,229 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:57:18,137 - DEBUG - Temperature update triggered, interval: 6
+2025-04-11 01:57:18,155 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:57:18,162 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:57:18,213 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:57:18,221 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:57:20,628 - DEBUG - Temperature update triggered, interval: 7
+2025-04-11 01:57:20,647 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:57:20,672 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:57:20,699 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:57:20,718 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:57:20,763 - DEBUG - Temperature update triggered, interval: 8
+2025-04-11 01:57:20,773 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:57:20,786 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:57:20,834 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:57:20,851 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:57:22,633 - DEBUG - Temperature update triggered, interval: 9
+2025-04-11 01:57:22,644 - DEBUG - Temperature update triggered, interval: 10
+2025-04-11 01:57:22,652 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:57:22,680 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:57:22,709 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:57:22,721 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:57:22,737 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:57:22,746 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:57:22,797 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:57:22,814 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:57:25,379 - DEBUG - Logging initialized
+2025-04-11 01:57:25,405 - DEBUG - Audio player callbacks registered successfully
+2025-04-11 01:57:25,417 - DEBUG - Dashboard mounted successfully
+2025-04-11 01:57:25,418 - DEBUG - Logging initialized
+2025-04-11 01:57:25,443 - DEBUG - Audio player callbacks registered successfully
+2025-04-11 01:57:25,454 - DEBUG - Using selector: SelectSelector
+2025-04-11 01:57:25,455 - DEBUG - Dashboard mounted successfully
+2025-04-11 01:57:25,486 - DEBUG - Dashboard mounted successfully
+2025-04-11 01:57:25,487 - DEBUG - Starting UDP receiver thread...
+2025-04-11 01:57:25,488 - DEBUG - Binding to UDP port 6002 to receive JSON data
+2025-04-11 01:57:25,488 - DEBUG - Logging initialized
+2025-04-11 01:57:25,491 - DEBUG - Using selector: SelectSelector
+2025-04-11 01:57:25,523 - DEBUG - Dashboard mounted successfully
+2025-04-11 01:57:25,525 - DEBUG - Starting UDP receiver thread...
+2025-04-11 01:57:25,525 - DEBUG - Binding to UDP port 6002 to receive JSON data
+2025-04-11 01:57:25,526 - DEBUG - Logging initialized
+2025-04-11 01:57:25,988 - DEBUG - Starting UDP audio receiver thread...
+2025-04-11 01:57:25,989 - DEBUG - Binding to UDP port 6001 to receive Audio data
+2025-04-11 01:57:26,026 - DEBUG - Starting UDP audio receiver thread...
+2025-04-11 01:57:26,027 - DEBUG - Binding to UDP port 6001 to receive Audio data
+2025-04-11 01:57:26,583 - ERROR - Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\dash\dash.py", line 1326, in dispatch
+    cb = self.callback_map[output]
+         ~~~~~~~~~~~~~~~~~^^^^^^^^
+KeyError: 'temperature_graph.figure'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\dash\dash.py", line 1400, in dispatch
+    raise KeyError(msg) from missing_callback_function
+KeyError: "Callback function not found for output 'temperature_graph.figure', perhaps you forgot to prepend the '@'?"
+2025-04-11 01:57:26,584 - ERROR - Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\dash\dash.py", line 1326, in dispatch
+    cb = self.callback_map[output]
+         ~~~~~~~~~~~~~~~~~^^^^^^^^
+KeyError: 'audio_graph.figure'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\dash\dash.py", line 1400, in dispatch
+    raise KeyError(msg) from missing_callback_function
+KeyError: "Callback function not found for output 'audio_graph.figure', perhaps you forgot to prepend the '@'?"
+2025-04-11 01:57:26,585 - ERROR - Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\dash\dash.py", line 1326, in dispatch
+    cb = self.callback_map[output]
+         ~~~~~~~~~~~~~~~~~^^^^^^^^
+KeyError: 'humidity_graph.figure'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\dash\dash.py", line 1400, in dispatch
+    raise KeyError(msg) from missing_callback_function
+KeyError: "Callback function not found for output 'humidity_graph.figure', perhaps you forgot to prepend the '@'?"
+2025-04-11 01:57:26,585 - ERROR - Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\dash\dash.py", line 1326, in dispatch
+    cb = self.callback_map[output]
+         ~~~~~~~~~~~~~~~~~^^^^^^^^
+KeyError: 'vibration_graph.figure'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\dash\dash.py", line 1400, in dispatch
+    raise KeyError(msg) from missing_callback_function
+KeyError: "Callback function not found for output 'vibration_graph.figure', perhaps you forgot to prepend the '@'?"
+2025-04-11 01:57:26,586 - ERROR - Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\dash\dash.py", line 1326, in dispatch
+    cb = self.callback_map[output]
+         ~~~~~~~~~~~~~~~~~^^^^^^^^
+KeyError: 'temperature_graph.figure'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hoaa9\AppData\Local\Programs\Python\Python312\Lib\site-packages\dash\dash.py", line 1400, in dispatch
+    raise KeyError(msg) from missing_callback_function
+KeyError: "Callback function not found for output 'temperature_graph.figure', perhaps you forgot to prepend the '@'?"
+2025-04-11 01:57:26,617 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:57:26,628 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:57:26,630 - DEBUG - Temperature update triggered, interval: 13
+2025-04-11 01:57:26,641 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:57:26,659 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:57:26,667 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:57:26,676 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:57:26,763 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:57:26,774 - DEBUG - Temperature update triggered, interval: 14
+2025-04-11 01:57:26,784 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:57:26,798 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:57:26,819 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:57:26,849 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:57:27,330 - DEBUG - Temperature update triggered, interval: 15
+2025-04-11 01:57:27,359 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:57:27,367 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:57:27,407 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:57:27,427 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:57:28,136 - DEBUG - Temperature update triggered, interval: 16
+2025-04-11 01:57:28,158 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:57:28,164 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:57:28,214 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:57:28,230 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:57:29,245 - DEBUG - Temperature update triggered, interval: 0
+2025-04-11 01:57:29,272 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:57:29,290 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:57:29,336 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:57:29,360 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:57:29,374 - DEBUG - Dashboard data retrieved for Time_of_flight: shape=(100, 8)
+2025-04-11 01:57:30,225 - DEBUG - Temperature update triggered, interval: 1
+2025-04-11 01:57:30,243 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:57:30,250 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:57:30,300 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:57:30,308 - DEBUG - Dashboard data retrieved for Time_of_flight: shape=(100, 8)
+2025-04-11 01:57:30,328 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:57:31,225 - DEBUG - Temperature update triggered, interval: 2
+2025-04-11 01:57:31,243 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:57:31,251 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:57:31,302 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:57:31,317 - DEBUG - Dashboard data retrieved for Time_of_flight: shape=(100, 8)
+2025-04-11 01:57:31,330 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:57:32,225 - DEBUG - Temperature update triggered, interval: 3
+2025-04-11 01:57:32,242 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:57:32,250 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:57:32,301 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:57:32,314 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:57:32,329 - DEBUG - Dashboard data retrieved for Time_of_flight: shape=(100, 8)
+2025-04-11 01:57:33,225 - DEBUG - Temperature update triggered, interval: 4
+2025-04-11 01:57:33,243 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:57:33,261 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:57:33,284 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:57:33,315 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:57:33,330 - DEBUG - Dashboard data retrieved for Time_of_flight: shape=(100, 8)
+2025-04-11 01:57:34,227 - DEBUG - Temperature update triggered, interval: 5
+2025-04-11 01:57:34,244 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:57:34,251 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:57:34,296 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:57:34,315 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:57:34,323 - DEBUG - Dashboard data retrieved for Time_of_flight: shape=empty
+2025-04-11 01:57:34,326 - DEBUG - Data types: timestamp              object
+Inside_temperature     object
+Outside_temperature    object
+Inside_humidity        object
+Outside_humidity       object
+Time_of_flight         object
+Vibration              object
+DB                     object
+dtype: object
+2025-04-11 01:57:34,330 - DEBUG - Null values: {'timestamp': 0, 'Inside_temperature': 0, 'Outside_temperature': 0, 'Inside_humidity': 0, 'Outside_humidity': 0, 'Time_of_flight': 0, 'Vibration': 0, 'DB': 0}
+2025-04-11 01:57:35,226 - DEBUG - Temperature update triggered, interval: 6
+2025-04-11 01:57:35,243 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:57:35,251 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:57:35,342 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:57:35,359 - DEBUG - Dashboard data retrieved for Time_of_flight: shape=(100, 8)
+2025-04-11 01:57:35,373 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:57:36,223 - DEBUG - Temperature update triggered, interval: 7
+2025-04-11 01:57:36,238 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:57:36,246 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:57:36,296 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:57:36,310 - DEBUG - Dashboard data retrieved for Time_of_flight: shape=(100, 8)
+2025-04-11 01:57:36,323 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:57:37,227 - DEBUG - Temperature update triggered, interval: 8
+2025-04-11 01:57:37,244 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:57:37,255 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:57:37,300 - DEBUG - Dashboard data retrieved for Time_of_flight: shape=(100, 8)
+2025-04-11 01:57:37,314 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:57:37,328 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:57:38,224 - DEBUG - Temperature update triggered, interval: 9
+2025-04-11 01:57:38,244 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:57:38,251 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:57:38,300 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:57:38,314 - DEBUG - Dashboard data retrieved for Time_of_flight: shape=(100, 8)
+2025-04-11 01:57:38,329 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:57:39,231 - DEBUG - Temperature update triggered, interval: 10
+2025-04-11 01:57:39,252 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:57:39,270 - DEBUG - Dashboard data retrieved for Time_of_flight: shape=(100, 8)
+2025-04-11 01:57:39,308 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:57:39,317 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:57:39,337 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:57:40,228 - DEBUG - Temperature update triggered, interval: 11
+2025-04-11 01:57:40,247 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:57:40,254 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:57:40,288 - DEBUG - Dashboard data retrieved for Time_of_flight: shape=(100, 8)
+2025-04-11 01:57:40,303 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:57:40,318 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:57:41,223 - DEBUG - Temperature update triggered, interval: 12
+2025-04-11 01:57:41,239 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:57:41,246 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:57:41,280 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:57:41,309 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:57:41,323 - DEBUG - Dashboard data retrieved for Time_of_flight: shape=(100, 8)
+2025-04-11 01:57:42,225 - DEBUG - Temperature update triggered, interval: 13
+2025-04-11 01:57:42,241 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:57:42,248 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:57:42,299 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:57:42,311 - DEBUG - Dashboard data retrieved for Time_of_flight: shape=(100, 8)
+2025-04-11 01:57:42,330 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:57:43,224 - DEBUG - Temperature update triggered, interval: 14
+2025-04-11 01:57:43,241 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:57:43,248 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:57:43,296 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:57:43,313 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:57:43,326 - DEBUG - Dashboard data retrieved for Time_of_flight: shape=(100, 8)
+2025-04-11 01:57:44,229 - DEBUG - Temperature update triggered, interval: 15
+2025-04-11 01:57:44,247 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:57:44,274 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:57:44,282 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:57:44,305 - DEBUG - Dashboard data retrieved for Time_of_flight: shape=(100, 8)
+2025-04-11 01:57:44,312 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:57:45,230 - DEBUG - Temperature update triggered, interval: 16
+2025-04-11 01:57:45,249 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:57:45,257 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:57:45,291 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:57:45,304 - DEBUG - Dashboard data retrieved for Time_of_flight: shape=(100, 8)
+2025-04-11 01:57:45,319 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:57:46,224 - DEBUG - Temperature update triggered, interval: 17
+2025-04-11 01:57:46,241 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:57:46,254 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:57:46,300 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:57:46,313 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:57:46,329 - DEBUG - Dashboard data retrieved for Time_of_flight: shape=(100, 8)
+2025-04-11 01:57:47,224 - DEBUG - Temperature update triggered, interval: 18
+2025-04-11 01:57:47,242 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:57:47,257 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:57:47,285 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:57:47,314 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:57:47,328 - DEBUG - Dashboard data retrieved for Time_of_flight: shape=(100, 8)
+2025-04-11 01:57:48,225 - DEBUG - Temperature update triggered, interval: 19
+2025-04-11 01:57:48,245 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:57:48,258 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:57:48,303 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:57:48,317 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:57:48,332 - DEBUG - Dashboard data retrieved for Time_of_flight: shape=(100, 8)
+2025-04-11 01:57:49,228 - DEBUG - Temperature update triggered, interval: 20
+2025-04-11 01:57:49,246 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:57:49,257 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:57:49,310 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:57:49,323 - DEBUG - Dashboard data retrieved for Time_of_flight: shape=(100, 8)
+2025-04-11 01:57:49,338 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:57:50,228 - DEBUG - Temperature update triggered, interval: 21
+2025-04-11 01:57:50,244 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:57:50,257 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:57:50,287 - DEBUG - Dashboard data retrieved for Time_of_flight: shape=(100, 8)
+2025-04-11 01:57:50,300 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:57:50,315 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:57:51,222 - DEBUG - Temperature update triggered, interval: 22
+2025-04-11 01:57:51,239 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:57:51,246 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:57:51,293 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:57:51,301 - DEBUG - Dashboard data retrieved for Time_of_flight: shape=(100, 8)
+2025-04-11 01:57:51,320 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:57:52,224 - DEBUG - Temperature update triggered, interval: 23
+2025-04-11 01:57:52,239 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:57:52,282 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:57:52,291 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:57:52,328 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:57:52,342 - DEBUG - Dashboard data retrieved for Time_of_flight: shape=(100, 8)
+2025-04-11 01:57:53,225 - DEBUG - Temperature update triggered, interval: 24
+2025-04-11 01:57:53,244 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:57:53,250 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:57:53,304 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:57:53,318 - DEBUG - Dashboard data retrieved for Time_of_flight: shape=(100, 8)
+2025-04-11 01:57:53,332 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:57:54,232 - DEBUG - Temperature update triggered, interval: 25
+2025-04-11 01:57:54,252 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:57:54,266 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:57:54,285 - DEBUG - Dashboard data retrieved for Time_of_flight: shape=(100, 8)
+2025-04-11 01:57:54,308 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:57:54,323 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:57:55,225 - DEBUG - Temperature update triggered, interval: 26
+2025-04-11 01:57:55,242 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:57:55,250 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:57:55,302 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:57:55,328 - DEBUG - Dashboard data retrieved for Time_of_flight: shape=(100, 8)
+2025-04-11 01:57:55,350 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:57:57,631 - DEBUG - Temperature update triggered, interval: 27
+2025-04-11 01:57:57,649 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:57:57,656 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:57:57,707 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:57:57,720 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:57:57,734 - DEBUG - Dashboard data retrieved for Time_of_flight: shape=(100, 8)
+2025-04-11 01:57:57,762 - DEBUG - Temperature update triggered, interval: 28
+2025-04-11 01:57:57,770 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:57:57,800 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:57:57,814 - DEBUG - Dashboard data retrieved for Time_of_flight: shape=(100, 8)
+2025-04-11 01:57:57,845 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:57:57,859 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:57:59,631 - DEBUG - Temperature update triggered, interval: 29
+2025-04-11 01:57:59,648 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:57:59,657 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:57:59,707 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:57:59,721 - DEBUG - Dashboard data retrieved for Time_of_flight: shape=(100, 8)
+2025-04-11 01:57:59,737 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:57:59,767 - DEBUG - Temperature update triggered, interval: 30
+2025-04-11 01:57:59,778 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:57:59,791 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:57:59,842 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:57:59,860 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:57:59,878 - DEBUG - Dashboard data retrieved for Time_of_flight: shape=(100, 8)
+2025-04-11 01:58:01,629 - DEBUG - Temperature update triggered, interval: 31
+2025-04-11 01:58:01,646 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:58:01,659 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:58:01,703 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:58:01,716 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:58:01,730 - DEBUG - Dashboard data retrieved for Time_of_flight: shape=(100, 8)
+2025-04-11 01:58:01,758 - DEBUG - Temperature update triggered, interval: 32
+2025-04-11 01:58:01,768 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:58:01,780 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:58:01,808 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:58:01,822 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:58:01,852 - DEBUG - Dashboard data retrieved for Time_of_flight: shape=(100, 8)
+2025-04-11 01:58:03,628 - DEBUG - Temperature update triggered, interval: 33
+2025-04-11 01:58:03,645 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:58:03,651 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:58:03,699 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:58:03,712 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:58:03,728 - DEBUG - Dashboard data retrieved for Time_of_flight: shape=(100, 8)
+2025-04-11 01:58:03,760 - DEBUG - Temperature update triggered, interval: 34
+2025-04-11 01:58:03,768 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:58:03,799 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:58:03,828 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:58:03,835 - DEBUG - Dashboard data retrieved for Time_of_flight: shape=(100, 8)
+2025-04-11 01:58:03,855 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:58:05,632 - DEBUG - Temperature update triggered, interval: 35
+2025-04-11 01:58:05,648 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:58:05,662 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:58:05,705 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:58:05,719 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:58:05,736 - DEBUG - Dashboard data retrieved for Time_of_flight: shape=(100, 8)
+2025-04-11 01:58:05,765 - DEBUG - Temperature update triggered, interval: 36
+2025-04-11 01:58:05,775 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:58:05,787 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:58:05,832 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:58:05,847 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:58:05,859 - DEBUG - Dashboard data retrieved for Time_of_flight: shape=(100, 8)
+2025-04-11 01:58:07,630 - DEBUG - Temperature update triggered, interval: 37
+2025-04-11 01:58:07,646 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:58:07,653 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:58:07,701 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:58:07,709 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:58:07,731 - DEBUG - Dashboard data retrieved for Time_of_flight: shape=(100, 8)
+2025-04-11 01:58:07,761 - DEBUG - Temperature update triggered, interval: 38
+2025-04-11 01:58:07,778 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:58:07,797 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:58:07,835 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:58:07,847 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:58:07,862 - DEBUG - Dashboard data retrieved for Time_of_flight: shape=(100, 8)
+2025-04-11 01:58:09,630 - DEBUG - Temperature update triggered, interval: 39
+2025-04-11 01:58:09,666 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:58:09,672 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:58:09,722 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:58:09,730 - DEBUG - Dashboard data retrieved for Time_of_flight: shape=(100, 8)
+2025-04-11 01:58:09,752 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:58:09,796 - DEBUG - Temperature update triggered, interval: 40
+2025-04-11 01:58:09,807 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:58:09,814 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:58:09,847 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:58:09,862 - DEBUG - Dashboard data retrieved for Time_of_flight: shape=(100, 8)
+2025-04-11 01:58:09,876 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:58:11,630 - DEBUG - Temperature update triggered, interval: 41
+2025-04-11 01:58:11,686 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:58:11,694 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:58:11,727 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:58:11,757 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:58:11,770 - DEBUG - Dashboard data retrieved for Time_of_flight: shape=(100, 8)
+2025-04-11 01:58:11,812 - DEBUG - Temperature update triggered, interval: 42
+2025-04-11 01:58:11,819 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:58:11,852 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:58:11,870 - DEBUG - Dashboard data retrieved for Time_of_flight: shape=(100, 8)
+2025-04-11 01:58:11,896 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:58:11,911 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:58:13,631 - DEBUG - Temperature update triggered, interval: 43
+2025-04-11 01:58:13,648 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:58:13,660 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:58:13,708 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:58:13,716 - DEBUG - Dashboard data retrieved for Time_of_flight: shape=(100, 8)
+2025-04-11 01:58:13,736 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:58:13,761 - DEBUG - Temperature update triggered, interval: 44
+2025-04-11 01:58:13,772 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:58:13,779 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:58:13,826 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:58:13,842 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:58:13,856 - DEBUG - Dashboard data retrieved for Time_of_flight: shape=(100, 8)
+2025-04-11 01:58:15,647 - DEBUG - Temperature update triggered, interval: 45
+2025-04-11 01:58:15,667 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:58:15,694 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:58:15,710 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:58:15,725 - DEBUG - Dashboard data retrieved for Time_of_flight: shape=(100, 8)
+2025-04-11 01:58:15,739 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:58:15,793 - DEBUG - Temperature update triggered, interval: 46
+2025-04-11 01:58:15,802 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:58:15,822 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:58:15,848 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:58:15,878 - DEBUG - Dashboard data retrieved for Time_of_flight: shape=(100, 8)
+2025-04-11 01:58:15,893 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:58:17,631 - DEBUG - Temperature update triggered, interval: 47
+2025-04-11 01:58:17,648 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:58:17,655 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:58:17,705 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)
+2025-04-11 01:58:17,719 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:58:17,736 - DEBUG - Dashboard data retrieved for Time_of_flight: shape=(100, 8)
+2025-04-11 01:58:17,752 - DEBUG - Temperature update triggered, interval: 48
+2025-04-11 01:58:17,759 - DEBUG - Dashboard data retrieved for Inside_temperature: shape=(100, 8)
+2025-04-11 01:58:17,792 - DEBUG - Dashboard data retrieved for Inside_humidity: shape=(100, 8)
+2025-04-11 01:58:17,806 - DEBUG - Dashboard data retrieved for Time_of_flight: shape=(100, 8)
+2025-04-11 01:58:17,836 - DEBUG - Dashboard data retrieved for Vibration: shape=(100, 8)
+2025-04-11 01:58:17,850 - DEBUG - Dashboard data retrieved for DB: shape=(100, 8)

@@ -229,18 +229,22 @@ def update_vibration_graph(n_intervals):
 )
 def update_audio_graph(n_intervals):
     return create_sensor_graph("DB")
+
 @callback(
     Output('tof_graph', 'figure'),
     Input('interval-component', 'n_intervals')
 )
 def udpate_tof_graph(n_intervals):
     return create_sensor_graph("Time_of_flight")
+
+
 # @app.callback(
 #     [Output("door-status-text", "children"),
 #      Output("door-status-indicator", "color")]
 # )
 # def update_door_status(n_clicks):
 #     return
+
 register_callbacks(app)
 
 

@@ -71,7 +71,7 @@ def validate_and_extract(data, key, index):
                     index < len(data[key])):
         value = data[key][index]
         scaled_value = scale_if_needed(key, value)
-        return value ##scaled_value
+        return scaled_value ##scaled_value
     else:
         return np.nan
     
