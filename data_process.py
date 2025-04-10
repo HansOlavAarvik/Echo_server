@@ -71,10 +71,27 @@ def validate_and_extract(data, key, index):
         isinstance(data[key], list) and
                     data[key] and                   
                     index < len(data[key])):
-        return data[key][index]
+        value = data[key][index]
+        scaled_value = scale_if_needed(key, value)
+        return scaled_value ##scaled_value
     else:
         return np.nan
     
+def scale_if_needed(key, value):
+    """Scale sensor values as all values are sent from microcontroller as 16bit int"""
+    # Check for None or np.nan first
+    if value is None or (isinstance(value, float) and np.isnan(value)):
+        return np.nan
+        
+    # Now we know value is a number and not None
+    if key == "Time_of_flight":
+        return value/10
+    elif key in ["Inside_temperature", "Outside_temperature"]:
+        return value/100 
+    elif key in ["Inside_humidity", "Outside_humidity"]:
+        return value/100
+    else:
+        return value   
 def handle_audio_data(data,adress):
     add_audio_chunk(data)
     return
