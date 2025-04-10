@@ -1,193 +1,93 @@
-2025-04-11 00:49:05,002 - DEBUG - Logging initialized
-2025-04-11 00:49:05,026 - DEBUG - Audio player callbacks registered successfully
-2025-04-11 00:49:09,529 - DEBUG - Logging initialized
-2025-04-11 00:49:09,555 - DEBUG - Audio player callbacks registered successfully
-2025-04-11 00:49:11,444 - DEBUG - Logging initialized
-2025-04-11 00:49:11,469 - DEBUG - Audio player callbacks registered successfully
-2025-04-11 00:49:11,517 - DEBUG - Using selector: SelectSelector
-2025-04-11 00:49:11,549 - DEBUG - Starting UDP receiver thread...
-2025-04-11 00:49:11,550 - DEBUG - Binding to UDP port 6002 to receive JSON data
-2025-04-11 00:49:11,551 - DEBUG - Logging initialized
-2025-04-11 00:49:12,051 - DEBUG - Starting UDP receiver thread...
-2025-04-11 00:49:12,052 - DEBUG - Binding to UDP port 6001 to receive Audio data
-2025-04-11 00:51:19,311 - DEBUG - Logging initialized
-2025-04-11 00:51:19,338 - DEBUG - Audio player callbacks registered successfully
-2025-04-11 00:51:21,452 - DEBUG - Logging initialized
-2025-04-11 00:51:21,476 - DEBUG - Audio player callbacks registered successfully
-2025-04-11 00:51:21,528 - DEBUG - Using selector: SelectSelector
-2025-04-11 00:51:21,565 - DEBUG - Starting UDP receiver thread...
-2025-04-11 00:51:21,566 - DEBUG - Binding to UDP port 6002 to receive JSON data
-2025-04-11 00:51:21,567 - DEBUG - Logging initialized
-2025-04-11 00:51:22,067 - DEBUG - Starting UDP receiver thread...
-2025-04-11 00:51:22,068 - DEBUG - Binding to UDP port 6001 to receive Audio data
-2025-04-11 00:52:58,821 - DEBUG - Logging initialized
-2025-04-11 00:52:58,850 - DEBUG - Audio player callbacks registered successfully
-2025-04-11 00:53:00,873 - DEBUG - Logging initialized
-2025-04-11 00:53:00,899 - DEBUG - Audio player callbacks registered successfully
-2025-04-11 00:53:00,952 - DEBUG - Using selector: SelectSelector
-2025-04-11 00:53:00,987 - DEBUG - Starting UDP receiver thread...
-2025-04-11 00:53:00,988 - DEBUG - Binding to UDP port 6002 to receive JSON data
-2025-04-11 00:53:00,989 - DEBUG - Logging initialized
-2025-04-11 00:53:01,489 - DEBUG - Starting UDP receiver thread...
-2025-04-11 00:53:01,490 - DEBUG - Binding to UDP port 6001 to receive Audio data
-2025-04-11 00:54:30,674 - DEBUG - Logging initialized
-2025-04-11 00:54:30,700 - DEBUG - Audio player callbacks registered successfully
-2025-04-11 00:54:32,766 - DEBUG - Logging initialized
-2025-04-11 00:54:32,791 - DEBUG - Audio player callbacks registered successfully
-2025-04-11 00:54:32,843 - DEBUG - Using selector: SelectSelector
-2025-04-11 00:54:32,879 - DEBUG - Starting UDP receiver thread...
-2025-04-11 00:54:32,880 - DEBUG - Binding to UDP port 6002 to receive JSON data
-2025-04-11 00:54:32,880 - DEBUG - Logging initialized
-2025-04-11 00:54:33,381 - DEBUG - Starting UDP receiver thread...
-2025-04-11 00:54:33,382 - DEBUG - Binding to UDP port 6001 to receive Audio data
-2025-04-11 00:56:50,117 - DEBUG - Logging initialized
-2025-04-11 00:56:50,144 - DEBUG - Audio player callbacks registered successfully
-2025-04-11 00:56:52,308 - DEBUG - Logging initialized
-2025-04-11 00:56:52,334 - DEBUG - Audio player callbacks registered successfully
-2025-04-11 00:56:52,387 - DEBUG - Using selector: SelectSelector
-2025-04-11 00:56:52,424 - DEBUG - Starting UDP receiver thread...
-2025-04-11 00:56:52,425 - DEBUG - Binding to UDP port 6002 to receive JSON data
-2025-04-11 00:56:52,426 - DEBUG - Logging initialized
-2025-04-11 00:56:52,926 - DEBUG - Starting UDP receiver thread...
-2025-04-11 00:56:52,927 - DEBUG - Binding to UDP port 6001 to receive Audio data
-2025-04-11 00:59:08,229 - DEBUG - Logging initialized
-2025-04-11 00:59:08,264 - DEBUG - Audio player callbacks registered successfully
-2025-04-11 00:59:16,745 - DEBUG - Logging initialized
-2025-04-11 00:59:16,771 - DEBUG - Audio player callbacks registered successfully
-2025-04-11 00:59:16,824 - DEBUG - Using selector: SelectSelector
-2025-04-11 00:59:16,860 - DEBUG - Starting UDP receiver thread...
-2025-04-11 00:59:16,861 - DEBUG - Binding to UDP port 6002 to receive JSON data
-2025-04-11 00:59:16,861 - DEBUG - Logging initialized
-2025-04-11 00:59:17,362 - DEBUG - Starting UDP receiver thread...
-2025-04-11 00:59:17,363 - DEBUG - Binding to UDP port 6001 to receive Audio data
-2025-04-11 01:00:52,835 - DEBUG - Logging initialized
-2025-04-11 01:00:52,861 - DEBUG - Audio player callbacks registered successfully
-2025-04-11 01:00:52,912 - DEBUG - Using selector: SelectSelector
-2025-04-11 01:00:52,947 - DEBUG - Starting UDP receiver thread...
-2025-04-11 01:00:52,948 - DEBUG - Binding to UDP port 6002 to receive JSON data
-2025-04-11 01:00:52,948 - DEBUG - Logging initialized
-2025-04-11 01:00:53,448 - DEBUG - Starting UDP receiver thread...
-2025-04-11 01:00:53,449 - DEBUG - Binding to UDP port 6001 to receive Audio data
-2025-04-11 01:02:27,923 - DEBUG - Logging initialized
-2025-04-11 01:02:27,949 - DEBUG - Audio player callbacks registered successfully
-2025-04-11 01:02:28,002 - DEBUG - Using selector: SelectSelector
-2025-04-11 01:02:28,036 - DEBUG - Starting UDP receiver thread...
-2025-04-11 01:02:28,037 - DEBUG - Binding to UDP port 6002 to receive JSON data
-2025-04-11 01:02:28,037 - DEBUG - Logging initialized
-2025-04-11 01:02:28,542 - DEBUG - Starting UDP receiver thread...
-2025-04-11 01:02:28,550 - DEBUG - Binding to UDP port 6001 to receive Audio data
-2025-04-11 01:02:59,801 - DEBUG - Logging initialized
-2025-04-11 01:02:59,826 - DEBUG - Audio player callbacks registered successfully
-2025-04-11 01:02:59,876 - DEBUG - Using selector: SelectSelector
-2025-04-11 01:02:59,911 - DEBUG - Starting UDP receiver thread...
-2025-04-11 01:02:59,912 - DEBUG - Binding to UDP port 6002 to receive JSON data
-2025-04-11 01:02:59,913 - DEBUG - Logging initialized
-2025-04-11 01:03:00,413 - DEBUG - Starting UDP receiver thread...
-2025-04-11 01:03:00,414 - DEBUG - Binding to UDP port 6001 to receive Audio data
-2025-04-11 01:04:43,298 - DEBUG - Logging initialized
-2025-04-11 01:04:43,323 - DEBUG - Audio player callbacks registered successfully
-2025-04-11 01:04:43,376 - DEBUG - Using selector: SelectSelector
-2025-04-11 01:04:43,411 - DEBUG - Starting UDP receiver thread...
-2025-04-11 01:04:43,412 - DEBUG - Binding to UDP port 6002 to receive JSON data
-2025-04-11 01:04:43,413 - DEBUG - Logging initialized
-2025-04-11 01:04:43,913 - DEBUG - Starting UDP receiver thread...
-2025-04-11 01:04:43,914 - DEBUG - Binding to UDP port 6001 to receive Audio data
-2025-04-11 01:06:49,487 - DEBUG - Logging initialized
-2025-04-11 01:06:49,561 - DEBUG - Using selector: SelectSelector
-2025-04-11 01:06:49,597 - DEBUG - Starting UDP receiver thread...
-2025-04-11 01:06:49,598 - DEBUG - Binding to UDP port 6002 to receive JSON data
-2025-04-11 01:06:49,598 - DEBUG - Logging initialized
-2025-04-11 01:06:50,099 - DEBUG - Starting UDP receiver thread...
-2025-04-11 01:06:50,100 - DEBUG - Binding to UDP port 6001 to receive Audio data
-2025-04-11 01:07:00,405 - DEBUG - Logging initialized
-2025-04-11 01:07:00,439 - DEBUG - Audio player callbacks registered successfully
-2025-04-11 01:07:00,512 - DEBUG - Using selector: SelectSelector
-2025-04-11 01:07:00,548 - DEBUG - Starting UDP receiver thread...
-2025-04-11 01:07:00,549 - DEBUG - Binding to UDP port 6002 to receive JSON data
-2025-04-11 01:07:00,549 - DEBUG - Logging initialized
-2025-04-11 01:07:01,050 - DEBUG - Starting UDP receiver thread...
-2025-04-11 01:07:01,051 - DEBUG - Binding to UDP port 6001 to receive Audio data
-2025-04-11 01:08:09,118 - DEBUG - Logging initialized
-2025-04-11 01:08:09,143 - DEBUG - Audio player callbacks registered successfully
-2025-04-11 01:08:09,194 - DEBUG - Using selector: SelectSelector
-2025-04-11 01:08:09,230 - DEBUG - Starting UDP receiver thread...
-2025-04-11 01:08:09,231 - DEBUG - Binding to UDP port 6002 to receive JSON data
-2025-04-11 01:08:09,231 - DEBUG - Logging initialized
-2025-04-11 01:08:09,731 - DEBUG - Starting UDP receiver thread...
-2025-04-11 01:08:09,732 - DEBUG - Binding to UDP port 6001 to receive Audio data
-2025-04-11 01:08:48,763 - DEBUG - Logging initialized
-2025-04-11 01:08:48,797 - DEBUG - Audio player callbacks registered successfully
-2025-04-11 01:08:48,857 - DEBUG - Using selector: SelectSelector
-2025-04-11 01:08:48,902 - DEBUG - Starting UDP receiver thread...
-2025-04-11 01:08:48,903 - DEBUG - Binding to UDP port 6002 to receive JSON data
-2025-04-11 01:08:48,904 - DEBUG - Logging initialized
-2025-04-11 01:08:49,404 - DEBUG - Starting UDP receiver thread...
-2025-04-11 01:08:49,405 - DEBUG - Binding to UDP port 6001 to receive Audio data
-2025-04-11 01:09:00,983 - DEBUG - Logging initialized
-2025-04-11 01:09:01,011 - DEBUG - Audio player callbacks registered successfully
-2025-04-11 01:09:01,068 - DEBUG - Using selector: SelectSelector
-2025-04-11 01:09:01,109 - DEBUG - Starting UDP receiver thread...
-2025-04-11 01:09:01,110 - DEBUG - Binding to UDP port 6002 to receive JSON data
-2025-04-11 01:09:01,111 - DEBUG - Logging initialized
-2025-04-11 01:09:01,611 - DEBUG - Starting UDP receiver thread...
-2025-04-11 01:09:01,611 - DEBUG - Binding to UDP port 6001 to receive Audio data
-2025-04-11 01:11:02,101 - DEBUG - Logging initialized
-2025-04-11 01:11:02,125 - DEBUG - Audio player callbacks registered successfully
-2025-04-11 01:11:02,178 - DEBUG - Using selector: SelectSelector
-2025-04-11 01:11:02,212 - DEBUG - Starting UDP receiver thread...
-2025-04-11 01:11:02,213 - DEBUG - Binding to UDP port 6002 to receive JSON data
-2025-04-11 01:11:02,213 - DEBUG - Logging initialized
-2025-04-11 01:11:02,714 - DEBUG - Starting UDP receiver thread...
-2025-04-11 01:11:02,715 - DEBUG - Binding to UDP port 6001 to receive Audio data
-2025-04-11 01:12:09,874 - DEBUG - Logging initialized
-2025-04-11 01:12:09,899 - DEBUG - Audio player callbacks registered successfully
-2025-04-11 01:12:09,966 - DEBUG - Using selector: SelectSelector
-2025-04-11 01:12:10,000 - DEBUG - Starting UDP receiver thread...
-2025-04-11 01:12:10,001 - DEBUG - Binding to UDP port 6002 to receive JSON data
-2025-04-11 01:12:10,002 - DEBUG - Logging initialized
-2025-04-11 01:12:10,502 - DEBUG - Starting UDP receiver thread...
-2025-04-11 01:12:10,503 - DEBUG - Binding to UDP port 6001 to receive Audio data
-2025-04-11 01:12:13,197 - DEBUG - Logging initialized
-2025-04-11 01:12:13,221 - DEBUG - Audio player callbacks registered successfully
-2025-04-11 01:12:13,285 - DEBUG - Using selector: SelectSelector
-2025-04-11 01:12:13,319 - DEBUG - Starting UDP receiver thread...
-2025-04-11 01:12:13,320 - DEBUG - Binding to UDP port 6002 to receive JSON data
-2025-04-11 01:12:13,320 - DEBUG - Logging initialized
-2025-04-11 01:12:13,821 - DEBUG - Starting UDP receiver thread...
-2025-04-11 01:12:13,822 - DEBUG - Binding to UDP port 6001 to receive Audio data
-2025-04-11 01:13:30,826 - DEBUG - Logging initialized
-2025-04-11 01:13:30,850 - DEBUG - Audio player callbacks registered successfully
-2025-04-11 01:13:30,916 - DEBUG - Using selector: SelectSelector
-2025-04-11 01:13:30,952 - DEBUG - Starting UDP receiver thread...
-2025-04-11 01:13:30,953 - DEBUG - Binding to UDP port 6002 to receive JSON data
-2025-04-11 01:13:30,954 - DEBUG - Logging initialized
-2025-04-11 01:13:31,454 - DEBUG - Starting UDP receiver thread...
-2025-04-11 01:13:31,455 - DEBUG - Binding to UDP port 6001 to receive Audio data
-2025-04-11 01:14:41,144 - DEBUG - Logging initialized
-2025-04-11 01:14:41,169 - DEBUG - Audio player callbacks registered successfully
-2025-04-11 01:14:43,038 - DEBUG - Logging initialized
-2025-04-11 01:14:43,062 - DEBUG - Audio player callbacks registered successfully
-2025-04-11 01:14:43,109 - DEBUG - Using selector: SelectSelector
-2025-04-11 01:14:43,141 - DEBUG - Starting UDP receiver thread...
-2025-04-11 01:14:43,142 - DEBUG - Binding to UDP port 6002 to receive JSON data
-2025-04-11 01:14:43,143 - DEBUG - Logging initialized
-2025-04-11 01:14:43,644 - DEBUG - Starting UDP receiver thread...
-2025-04-11 01:14:43,645 - DEBUG - Binding to UDP port 6001 to receive Audio data
-2025-04-11 01:15:24,181 - DEBUG - Logging initialized
-2025-04-11 01:15:24,208 - DEBUG - Audio player callbacks registered successfully
-2025-04-11 01:15:26,112 - DEBUG - Logging initialized
-2025-04-11 01:15:26,136 - DEBUG - Audio player callbacks registered successfully
-2025-04-11 01:15:26,185 - DEBUG - Using selector: SelectSelector
-2025-04-11 01:15:26,218 - DEBUG - Starting UDP receiver thread...
-2025-04-11 01:15:26,219 - DEBUG - Binding to UDP port 6002 to receive JSON data
-2025-04-11 01:15:26,219 - DEBUG - Logging initialized
-2025-04-11 01:15:26,720 - DEBUG - Starting UDP receiver thread...
-2025-04-11 01:15:26,721 - DEBUG - Binding to UDP port 6001 to receive Audio data
-2025-04-11 01:15:43,439 - DEBUG - Logging initialized
-2025-04-11 01:15:43,463 - DEBUG - Audio player callbacks registered successfully
-2025-04-11 01:15:43,510 - DEBUG - Using selector: SelectSelector
-2025-04-11 01:15:43,545 - DEBUG - Starting UDP receiver thread...
-2025-04-11 01:15:43,546 - DEBUG - Binding to UDP port 6002 to receive JSON data
-2025-04-11 01:15:43,546 - DEBUG - Logging initialized
-2025-04-11 01:15:44,047 - DEBUG - Starting UDP receiver thread...
-2025-04-11 01:15:44,048 - DEBUG - Binding to UDP port 6001 to receive Audio data
+2025-04-11 01:31:16,252 - DEBUG - Logging initialized
+2025-04-11 01:31:16,278 - DEBUG - Audio player callbacks registered successfully
+2025-04-11 01:31:16,292 - DEBUG - Dashboard mounted successfully
+2025-04-11 01:31:18,161 - DEBUG - Logging initialized
+2025-04-11 01:31:18,186 - DEBUG - Audio player callbacks registered successfully
+2025-04-11 01:31:18,199 - DEBUG - Dashboard mounted successfully
+2025-04-11 01:31:18,235 - DEBUG - Using selector: SelectSelector
+2025-04-11 01:31:18,265 - DEBUG - Dashboard mounted successfully
+2025-04-11 01:31:18,267 - DEBUG - Starting UDP receiver thread...
+2025-04-11 01:31:18,268 - DEBUG - Binding to UDP port 6002 to receive JSON data
+2025-04-11 01:31:18,268 - DEBUG - Logging initialized
+2025-04-11 01:31:18,769 - DEBUG - Starting UDP audio receiver thread...
+2025-04-11 01:31:18,770 - DEBUG - Binding to UDP port 6001 to receive Audio data
+2025-04-11 01:32:16,708 - DEBUG - Logging initialized
+2025-04-11 01:32:16,732 - DEBUG - Audio player callbacks registered successfully
+2025-04-11 01:32:16,744 - DEBUG - Dashboard mounted successfully
+2025-04-11 01:32:16,780 - DEBUG - Using selector: SelectSelector
+2025-04-11 01:32:16,811 - DEBUG - Dashboard mounted successfully
+2025-04-11 01:32:16,813 - DEBUG - Starting UDP receiver thread...
+2025-04-11 01:32:16,814 - DEBUG - Binding to UDP port 6002 to receive JSON data
+2025-04-11 01:32:16,814 - DEBUG - Logging initialized
+2025-04-11 01:32:17,315 - DEBUG - Starting UDP audio receiver thread...
+2025-04-11 01:32:17,316 - DEBUG - Binding to UDP port 6001 to receive Audio data
+2025-04-11 01:33:47,226 - DEBUG - Logging initialized
+2025-04-11 01:33:47,250 - DEBUG - Audio player callbacks registered successfully
+2025-04-11 01:33:47,262 - DEBUG - Dashboard mounted successfully
+2025-04-11 01:33:47,299 - DEBUG - Using selector: SelectSelector
+2025-04-11 01:33:47,330 - DEBUG - Dashboard mounted successfully
+2025-04-11 01:33:47,331 - DEBUG - Starting UDP receiver thread...
+2025-04-11 01:33:47,333 - DEBUG - Binding to UDP port 6002 to receive JSON data
+2025-04-11 01:33:47,333 - DEBUG - Logging initialized
+2025-04-11 01:33:47,833 - DEBUG - Starting UDP audio receiver thread...
+2025-04-11 01:33:47,834 - DEBUG - Binding to UDP port 6001 to receive Audio data
+2025-04-11 01:37:34,748 - DEBUG - Logging initialized
+2025-04-11 01:37:34,773 - DEBUG - Audio player callbacks registered successfully
+2025-04-11 01:37:34,787 - DEBUG - Dashboard mounted successfully
+2025-04-11 01:37:34,825 - DEBUG - Using selector: SelectSelector
+2025-04-11 01:37:34,861 - DEBUG - Dashboard mounted successfully
+2025-04-11 01:37:34,862 - DEBUG - Starting UDP receiver thread...
+2025-04-11 01:37:34,863 - DEBUG - Binding to UDP port 6002 to receive JSON data
+2025-04-11 01:37:34,864 - DEBUG - Logging initialized
+2025-04-11 01:37:35,364 - DEBUG - Starting UDP audio receiver thread...
+2025-04-11 01:37:35,365 - DEBUG - Binding to UDP port 6001 to receive Audio data
+2025-04-11 01:37:38,299 - DEBUG - Logging initialized
+2025-04-11 01:37:38,323 - DEBUG - Audio player callbacks registered successfully
+2025-04-11 01:37:38,334 - DEBUG - Dashboard mounted successfully
+2025-04-11 01:37:38,369 - DEBUG - Using selector: SelectSelector
+2025-04-11 01:37:38,403 - DEBUG - Dashboard mounted successfully
+2025-04-11 01:37:38,405 - DEBUG - Starting UDP receiver thread...
+2025-04-11 01:37:38,406 - DEBUG - Binding to UDP port 6002 to receive JSON data
+2025-04-11 01:37:38,406 - DEBUG - Logging initialized
+2025-04-11 01:37:38,907 - DEBUG - Starting UDP audio receiver thread...
+2025-04-11 01:37:38,908 - DEBUG - Binding to UDP port 6001 to receive Audio data
+2025-04-11 01:37:49,028 - DEBUG - Logging initialized
+2025-04-11 01:37:49,054 - DEBUG - Audio player callbacks registered successfully
+2025-04-11 01:37:49,066 - DEBUG - Dashboard mounted successfully
+2025-04-11 01:37:49,102 - DEBUG - Using selector: SelectSelector
+2025-04-11 01:37:49,133 - DEBUG - Dashboard mounted successfully
+2025-04-11 01:37:49,135 - DEBUG - Starting UDP receiver thread...
+2025-04-11 01:37:49,136 - DEBUG - Binding to UDP port 6002 to receive JSON data
+2025-04-11 01:37:49,136 - DEBUG - Logging initialized
+2025-04-11 01:37:49,637 - DEBUG - Starting UDP audio receiver thread...
+2025-04-11 01:37:49,638 - DEBUG - Binding to UDP port 6001 to receive Audio data
+2025-04-11 01:38:03,056 - DEBUG - Logging initialized
+2025-04-11 01:38:03,079 - DEBUG - Audio player callbacks registered successfully
+2025-04-11 01:38:03,091 - DEBUG - Dashboard mounted successfully
+2025-04-11 01:38:03,126 - DEBUG - Using selector: SelectSelector
+2025-04-11 01:38:03,156 - DEBUG - Dashboard mounted successfully
+2025-04-11 01:38:03,157 - DEBUG - Starting UDP receiver thread...
+2025-04-11 01:38:03,158 - DEBUG - Binding to UDP port 6002 to receive JSON data
+2025-04-11 01:38:03,158 - DEBUG - Logging initialized
+2025-04-11 01:38:03,659 - DEBUG - Starting UDP audio receiver thread...
+2025-04-11 01:38:03,660 - DEBUG - Binding to UDP port 6001 to receive Audio data
+2025-04-11 01:38:34,011 - DEBUG - Logging initialized
+2025-04-11 01:38:34,036 - DEBUG - Audio player callbacks registered successfully
+2025-04-11 01:38:34,048 - DEBUG - Dashboard mounted successfully
+2025-04-11 01:38:34,084 - DEBUG - Using selector: SelectSelector
+2025-04-11 01:38:34,116 - DEBUG - Dashboard mounted successfully
+2025-04-11 01:38:34,118 - DEBUG - Starting UDP receiver thread...
+2025-04-11 01:38:34,119 - DEBUG - Binding to UDP port 6002 to receive JSON data
+2025-04-11 01:38:34,119 - DEBUG - Logging initialized
+2025-04-11 01:38:34,620 - DEBUG - Starting UDP audio receiver thread...
+2025-04-11 01:38:34,621 - DEBUG - Binding to UDP port 6001 to receive Audio data
+2025-04-11 01:39:20,997 - DEBUG - Logging initialized
+2025-04-11 01:39:21,022 - DEBUG - Audio player callbacks registered successfully
+2025-04-11 01:39:21,034 - DEBUG - Dashboard mounted successfully
+2025-04-11 01:39:21,069 - DEBUG - Using selector: SelectSelector
+2025-04-11 01:39:21,100 - DEBUG - Dashboard mounted successfully
+2025-04-11 01:39:21,101 - DEBUG - Starting UDP receiver thread...
+2025-04-11 01:39:21,102 - DEBUG - Binding to UDP port 6002 to receive JSON data
+2025-04-11 01:39:21,103 - DEBUG - Logging initialized
+2025-04-11 01:39:21,603 - DEBUG - Starting UDP audio receiver thread...
+2025-04-11 01:39:21,604 - DEBUG - Binding to UDP port 6001 to receive Audio data

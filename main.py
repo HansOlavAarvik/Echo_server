@@ -5,7 +5,7 @@ import time
 import threading
 import database
 from div import log
-from dashboard import server as dashboard_server
+import dashboard
 from UDP_recieve import UDP_main_json, UDP_main_audio
 from audio_API import router as audio_router
 
@@ -23,14 +23,14 @@ async def startup_json_receiver():
     udp_json_thread = threading.Thread(target=UDP_main_json, daemon=True)
     udp_json_thread.start()
     time.sleep(0.5) 
+
 @app.on_event("startup")
 async def startup_audio_reciever():
-    global udp_json_thread
-    log("Starting UDP receiver thread...")
-    udp_json_thread = threading.Thread(target=UDP_main_audio, daemon=True)
-    udp_json_thread.start()
+    global udp_audio_thread  
+    log("Starting UDP audio receiver thread...")
+    udp_audio_thread = threading.Thread(target=UDP_main_audio, daemon=True)
+    udp_audio_thread.start()
     time.sleep(0.5)
-
 
 @app.get("/")
 def read_root():
@@ -44,7 +44,8 @@ def data_status():
         "columns": list(df.columns) if not df.empty else []
     }
 
-app.mount("/dashboard", WSGIMiddleware(dashboard_server))
+app.mount("/dashboard", WSGIMiddleware(dashboard.server))
+log("Dashboard mounted successfully")
 # Run the app
 if __name__ == "__main__":
     import uvicorn

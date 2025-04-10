@@ -204,7 +204,6 @@ def create_single_plot_graph(y_reading,data):
     fig.update_layout(**graph_layout())
     return fig
 
-### callback functions
 @callback(
     Output('temperature_graph', 'figure'),
     Input('interval-component', 'n_intervals')
@@ -236,24 +235,16 @@ def update_audio_graph(n_intervals):
 )
 def udpate_tof_graph(n_intervals):
     return create_sensor_graph("Time_of_flight")
-@app.callback(
-    [Output("door-status-text", "children"),
-     Output("door-status-indicator", "color")]
-)
-def update_door_status(n_clicks):
-    return
+# @app.callback(
+#     [Output("door-status-text", "children"),
+#      Output("door-status-indicator", "color")]
+# )
+# def update_door_status(n_clicks):
+#     return
 register_callbacks(app)
 
 
-@app.callback(  # Note: using @app.callback instead of @callback
-    Output('debug-div', 'children'),
-    Input('client-debug-interval', 'n_intervals')
-)
-def debug_callback(n):
-    time_now = datetime.now().strftime('%H:%M:%S.%f')[:-3]
-    log(f"Debug callback fired at {time_now}, n_intervals={n}")
-    return f"Debug div updated: {time_now}"
-### layout run
+
 app.layout = dbc.Container([
     create_header(),
     create_device_selector(),
@@ -263,10 +254,7 @@ app.layout = dbc.Container([
     create_tof(),
     create_audio(),
     create_audio_player(wrap),
-    create_interval(),
-    html.Div(id='debug-div', style={'margin': '20px', 'padding': '10px', 'border': '1px solid #ccc'}),
-    dcc.Interval(id='client-debug-interval', interval=1000, n_intervals=0),
- 
+    create_interval()
 ], fluid=True)
 
 
