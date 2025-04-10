@@ -239,7 +239,7 @@ def update_door_status(n_clicks):
     return
 register_callbacks(app)
 
-### layout 
+### layout run
 app.layout = dbc.Container([
     create_header(),
     create_device_selector(),
