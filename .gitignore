@@ -1,3 +1,10 @@
-sensor_data.json
+# Ignore specific file types
 *.wav
 *.log
+*.pyc
+*.json
+
+# Ignore all pycache directories
+__pycache__/
+*.py[cod]
+*$py.class
