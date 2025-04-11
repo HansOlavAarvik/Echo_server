@@ -142,9 +142,8 @@ def create_dummy_graph(y_reading):
         **graph_layout()
     )
     return fig
-def create_sensor_graph(y_reading,y_reading_secondary = None):
+def create_sensor_graph(y_reading,y_reading_secondary = None,y_title=None):
     data = recent_data()
-    log(f"Dashboard data retrieved for {y_reading}: shape={data.shape if not data.empty else 'empty'}")
     if data.empty:
         log(f"Data types: {data.dtypes}")
         log(f"Null values: {data.isnull().sum().to_dict()}")
@@ -156,11 +155,11 @@ def create_sensor_graph(y_reading,y_reading_secondary = None):
         log(f"Missing required column: {y_reading} or timestamp")
         return create_dummy_graph(y_reading)   
     if y_reading_secondary is not None:
-        fig = create_multi_plot_graph(y_reading,y_reading_secondary, data)
+        fig = create_multi_plot_graph(y_reading, y_reading_secondary, data, y_title)
     else:
-        fig = create_single_plot_graph(y_reading, data)
+        fig = create_single_plot_graph(y_reading, data, y_title)
     return fig            
-def create_multi_plot_graph(y_reading,y_reading_secondary,data):
+def create_multi_plot_graph(y_reading, y_reading_secondary, data, y_title):
     fig = make_subplots(specs=[[{"secondary_y": True}]])
 
     y1_min, y1_max = min(data[y_reading]), max(data[y_reading])
@@ -189,10 +188,10 @@ def create_multi_plot_graph(y_reading,y_reading_secondary,data):
         ),secondary_y=True
     )
     fig.update_layout(**graph_layout())
-    fig.update_yaxes(title_text=y_reading,range=y_range, secondary_y=False)
-    fig.update_yaxes(title_text=y_reading_secondary,range=y_range, secondary_y=True)
+    fig.update_yaxes(title_text=y_title,range=y_range, secondary_y=False)
+    fig.update_yaxes(range=y_range, secondary_y=True)
     return fig   
-def create_single_plot_graph(y_reading,data):
+def create_single_plot_graph(y_reading,data,y_title):
     fig = go.Figure()
     fig.add_trace(go.Scatter(
             x=data["timestamp"], 
@@ -202,6 +201,7 @@ def create_single_plot_graph(y_reading,data):
             connectgaps=True
     ))
     fig.update_layout(**graph_layout())
+    fig.update_yaxes(title_text=y_title)
     return fig
 
 @callback(
@@ -210,32 +210,32 @@ def create_single_plot_graph(y_reading,data):
 )
 def update_temperature_graph(n_intervals):
     log(f"Temperature update triggered, interval: {n_intervals}")
-    return create_sensor_graph("Inside_temperature","Outside_temperature")
+    return create_sensor_graph("Inside_temperature","Outside_temperature",y_title= " Temperature [°C]")
 @callback(
     Output('humidity_graph', 'figure'),
     Input('interval-component', 'n_intervals')
 )
 def update_humidity_graph(n_intervals):
-    return create_sensor_graph("Inside_humidity","Outside_humidity")
+    return create_sensor_graph("Inside_humidity","Outside_humidity",y_title= " Humidity [%]")
 @callback(
     Output('vibration_graph', 'figure'),
     Input('interval-component', 'n_intervals')
 )
 def update_vibration_graph(n_intervals):
-    return create_sensor_graph("Vibration")
+    return create_sensor_graph("Vibration",y_title="Acceleration [G]")
 @callback(
     Output('audio_graph', 'figure'),
     Input('interval-component', 'n_intervals')
 )
 def update_audio_graph(n_intervals):
-    return create_sensor_graph("DB")
+    return create_sensor_graph("DB", y_title="Decibel")
 
 @callback(
     Output('tof_graph', 'figure'),
     Input('interval-component', 'n_intervals')
 )
 def udpate_tof_graph(n_intervals):
-    return create_sensor_graph("Time_of_flight")
+    return create_sensor_graph("Time_of_flight",y_title="Distance to door [CM]")
 
 
 # @app.callback(
