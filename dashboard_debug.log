@@ -23421,3 +23421,201 @@ KeyError: "Callback function not found for output 'temperature_graph.figure', pe
 2025-04-11 02:13:19,094 - DEBUG - Temperature update triggered, interval: 54
 2025-04-11 02:13:20,238 - DEBUG - Temperature update triggered, interval: 55
 2025-04-11 02:13:21,279 - DEBUG - Temperature update triggered, interval: 56
+2025-04-11 10:47:07,255 - DEBUG - Logging initialized
+2025-04-11 10:47:07,284 - DEBUG - Audio player callbacks registered successfully
+2025-04-11 10:47:07,296 - DEBUG - Dashboard mounted successfully
+2025-04-11 10:47:09,323 - DEBUG - Logging initialized
+2025-04-11 10:47:09,348 - DEBUG - Audio player callbacks registered successfully
+2025-04-11 10:47:09,361 - DEBUG - Dashboard mounted successfully
+2025-04-11 10:47:09,401 - DEBUG - Using selector: SelectSelector
+2025-04-11 10:47:09,436 - DEBUG - Dashboard mounted successfully
+2025-04-11 10:47:09,437 - DEBUG - Starting UDP receiver thread...
+2025-04-11 10:47:09,438 - DEBUG - Binding to UDP port 6002 to receive JSON data
+2025-04-11 10:47:09,439 - DEBUG - Logging initialized
+2025-04-11 10:47:09,939 - DEBUG - Starting UDP audio receiver thread...
+2025-04-11 10:47:09,939 - DEBUG - Binding to UDP port 6001 to receive Audio data
+2025-04-11 10:50:21,303 - DEBUG - Logging initialized
+2025-04-11 10:50:21,331 - DEBUG - Audio player callbacks registered successfully
+2025-04-11 10:50:21,347 - DEBUG - Dashboard mounted successfully
+2025-04-11 10:50:23,181 - DEBUG - Logging initialized
+2025-04-11 10:50:23,204 - DEBUG - Audio player callbacks registered successfully
+2025-04-11 10:50:23,216 - DEBUG - Dashboard mounted successfully
+2025-04-11 10:50:23,251 - DEBUG - Using selector: SelectSelector
+2025-04-11 10:50:23,283 - DEBUG - Dashboard mounted successfully
+2025-04-11 10:50:23,284 - DEBUG - Starting UDP receiver thread...
+2025-04-11 10:50:23,285 - DEBUG - Binding to UDP port 6002 to receive JSON data
+2025-04-11 10:50:23,286 - DEBUG - Logging initialized
+2025-04-11 10:50:23,787 - DEBUG - Starting UDP audio receiver thread...
+2025-04-11 10:50:23,787 - DEBUG - Binding to UDP port 6001 to receive Audio data
+2025-04-11 10:53:11,927 - DEBUG - Logging initialized
+2025-04-11 10:53:11,958 - DEBUG - Audio player callbacks registered successfully
+2025-04-11 10:53:11,975 - DEBUG - Dashboard mounted successfully
+2025-04-11 10:53:13,915 - DEBUG - Logging initialized
+2025-04-11 10:53:13,940 - DEBUG - Audio player callbacks registered successfully
+2025-04-11 10:53:13,952 - DEBUG - Dashboard mounted successfully
+2025-04-11 10:53:13,991 - DEBUG - Using selector: SelectSelector
+2025-04-11 10:53:14,035 - DEBUG - Dashboard mounted successfully
+2025-04-11 10:53:14,037 - DEBUG - Starting UDP receiver thread...
+2025-04-11 10:53:14,038 - DEBUG - Binding to UDP port 6002 to receive JSON data
+2025-04-11 10:53:14,039 - DEBUG - Logging initialized
+2025-04-11 10:53:14,538 - DEBUG - Starting UDP audio receiver thread...
+2025-04-11 10:53:14,538 - DEBUG - Binding to UDP port 6001 to receive Audio data
+2025-04-11 10:53:15,962 - DEBUG - Temperature update triggered, interval: 0
+2025-04-11 10:53:16,950 - DEBUG - Temperature update triggered, interval: 1
+2025-04-11 10:53:17,943 - DEBUG - Temperature update triggered, interval: 2
+2025-04-11 10:53:18,972 - DEBUG - Temperature update triggered, interval: 3
+2025-04-11 10:53:19,946 - DEBUG - Temperature update triggered, interval: 4
+2025-04-11 10:53:20,953 - DEBUG - Temperature update triggered, interval: 5
+2025-04-11 10:53:21,945 - DEBUG - Temperature update triggered, interval: 6
+2025-04-11 10:53:22,946 - DEBUG - Temperature update triggered, interval: 7
+2025-04-11 10:53:23,947 - DEBUG - Temperature update triggered, interval: 8
+2025-04-11 10:53:24,948 - DEBUG - Temperature update triggered, interval: 9
+2025-04-11 10:53:27,701 - DEBUG - Temperature update triggered, interval: 10
+2025-04-11 10:53:27,800 - DEBUG - Temperature update triggered, interval: 11
+2025-04-11 10:53:27,957 - DEBUG - Temperature update triggered, interval: 12
+2025-04-11 10:53:28,946 - DEBUG - Temperature update triggered, interval: 13
+2025-04-11 10:53:29,944 - DEBUG - Temperature update triggered, interval: 14
+2025-04-11 10:53:30,946 - DEBUG - Temperature update triggered, interval: 15
+2025-04-11 10:53:31,945 - DEBUG - Temperature update triggered, interval: 16
+2025-04-11 10:53:32,945 - DEBUG - Temperature update triggered, interval: 17
+2025-04-11 10:53:33,948 - DEBUG - Temperature update triggered, interval: 18
+2025-04-11 10:53:34,947 - DEBUG - Temperature update triggered, interval: 19
+2025-04-11 10:53:35,950 - DEBUG - Temperature update triggered, interval: 20
+2025-04-11 10:53:36,945 - DEBUG - Temperature update triggered, interval: 21
+2025-04-11 10:53:37,950 - DEBUG - Temperature update triggered, interval: 22
+2025-04-11 10:53:38,948 - DEBUG - Temperature update triggered, interval: 23
+2025-04-11 10:53:39,945 - DEBUG - Temperature update triggered, interval: 24
+2025-04-11 10:53:40,946 - DEBUG - Temperature update triggered, interval: 25
+2025-04-11 10:53:41,944 - DEBUG - Temperature update triggered, interval: 26
+2025-04-11 10:53:42,945 - DEBUG - Temperature update triggered, interval: 27
+2025-04-11 10:53:43,945 - DEBUG - Temperature update triggered, interval: 28
+2025-04-11 10:53:44,945 - DEBUG - Temperature update triggered, interval: 29
+2025-04-11 10:53:45,948 - DEBUG - Temperature update triggered, interval: 30
+2025-04-11 10:53:46,949 - DEBUG - Temperature update triggered, interval: 31
+2025-04-11 10:53:47,946 - DEBUG - Temperature update triggered, interval: 32
+2025-04-11 10:53:48,945 - DEBUG - Temperature update triggered, interval: 33
+2025-04-11 10:53:49,947 - DEBUG - Temperature update triggered, interval: 34
+2025-04-11 10:53:50,951 - DEBUG - Temperature update triggered, interval: 35
+2025-04-11 10:53:51,946 - DEBUG - Temperature update triggered, interval: 36
+2025-04-11 10:53:52,947 - DEBUG - Temperature update triggered, interval: 37
+2025-04-11 10:53:55,313 - DEBUG - Temperature update triggered, interval: 38
+2025-04-11 10:53:55,446 - DEBUG - Temperature update triggered, interval: 39
+2025-04-11 10:53:57,317 - DEBUG - Temperature update triggered, interval: 40
+2025-04-11 10:53:57,413 - DEBUG - Temperature update triggered, interval: 41
+2025-04-11 10:54:48,772 - DEBUG - Logging initialized
+2025-04-11 10:54:48,798 - DEBUG - Audio player callbacks registered successfully
+2025-04-11 10:55:15,588 - DEBUG - Logging initialized
+2025-04-11 10:55:15,619 - DEBUG - Audio player callbacks registered successfully
+2025-04-11 10:55:15,650 - DEBUG - Dashboard mounted successfully
+2025-04-11 10:55:17,464 - DEBUG - Logging initialized
+2025-04-11 10:55:17,487 - DEBUG - Audio player callbacks registered successfully
+2025-04-11 10:55:17,499 - DEBUG - Dashboard mounted successfully
+2025-04-11 10:55:17,539 - DEBUG - Using selector: SelectSelector
+2025-04-11 10:55:17,569 - DEBUG - Dashboard mounted successfully
+2025-04-11 10:55:17,571 - DEBUG - Starting UDP receiver thread...
+2025-04-11 10:55:17,572 - DEBUG - Binding to UDP port 6002 to receive JSON data
+2025-04-11 10:55:17,572 - DEBUG - Logging initialized
+2025-04-11 10:55:18,073 - DEBUG - Starting UDP audio receiver thread...
+2025-04-11 10:55:18,073 - DEBUG - Binding to UDP port 6001 to receive Audio data
+2025-04-11 10:55:18,973 - DEBUG - Temperature update triggered, interval: 82
+2025-04-11 10:55:19,100 - DEBUG - Temperature update triggered, interval: 83
+2025-04-11 10:55:19,163 - DEBUG - Temperature update triggered, interval: 84
+2025-04-11 10:55:19,295 - DEBUG - Temperature update triggered, interval: 85
+2025-04-11 10:55:19,400 - DEBUG - Temperature update triggered, interval: 86
+2025-04-11 10:55:19,514 - DEBUG - Temperature update triggered, interval: 87
+2025-04-11 10:55:19,598 - DEBUG - Temperature update triggered, interval: 88
+2025-04-11 10:55:19,717 - DEBUG - Temperature update triggered, interval: 89
+2025-04-11 10:55:19,850 - DEBUG - Temperature update triggered, interval: 90
+2025-04-11 10:55:19,886 - DEBUG - Temperature update triggered, interval: 91
+2025-04-11 10:55:20,065 - DEBUG - Temperature update triggered, interval: 92
+2025-04-11 10:55:20,233 - DEBUG - Temperature update triggered, interval: 93
+2025-04-11 10:55:20,323 - DEBUG - Temperature update triggered, interval: 94
+2025-04-11 10:55:20,477 - DEBUG - Temperature update triggered, interval: 95
+2025-04-11 10:55:20,586 - DEBUG - Temperature update triggered, interval: 96
+2025-04-11 10:55:20,669 - DEBUG - Temperature update triggered, interval: 97
+2025-04-11 10:55:20,789 - DEBUG - Temperature update triggered, interval: 98
+2025-04-11 10:55:20,863 - DEBUG - Temperature update triggered, interval: 99
+2025-04-11 10:55:20,964 - DEBUG - Temperature update triggered, interval: 100
+2025-04-11 10:55:21,143 - DEBUG - Temperature update triggered, interval: 101
+2025-04-11 10:55:21,248 - DEBUG - Temperature update triggered, interval: 102
+2025-04-11 10:55:21,325 - DEBUG - Temperature update triggered, interval: 103
+2025-04-11 10:55:21,488 - DEBUG - Temperature update triggered, interval: 104
+2025-04-11 10:55:21,617 - DEBUG - Temperature update triggered, interval: 105
+2025-04-11 10:55:21,711 - DEBUG - Temperature update triggered, interval: 106
+2025-04-11 10:55:21,805 - DEBUG - Temperature update triggered, interval: 107
+2025-04-11 10:55:21,850 - DEBUG - Temperature update triggered, interval: 108
+2025-04-11 10:55:22,014 - DEBUG - Temperature update triggered, interval: 109
+2025-04-11 10:55:22,184 - DEBUG - Temperature update triggered, interval: 110
+2025-04-11 10:55:22,285 - DEBUG - Temperature update triggered, interval: 111
+2025-04-11 10:55:22,403 - DEBUG - Temperature update triggered, interval: 112
+2025-04-11 10:55:22,486 - DEBUG - Temperature update triggered, interval: 113
+2025-04-11 10:55:22,592 - DEBUG - Temperature update triggered, interval: 114
+2025-04-11 10:55:22,724 - DEBUG - Temperature update triggered, interval: 115
+2025-04-11 10:55:22,849 - DEBUG - Temperature update triggered, interval: 116
+2025-04-11 10:55:22,916 - DEBUG - Temperature update triggered, interval: 117
+2025-04-11 10:55:23,061 - DEBUG - Temperature update triggered, interval: 118
+2025-04-11 10:55:23,186 - DEBUG - Temperature update triggered, interval: 119
+2025-04-11 10:55:23,240 - DEBUG - Temperature update triggered, interval: 120
+2025-04-11 10:55:23,425 - DEBUG - Temperature update triggered, interval: 121
+2025-04-11 10:55:23,546 - DEBUG - Temperature update triggered, interval: 122
+2025-04-11 10:55:23,645 - DEBUG - Temperature update triggered, interval: 123
+2025-04-11 10:55:23,774 - DEBUG - Temperature update triggered, interval: 124
+2025-04-11 10:55:23,851 - DEBUG - Temperature update triggered, interval: 125
+2025-04-11 10:55:24,036 - DEBUG - Temperature update triggered, interval: 126
+2025-04-11 10:55:24,141 - DEBUG - Temperature update triggered, interval: 127
+2025-04-11 10:55:24,255 - DEBUG - Temperature update triggered, interval: 128
+2025-04-11 10:55:24,944 - DEBUG - Temperature update triggered, interval: 129
+2025-04-11 10:55:25,948 - DEBUG - Temperature update triggered, interval: 130
+2025-04-11 10:55:26,944 - DEBUG - Temperature update triggered, interval: 131
+2025-04-11 10:55:27,946 - DEBUG - Temperature update triggered, interval: 132
+2025-04-11 10:55:28,958 - DEBUG - Temperature update triggered, interval: 133
+2025-04-11 10:55:29,947 - DEBUG - Temperature update triggered, interval: 134
+2025-04-11 10:55:30,951 - DEBUG - Temperature update triggered, interval: 135
+2025-04-11 10:55:31,946 - DEBUG - Temperature update triggered, interval: 136
+2025-04-11 10:55:32,944 - DEBUG - Temperature update triggered, interval: 137
+2025-04-11 10:55:33,958 - DEBUG - Temperature update triggered, interval: 138
+2025-04-11 10:55:34,946 - DEBUG - Temperature update triggered, interval: 139
+2025-04-11 10:55:35,956 - DEBUG - Temperature update triggered, interval: 140
+2025-04-11 10:55:36,947 - DEBUG - Temperature update triggered, interval: 141
+2025-04-11 10:55:37,950 - DEBUG - Temperature update triggered, interval: 142
+2025-04-11 10:55:38,944 - DEBUG - Temperature update triggered, interval: 143
+2025-04-11 10:55:39,945 - DEBUG - Temperature update triggered, interval: 144
+2025-04-11 10:55:40,948 - DEBUG - Temperature update triggered, interval: 145
+2025-04-11 10:55:41,946 - DEBUG - Temperature update triggered, interval: 146
+2025-04-11 10:55:42,945 - DEBUG - Temperature update triggered, interval: 147
+2025-04-11 10:55:43,946 - DEBUG - Temperature update triggered, interval: 148
+2025-04-11 10:55:44,949 - DEBUG - Temperature update triggered, interval: 149
+2025-04-11 10:55:45,950 - DEBUG - Temperature update triggered, interval: 150
+2025-04-11 10:55:46,951 - DEBUG - Temperature update triggered, interval: 151
+2025-04-11 10:55:47,946 - DEBUG - Temperature update triggered, interval: 152
+2025-04-11 10:55:48,944 - DEBUG - Temperature update triggered, interval: 153
+2025-04-11 10:55:49,952 - DEBUG - Temperature update triggered, interval: 154
+2025-04-11 10:55:50,946 - DEBUG - Temperature update triggered, interval: 155
+2025-04-11 10:55:51,945 - DEBUG - Temperature update triggered, interval: 156
+2025-04-11 10:55:52,947 - DEBUG - Temperature update triggered, interval: 157
+2025-04-11 10:55:53,953 - DEBUG - Temperature update triggered, interval: 158
+2025-04-11 10:55:54,951 - DEBUG - Temperature update triggered, interval: 159
+2025-04-11 10:55:55,949 - DEBUG - Temperature update triggered, interval: 160
+2025-04-11 10:55:56,945 - DEBUG - Temperature update triggered, interval: 161
+2025-04-11 10:55:57,945 - DEBUG - Temperature update triggered, interval: 162
+2025-04-11 10:55:58,945 - DEBUG - Temperature update triggered, interval: 163
+2025-04-11 10:55:59,950 - DEBUG - Temperature update triggered, interval: 164
+2025-04-11 10:56:00,947 - DEBUG - Temperature update triggered, interval: 165
+2025-04-11 10:56:01,946 - DEBUG - Temperature update triggered, interval: 166
+2025-04-11 10:56:02,951 - DEBUG - Temperature update triggered, interval: 167
+2025-04-11 10:56:03,945 - DEBUG - Temperature update triggered, interval: 168
+2025-04-11 10:56:04,945 - DEBUG - Temperature update triggered, interval: 169
+2025-04-11 10:56:05,949 - DEBUG - Temperature update triggered, interval: 170
+2025-04-11 10:56:06,945 - DEBUG - Temperature update triggered, interval: 171
+2025-04-11 10:56:07,946 - DEBUG - Temperature update triggered, interval: 172
+2025-04-11 10:56:08,945 - DEBUG - Temperature update triggered, interval: 173
+2025-04-11 10:56:09,946 - DEBUG - Temperature update triggered, interval: 174
+2025-04-11 10:56:10,951 - DEBUG - Temperature update triggered, interval: 175
+2025-04-11 10:56:11,952 - DEBUG - Temperature update triggered, interval: 176
+2025-04-11 10:56:12,949 - DEBUG - Temperature update triggered, interval: 177
+2025-04-11 10:56:13,946 - DEBUG - Temperature update triggered, interval: 178
+2025-04-11 10:56:14,947 - DEBUG - Temperature update triggered, interval: 179
+2025-04-11 10:56:15,948 - DEBUG - Temperature update triggered, interval: 180
+2025-04-11 10:56:16,951 - DEBUG - Temperature update triggered, interval: 181
+2025-04-11 10:56:17,946 - DEBUG - Temperature update triggered, interval: 182
+2025-04-11 10:56:18,946 - DEBUG - Temperature update triggered, interval: 183

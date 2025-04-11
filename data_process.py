@@ -88,6 +88,8 @@ def scale_if_needed(key, value):
         return value/100 
     elif key in ["Inside_humidity", "Outside_humidity"]:
         return value/100
+    elif key == "Vibration":
+        return value/1000
     else:
         return value
 
